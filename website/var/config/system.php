@@ -16,7 +16,7 @@ return [
             "username" => "root",
             "password" => "root",
             "dbname" => "atitesting",
-            "host" => "localhost",
+            "host" => "192.168.10.126",
             "port" => "3306"
         ]
     ],
