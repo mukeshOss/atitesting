@@ -1,0 +1,381 @@
+﻿/*--------------------layout---------------------*/
+* {margin:0;padding:0}
+form {
+	text-align: center;		
+	}
+#wrapper {
+	width: 770px;
+	background: #fff;
+	margin: 10px auto;
+	text-align: left;	
+	}
+#Main {
+	float:left;
+	width: 65%;
+	margin: 0;	
+	}
+#SideBar {
+	width: 28%;	
+	float: right;	
+	padding: 15px;	
+	}
+#Header, #Footer {
+	clear:both;
+	}
+
+/*--------------------style---------------------*/
+body {
+	font-family: Arial, Verdana;
+	color: black;
+	font-size: 12px;
+	background: white;
+	margin:0;
+	padding:0;			
+	}
+
+#Header {
+	margin-bottom: 20px;
+	background: #1F5DA7;
+	margin-top: 10px;	
+	}
+#Header h1 {
+	font-family: Georgia;
+	font-size: 35px;	
+	color: #fff;
+	margin: 0 10px;
+	}
+#TopNavigation {
+	margin: 10px 0 0 0;	
+	padding: 5px 10px;
+	background:#75A8E6;
+	color: #fff;	
+	}
+#TopNavigation:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+	}
+#TopNavigation {display: inline-block;}
+/* Hides from IE-mac \*/
+* html #TopNavigation {height: 1%;}
+#TopNavigation {display: block;}
+/* End hide from IE-mac */
+
+#TopNavigation a {
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	}
+#TopNavigation a:hover {
+	color: #1F5DA7;
+	}
+#Main {
+	font-size: 14px;
+	line-height: 150%;	
+	}
+#Main h2 {
+	color: #1F5DA7;
+	}
+#SideBar {
+	font-size: 12px;	
+	background: #F8FAFC;
+		
+	}
+#Footer {
+	clear:both;
+	color: #666;
+	font-size: 11px;
+	border-top: 1px solid #000;
+	margin-top: 20px;
+	padding: 0 10px;
+	}
+
+#SideBar dt{
+	font-weight: bold;
+	color: #1F5DA7;	
+	}
+#SideBar dd {
+	margin-left: 0;
+	margin-bottom: 10px;
+	}
+#SideBar ul {
+	padding-left:20px;
+	margin-left:0;
+	}
+#SideBar .contacts  {
+	margin-top: 20px;	
+	}
+#SideBar .contacts dt {
+	font-size: 16px;
+	color: black;
+	margin-bottom: 10px;
+	}
+#SideBar .contacts dd {
+	margin-bottom: 5px;
+	
+	}
+.contacts dd strong {
+	font-size: 11px;
+	}
+a {
+	color: #1F5DA7;
+	text-decoration: none;
+	}
+a:hover {
+	color: #1F5DA7;
+	text-decoration: underline;
+	}
+.gallery {
+	width: 80px;
+	height: 80px;
+	float: left;
+	display: block;
+	}
+	
+/*-------------------------------------PollBox---------------------------------*/
+.PollBox {
+    font-size: 1.0em;
+    margin: 0;
+    background: transparent;
+    width: 200px;
+    padding: 10px;
+    }
+.PollBox fieldset {
+    border: 0;      
+    padding: 0;
+    margin: 10px 0 10px 0;        
+    }
+.PollBox h4 {
+    font-size: 1.3em;
+    padding:0;
+    margin: 0;
+    }
+.PollBox fieldset h5 {
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 5px 0;        
+    }
+.PollBox fieldset span {
+    display: block;
+    margin: 0;
+    font-size: 1.0em;
+    color: #000;
+    line-height: 1.6em;
+    }
+.PollBox fieldset span label {
+    display: inline;
+    font-weight: normal;    
+    }
+.PollBox a {
+    float:right;
+    margin-top: -16px;
+    }
+.PollBox span {
+    color: #999;
+    font-size: 0.9em;
+    }
+.PollBox span.validator {
+    color: red;
+    display: block;
+    margin-bottom: 10px;
+    }
+/*-------------------------------------News---------------------------------*/ 
+   
+/*----------newslist-----------*/
+		.newslist {
+			list-style:none;
+			margin:0;
+			padding:0;
+			}
+		.newslist li {
+			margin-bottom: 20px;
+			border-bottom: 1px dashed #ededed;
+			}
+		.newslist p.summary {
+			margin:0;
+			font-size: 0.9em;
+			}
+		.newslist h4, .newslist h5 {
+			margin: 0;
+			padding: 0;
+			font-size: 1.0em;			
+			}
+		.newslist h5 {
+			font-weight: normal;
+			}
+		.newslist span.date {
+			font-style: italic;
+			font-size: 0.8em;
+			}
+		.newslist a.more {
+			font-size: 0.8em;
+			}
+
+		/*---------singlenews---------*/
+
+		.singlenews h2 {
+			font-size: 1.5em;
+			margin-bottom: 0;
+			}		
+		.singlenews h3 {
+			margin: 0;
+			padding: 0;
+			font-weight: normal;
+			font-size: 0.9em;
+			}		
+		.singlenews span.date {
+			font-style: italic;
+			font-size: 0.8em;
+			line-height: 3em;			
+			}
+		.singlenews p.summary {
+			font-weight: bold;
+			font-size: 0.9em;
+			}
+		.singlenews div.newsbody {
+			margin-top: 20px;
+			font-size: 0.9em;
+			}
+		.related h3 {
+			font-size: 1.2em;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			}
+		.related h4 {
+			margin: 0 0 10px 0;
+			font-size: 1.0em;			}
+		.related ul {
+			margin:0 0 20px 0;
+			padding:0;						
+			}
+		.related li {
+			padding: 0 0 0 0;
+			margin-left: 20px;
+			}
+		.related li.more {
+			font-size: 0.8em;
+			line-height: 2.5em;
+			list-style-type: none;
+			}
+/*-------------------------------------Blogs---------------------------------*/
+/*blog posts*/
+.post{margin:2.4em 0}
+.postTitle{color:#1F5DA7;font:normal 2.2em/1.2em georgia,arial,sans-serif;}
+.postTitle a{text-decoration:none}
+.postDate{margin-bottom:1.2em;font-size:0.8em;color:#000 !important}
+.postContent{font-size:13px}
+.postContent p{margin-bottom:1.2em}
+.postGet,.entryFoot{color:#fff}
+.postGet{margin-top:1em}
+.diggit{padding-left:20px;background:url(img/blogDiggit.gif) 0 0 no-repeat}
+.delicious,.delicous{margin-left:10px;padding-left:18px;background:url(img/blogDelicious.gif) 0 0 no-repeat}
+p.more{font-size:0.85em}
+.postFoot a{clear:left;font-size:0.85em}
+.postFoot a.postComments{}
+.postFoot span{margin-left:10px;color:#000}
+.postComments{margin-top:40px;font-size:0.9em;line-height:1.4em;}
+.postComments h3{color: #1F5DA7;margin-top:1.5em;background:url(img/blogComments.gif) 0 0.2em no-repeat;font:normal 1.6em/1.2em georgia,arial,sans-serif;}
+.postComments h3 a{color:#333}
+.commentsView{background:#F8FAFC;padding:20px 30px 30px}
+.postComments .commentAuthor{margin-top:1.6em;color: #1F5DA7;font-size:1.0em}
+.postComments .commentAuthor a{text-transform:none;text-decoration:underline}
+.postComments .commentAuthor a:hover{text-transform:none;text-decoration:none}
+.postComments .commentDate{font-size:0.8em;font-weight:bold}
+.postComments p{margin-top:0}
+p.commentMessage{background:#690;color:#fff;padding:3px 10px;margin:20px 0}
+
+
+/*comments form*/
+.postComments ol{list-style:none}
+.postComments fieldset{display:block;margin-top:1em;margin-bottom:2.3em;padding:1.8em 1em 1em;border:0;background: #E2EBF3}
+.postComments fieldset li{clear:both;margin-bottom:1em}
+.postComments fieldset li:after{content:".";display:block;clear:both;height:3px;visibility:hidden}
+.postComments fieldset label, .postComments fieldset span {float:left;width:70px;padding-right:10px;text-align:right;line-height:1.8em;font-size:0.85em}
+.postComments fieldset input{float:left;width:200px;padding:2px}
+.postComments fieldset textarea{float:left;width:380px;height:150px;font-family: Arial;font-size:12px}
+.postComments fieldset input.commentsButton{display:block;width:auto;margin:0.4em 0 0 80px;height:auto;font-weight:bold;padding:3px 5px}
+.postComments fieldset span.commentsValidator{margin-left:70px;color:red;font-weight:bold;width:320px;text-align:left}
+
+.postsNavigation{font-size:12px}
+.prevPost{border-right:1px solid #000;padding-right:10px;margin-right:5px;background:url(Images/prev.gif) center left no-repeat;padding-left:13px;}
+.allPosts{font-weight:bold}
+.nextPost{border-left:1px solid #000;padding-left:10px;margin-left:5px;background:url(Images/next.gif) center right no-repeat;padding-right:13px;}
+.postsNavigation {margin-top:10px}
+
+/*lists*/
+.sf_list_simple, .sf_list_expanded, .sf_anchor_list, .sf_list_expandable, .sf_target_list, #SideBar ul {list-style:none;margin-bottom:30px;font-size:13px}
+.sf_list_simple li, .sf_list_expanded li, #Main li, #SideBar li{margin-top:10px}
+#Main li 
+{
+	margin-left: 15px;
+}
+.sf_list_expanded h5, .sf_item_head, ul h2 {font-size:1.0em;font-weight:bold;margin-top:0.5em}
+.sf_target_list{margin-left:0}
+.sf_target_list dt{font-weight:bold;margin-top:1.0em}
+#Main ul {margin-left:15px;list-style-type:disc;font-size:13px}
+#Main ol {margin-left:15px;font-size:13px}
+#Main h1, #Main .list_header{margin-top:20px}
+
+
+/* Categories, Tags, Archive */
+ul.tagCloud {
+	margin: 0;
+	padding: 0;
+}
+ul.tagCloud li {
+	margin: 0;
+	padding: 0 10px 0 0;
+	background: none;
+	border-bottom: 0;
+	padding: 0;
+	display: inline;
+	line-height: 36px;
+}
+ul.tagCloud li a.s6:link, ul.tagCloud li a.s6:visited, ul.tagCloud li a.s6:hover, ul.tagCloud li a.s6:active {
+	font-size: 9px;
+}
+ul.tagCloud li a.s5:link, ul.tagCloud li a.s5:visited, ul.tagCloud li a.s5:hover, ul.tagCloud li a.s5:active {
+	font-size: 12px;
+}
+ul.tagCloud li a.s4:link, ul.tagCloud li a.s4:visited, ul.tagCloud li a.s4:hover, ul.tagCloud li a.s4:active {
+	font-size: 16px;
+}
+ul.tagCloud li a.s3:link, ul.tagCloud li a.s3:visited, ul.tagCloud li a.s3:hover, ul.tagCloud li a.s3:active {
+	font-size: 21px;
+}
+ul.tagCloud li a.s2:link, ul.tagCloud li a.s2:visited, ul.tagCloud li a.s2:hover, ul.tagCloud li a.s2:active {
+	font-size: 29px;
+}
+ul.tagCloud li a.s1:link, ul.tagCloud li a.s1:visited, ul.tagCloud li a.s1:hover, ul.tagCloud li a.s1:active {
+	font-size: 36px;
+}
+h1.categorizedAs {
+	margin: 20px 0 0;
+	font-size: 2.5em;
+	font-family: georgia,arial,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+dl.taggedWithList {
+	margin: 0;
+	padding: 0;
+}
+dl.taggedWithList dt, dl.taggedWithList dd {
+	margin: 0;
+	padding: 0 5px 0 0;
+	display: inline;
+}
+
+#Main ul.sf_singleImageData 
+{
+	margin-left: 0;
+	line-height: 1.3;
+}
+#Main ul.sf_singleImageData li
+{
+	margin-top: 0;
+}

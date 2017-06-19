@@ -1,0 +1,160 @@
+﻿/* Secondary Page */
+#secondary 
+{
+}
+#secondary #header
+{
+	height: 185px;
+}
+#secondary #headerCallout
+{
+	background-color: Transparent;
+	background-image: url(Images/header-grey.png);
+	background-repeat: repeat-x;
+}
+#secondary #headerLogo-middle 
+{
+	height: 122px;	
+	background-image: url(Images/header-logo-secondary.png);
+}
+#secondary .headerLogo-link
+{
+	display: block;	
+	width: 235px;
+	height: 122px;
+}
+#secondary .headerLogo-link-spacer 
+{
+	width: 235px;
+	height: 122px;
+}
+#secondary #headerCallout-middle 
+{
+	height: 122px;
+}
+#secondary .headerCallout-middle-image
+{
+	height: 122px;
+}
+#secondary .headerCallout-middle-link
+{
+	height: 122px;
+}
+#secondary #content
+{
+	float: none;
+	margin-bottom: 30px;
+	width: 719px;	
+	margin-right: 0px;
+}
+#secondary #footer-sidebar 
+{
+	float: left;
+	width: 235px;
+}
+#secondary #footer-content
+{
+	float: right;
+}
+#secondary .sidebar 
+{
+	float: none;	
+	background-color: #F2F2F2;
+	width: 235px;
+}
+#secondary #sidebarNav
+{
+	margin-top: 38px;
+	margin-bottom: 7px;
+}
+#secondary #tableContent 
+{	
+}
+#secondary #tableContent-leftColumn
+{
+	border-left: solid 0px #CCCCCC;
+	width: 316px;
+}
+#secondary #tableContent-rightColumn
+{
+	border-left: solid 0px #CCCCCC;
+	width: 316px;
+}
+#secondary .sidebarNavItem-level1
+{	
+}
+#secondary .sidebarNavItem-level1 a, #secondary .sidebarNavItem-level1-expanded a, #secondary .sidebarNavItem-level1-collapsed a
+{
+	display: block;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	color: #474544;
+	text-decoration: none;
+	letter-spacing: .025em;
+	line-height: 21px;
+	font-weight: bold;
+	width: 195px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding: 0px 20px 0px 20px;
+}
+#secondary .sidebarNavItem-level1 a:hover 
+{
+	background-color: #d9d9d9;
+}
+#secondary .sidebarNavItem-level1-expanded a
+{	
+	background-image: url(Images/sidebar-minus.gif);
+	background-position:left center;
+	background-repeat: no-repeat;	
+}
+#secondary .sidebarNavItem-level1-expanded a:hover
+{
+	background-color: #d9d9d9;
+	background-image: url(Images/sidebar-minus.gif);
+	background-position:left center;
+	background-repeat: no-repeat;	
+}
+#secondary .sidebarNavItem-level1-collapsed a
+{
+	background-image: url(Images/sidebar-plus.gif);
+	background-position:left center;
+	background-repeat: no-repeat;	
+}
+#secondary .sidebarNavItem-level1-collapsed a:hover
+{
+	background-color: #d9d9d9;
+	background-image: url(Images/sidebar-plus.gif);
+	background-position:left center;
+	background-repeat: no-repeat;	
+}
+#secondary .sidebarNavItem-level2
+{		
+}
+#secondary .sidebarNavItem-level2 a 
+{
+	display: block;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	color: #474544;
+	line-height: 17px;
+	text-decoration: none;
+	letter-spacing: .025em;
+	font-weight: bold;
+	width: 175px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 0px 20px 0px 40px;
+}
+#secondary .sidebarNavItem-level2 a:hover 
+{
+	background-color: #d9d9d9;		
+}
+#secondary .sidebarNavItem-selected a
+{
+	color: #c54e46 !important; 
+}
+#secondary .sidebarNavItem-selected a:hover 
+{	
+	color: #c54e46 !important;
+}

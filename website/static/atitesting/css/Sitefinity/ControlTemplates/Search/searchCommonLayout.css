@@ -1,0 +1,29 @@
+﻿/* Search Box */
+.sf_searchBox 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Pager */
+ol.sf_pager 
+{
+	margin: 10px 0;
+	padding: 0;
+	width: 100%;
+	float: left;
+	list-style: none;
+	clear: both;
+}
+ol.sf_pager li
+{
+	margin: 0;
+	padding: 0 10px 0 0;
+	width: auto;
+	float: left;
+}
+ol.sf_pager li a
+{
+	padding: 3px 5px;
+}

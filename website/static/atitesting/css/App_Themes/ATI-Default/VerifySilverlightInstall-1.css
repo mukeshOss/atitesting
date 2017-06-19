@@ -1,0 +1,17 @@
+﻿#verify-silverlight-install-container
+{
+    margin:2px;
+    display:none; /* do not remove or change this property */
+    height:90px;
+}
+
+#verify-silverlight-install-logoandlink
+{
+
+}
+
+#verify-silverlight-install-message
+{
+    margin: -55px 0px 0px 95px;
+}
+

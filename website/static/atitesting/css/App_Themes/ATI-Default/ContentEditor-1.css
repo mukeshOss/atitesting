@@ -1,0 +1,59 @@
+/* Standard Tags */
+h1{
+	margin-bottom: 8px;
+}
+h1.secondary
+{
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #c74e46;
+	line-height: 24px;
+	font-weight: normal;
+	margin-top: 14px;
+	margin-bottom: 0px;
+}
+h2.leadership	
+{
+	font-size: 13px;
+	color: #474544;
+	line-height: 18px;
+	font-weight: bold;
+	margin: 0 0 0 0;
+	border-bottom: 1px solid #848484;
+}
+ul
+{
+	font-size: 13px;
+	color: #474544;
+	letter-spacing: .025em;
+	line-height: 18px;
+	margin: 0 0 12px 18px;
+	padding: 0 0 0 0;
+	list-style-position: outside;
+}
+li
+{
+	padding: 0 0 0 0;
+	margin: 2px 0;	
+}
+.bump
+{
+	margin: 8px 0 0 0;	
+}
+.listbump
+{
+	margin: 0 0 2px 18px;	
+}
+a:link { 
+	color: #474544;
+	}
+a:visited { 
+	color: #474544;
+	}
+a:hover { 
+	color: #C64E46;
+	text-decoration: none;
+	}
+a:active { 
+	color: #474544;
+	}

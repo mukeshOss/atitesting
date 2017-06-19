@@ -1,0 +1,163 @@
+/* RadMenu Plain skin */
+
+.RadMenu_SitefinityBlue 
+{
+	background: #75a8e6;
+	z-index: 100 !important;		
+	
+}
+
+.RadMenu_SitefinityBlueBlue_Context
+{
+	background: none;
+	border:0;
+}
+
+.RadMenu_SitefinityBlueBlue .rmLink,
+.RadMenu_SitefinityBlueBlue .rmTemplate .rmText
+{
+	line-height: 20px;
+	text-decoration:none;
+	color: #fff;
+	background: #75a8e6;	
+}
+
+.RadMenu_SitefinityBlue .rmTemplate .rmText:hover,
+.RadMenu_SitefinityBlue .rmLink:hover,
+.RadMenu_SitefinityBlue .rmFocused,
+.RadMenu_SitefinityBlue .rmExpanded
+{
+	color: #000;
+}
+
+.RadMenu_SitefinityBlue .rmText
+{
+	padding: 0 20px 5px 10px;	
+	font-size: 12px;
+	font-family: Arial, Verdana;
+
+}
+
+.RadMenu_SitefinityBlue_rtl .rmText
+{
+	padding-right: 10px;	
+	padding-left: 36px;
+}
+
+
+.RadMenu_SitefinityBlue .rmGroup
+{
+	border: solid 1px #d7d7d7;	
+	background: #75a8e6;
+}
+
+.RadMenu_SitefinityBlue .rmGroup .rmLink,
+.RadMenu_SitefinityBlue .rmGroup .rmTemplate .rmText
+{
+	background: none;		
+	text-align: left;	
+}
+
+.RadMenu_SitefinityBlue_rtl .rmGroup .rmTemplate .rmText,
+.RadMenu_SitefinityBlue_rtl .rmGroup .rmLink
+{
+	text-align: right;
+}
+
+.RadMenu_SitefinityBlue .rmGroup .rmTemplate .rmText:hover,
+.RadMenu_SitefinityBlue .rmGroup .rmLink:hover,
+.RadMenu_SitefinityBlue .rmGroup .rmFocused,
+.RadMenu_SitefinityBlue .rmGroup .rmExpanded
+{
+	background: #a7cfe8;
+	color: #fff;	
+	font-weight: normal;
+}
+
+.RadMenu_SitefinityBlue .rmLeftArrow,
+.RadMenu_SitefinityBlue .rmRightArrow,
+.RadMenu_SitefinityBlue .rmTopArrow,
+.RadMenu_SitefinityBlue .rmBottomArrow,
+.RadMenu_SitefinityBlue .rmLeftArrowDisabled,
+.RadMenu_SitefinityBlue .rmRightArrowDisabled,
+.RadMenu_SitefinityBlue .rmTopArrowDisabled,
+.RadMenu_SitefinityBlue .rmBottomArrowDisabled
+{
+	background: #ededed url('Menu/left.gif') center center no-repeat;
+	width:15px;
+}
+
+.RadMenu_SitefinityBlue .rmTopArrow,
+.RadMenu_SitefinityBlue .rmTopArrowDisabled
+{
+	background-image:url('Menu/top.gif');
+	width:100%;
+}
+
+.RadMenu_SitefinityBlue .rmBottomArrow,
+.RadMenu_SitefinityBlue .rmBottomArrowDisabled
+{
+	background-image:url('Menu/bottom.gif');
+	width:100%;
+}
+
+.RadMenu_SitefinityBlue .rmRightArrow,
+.RadMenu_SitefinityBlue .rmLeftArrow
+{
+	height:100%;
+}
+
+.RadMenu_SitefinityBlue .rmRightArrow,
+.RadMenu_SitefinityBlue .rmRightArrowDisabled
+{
+	background-image: url('Menu/right.gif');
+}
+
+.RadMenu_SitefinityBlue .rmVertical .rmSeparator
+{
+	padding: 0;
+	background: #ccc;
+	font-size: 1px;
+	line-height: 1px;
+	height: 1px;
+}
+
+.RadMenu_SitefinityBlue .rmExpandLeft,
+.RadMenu_SitefinityBlue .rmExpandRight
+{
+	background: transparent url('Menu/groupImage.gif') right center no-repeat;
+	margin-right: 4px;
+}
+
+.RadMenu_SitefinityBlue_rtl .rmExpandLeft,
+.RadMenu_SitefinityBlue_rtl .rmExpandRight
+{
+	background: url('Menu/groupImageRTL.gif') left center no-repeat;
+}
+
+.RadMenu_SitefinityBlue .rmLink:hover .rmExpandLeft,
+.RadMenu_SitefinityBlue .rmLink:hover .rmExpandRight,
+.RadMenu_SitefinityBlue .rmFocused .rmExpandLeft,
+.RadMenu_SitefinityBlue .rmFocused .rmExpandRight,
+.RadMenu_SitefinityBlue .rmExpanded .rmExpandLeft,
+.RadMenu_SitefinityBlue .rmExpanded .rmExpandRight
+{
+	background:transparent url('Menu/invertedGroupImage.gif') right center no-repeat;
+}
+
+.RadMenu_SitefinityBlue_rtl .rmLink:hover .rmExpandLeft,
+.RadMenu_SitefinityBlue_rtl .rmLink:hover .rmExpandRight,
+.RadMenu_SitefinityBlue_rtl .rmFocused .rmExpandLeft,
+.RadMenu_SitefinityBlue_rtl .rmFocused .rmExpandRight,
+.RadMenu_SitefinityBlue_rtl .rmExpanded .rmExpandLeft,
+.RadMenu_SitefinityBlue_rtl .rmExpanded .rmExpandRight
+{
+	background:transparent url('Menu/groupImageRTL.gif') left center no-repeat;
+}
+
+.RadMenu_SitefinityBlue a.rmDisabled,  
+.RadMenu_SitefinityBlue .rmDisabled:hover  
+{  
+    background: none;  
+    color: #ccc;  
+}  
