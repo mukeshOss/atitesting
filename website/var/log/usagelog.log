@@ -1,0 +1,23 @@
+AUTOCREATE
+2017-06-19T11:34:19+0200 : 0|admin|login|index|[]
+2017-06-19T11:34:25+0200 : 0|admin|login|login|{"username":"admin"}
+2017-06-19T11:34:26+0200 : 2|admin|index|index|[]
+2017-06-19T11:34:26+0200 : 2|admin|misc|available-languages|[]
+2017-06-19T11:34:26+0200 : 2|admin|user|get-image|[]
+2017-06-19T11:34:26+0200 : 2|admin|user|get-current-user|[]
+2017-06-19T11:34:26+0200 : 2|admin|misc|admin-css|{"extjs6":"true?_dc=4084"}
+2017-06-19T11:34:26+0200 : 2|admin|misc|json-translations-admin|{"language":"en"}
+2017-06-19T11:34:26+0200 : 2|admin|misc|json-translations-system|{"language":"en"}
+2017-06-19T11:34:26+0200 : 2|admin|misc|script-proxy|{"scripts":"minified_javascript_core_c8fed41278f8783..."}
+2017-06-19T11:34:59+0200 : 2|admin|class|get-tree|{"page":"1","start":"0","limit":"25"}
+2017-06-19T11:34:59+0200 : 2|admin|class|get-tree|{"createAllowed":"true","page":"1","start":"0","limit":"25"}
+2017-06-19T11:34:59+0200 : 2|admin|settings|get-available-admin-languages|{"page":"1","start":"0","limit":"25"}
+2017-06-19T11:34:59+0200 : 2|admin|settings|get-available-sites|{"page":"1","start":"0","limit":"25"}
+2017-06-19T11:35:00+0200 : 2|reports|targeting|persona-list|{"page":"1","start":"0","limit":"25"}
+2017-06-19T11:35:00+0200 : 2|admin|document|tree-get-root|{"id":"1","view":"null"}
+2017-06-19T11:35:00+0200 : 2|admin|object|tree-get-root|{"id":"null","view":"null"}
+2017-06-19T11:35:00+0200 : 2|admin|asset|tree-get-root|{"id":"1","view":"null"}
+2017-06-19T11:35:00+0200 : 2|admin|portal|dashboard-list|[]
+2017-06-19T11:35:00+0200 : 2|reports|custom-report|get-report-config|[]
+2017-06-19T11:35:00+0200 : 2|admin|document|doc-types|{"xaction":"read","page":"1","start":"0","limit":"25"}
+2017-06-19T11:35:01+0200 : 2|admin|object|tree-get-childs-by-id|{"limit":"30","view":"null","node":"1"}
