@@ -28,9 +28,67 @@
           <div id="header-nav">
             <table cellpadding="0" cellspacing="0">
               <tbody><tr>
-                <td id="header-nav-about" class="header-nav-item"><a href="About.html" id="ctl00_aboutATI" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">About ATI</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td>
-                <td id="header-nav-solutions" class="header-nav-item"><a href="Solutions.html" id="ctl00_productSolutions" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Product Solutions</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td>
-                <td id="header-nav-resources" class="header-nav-item"><a href="Resources.html" id="ctl00_newsAndResources" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Resources</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td>
+        
+            <?php     
+                $allUrls = array();
+                if(\Pimcore\Model\Site::isSiteRequest()) {
+                    $currentPageURI = $this->currentPageURI;                           
+                    $arr = explode("/", substr($currentPageURI, 1));                            
+                    $str.="";
+                    foreach($arr as $val){
+                        $str.="/".$val;
+                        $allUrls[] = $str;
+                    }
+                }                        
+
+                $mainNavStartNode = ($this->document->getProperty("mainNavStartNode")) ?
+                 Document::getByPath("/atitesting") 
+                : $this->document->getProperty("mainNavStartNode");
+                $mainNavigation = $this->pimcoreNavigation()->getNavigation($this->document, $mainNavStartNode);
+
+                foreach ($mainNavigation as $page) {                            
+                    $active = $page->getActive(true) ? "current" : "";
+                    if(in_array($page->getHref(), $allUrls)) $active = "current";                            
+                 ?>                        
+                <?php if (!$page->isVisible() || !$this->navigation()->accept($page) || 
+                in_array('footer', explode(' ', $page->getClass()))) { continue; } ?>  
+
+                <td id="header-nav-solutions" class="header-nav-item">
+                  <a href="<?php echo $page->getHref() ?>" id="ctl00_aboutATI" 
+                  onmouseover="JavaScript:navItemMouseOver(event, this);" 
+                  onmouseout="JavaScript:navItemMouseOut(event, this);">
+                  <img style="border-width: 0px;" 
+                  src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" 
+                  class="nav-item-left"><span class="header-nav-text">
+                  <?php echo $this->translate($page->getLabel());?></span>
+
+                  <img style="border-width: 0px;" 
+                  src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif"
+                   class="nav-item-right"></a></td>
+
+            
+            <?php } ?>                    
+      
+                
+
+                <!-- <td id="header-nav-about" class="header-nav-item">
+                  <a href="About.html" id="ctl00_aboutATI" 
+                  onmouseover="JavaScript:navItemMouseOver(event, this);" 
+                  onmouseout="JavaScript:navItemMouseOut(event, this);">
+                  <img style="border-width: 0px;" 
+                  src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" 
+                  class="nav-item-left"><span class="header-nav-text">
+                  About ATI</span>
+
+                  <img style="border-width: 0px;" 
+                  src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif"
+                   class="nav-item-right"></a></td>
+                <td id="header-nav-solutions" 
+                class="header-nav-item"><a href="Solutions.html" id="ctl00_productSolutions" 
+                onmouseover="JavaScript:navItemMouseOver(event, this);" 
+                onmouseout="JavaScript:navItemMouseOut(event, this);">
+                <img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Product Solutions</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td>
+                <td id="header-nav-resources" class="header-nav-item"><a href="Resources.html" id="ctl00_newsAndResources" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Resources</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td> -->
               </tr>
             </tbody></table>
             <div class="clear"> </div>

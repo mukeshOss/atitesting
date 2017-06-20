@@ -6,24 +6,7 @@
             </div>
             <table cellpadding="0" cellspacing="0" id="tableContent">
               <tbody><tr>
-                <td id="tableContent-leftColumn"><div class="leftContent">
-                    <style>
-    .heading123 {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:22px;
-    color:#C74E46;
-    margin-bottom:10px;
-    }
-</style>
-                    <div class="heading123">High Performance Tools Educators Need To Succeed</div>
-                    <p>ATI Nursing Education is what nurse educators need to do their jobs and do them really well. As the nation's preeminent e-learning provider, ATI offers programs that are instrumental in improving faculty, student and program outcomes. With our programs, educators have the power to augment curriculum, revamp courses and faculty development, improve student tests outcomes and lower attrition rates.</p>
-                    <p><a href="Solutions.html">Learn More</a></p>
-                  </div></td>
-                <td id="tableContent-rightColumn"><div class="rightContent">
-                    <div class="heading123">Our Customer Service Is Better Than Customer Service</div>
-                    <p>Or so we’ve been told. “Awesome.” “Wonderful." "They go above and beyond." "My ATI rep fixed a problem that wasn’t even hers to fix." Those are just a few comments from our clients about our passionate service team. Our programs and tools are renowned, but it’s our people who truly make the difference. And it shows. Right now, we’re working with more than 20,000 nurse educators, 2,100 colleges and universities nationwide and 225,000 students. And counting.</p>
-                    <p><a href="About.html">Learn More</a></p>
-                  </div></td>
+                <?= $this->areablock("content"); ?>
               </tr>
             </tbody></table>
             <div class="bottomContent">
@@ -77,24 +60,22 @@
   </script> <!-- End of Async HubSpot Analytics Code -->
             <div style="background-color: #ffffff; height: 7px;"></div>
             <div class="orange">
-              <p style="font-weight: bold; font-size: 16px;">Important!</p>
-              <p>Our recommended browser is <a href="https://www.mozilla.org/en-US/firefox/all/?q=english (us)">Firefox</a>.</p>
-              <p><a href="TechnicalRequirements.html">View more technical requirements</a></p>
+              <p style="font-weight: bold; font-size: 16px;"><?= $this->wysiwyg("important_desc") ?></p>
+              
             </div>
             <style>
     .orange p {color:#ffffff; text-align:left !important; font-size:12px;}
     .orange { background:#eb8031; padding:15px 8px 8px 8px; }
     .orange a {color:#ffffff; text-align:left !important; text-decoration:underline;}
 </style>
-            <div style="background-color: #ffffff; height: 7px;"></div>
-            <div class="sidebar-actionLinks"> <a href="" style="margin-bottom: 0px;">Virtual ATI Login</a></div>
-            <div style="background-color: #ffffff; height: 7px;"></div>
-            <div class="sidebar-actionLinks"><a href="ati_next_gen\customecom\SessionTypeSelection.htm?stf=1">Register for TEAS</a>&nbsp;<a href="ati_next_gen\customecom\SessionTypeSelection-1.htm?stf=7" title="PSI is our national testing center for the TEAS">Register for TEAS with PSI</a> <a shape="rect" href="ati_next_gen\customecom\SessionCityStateSelection.htm?stf=2&amp;stype=3&amp;prev=1">Register for NCLEX Live Review</a> <a shape="rect" href="">Shop Online</a> </div>
-            <script>document.write("<scr"+"ipt src='https://bp.specificclick.net?pixid=99068583&u="+escape(parent.document.location)+"&r="+escape(parent.document.referrer)+"'></scri"+"pt>");</script><script src="https://bp.specificclick.net?pixid=99068583&amp;u=file%3A///home/harpreet/Downloads/atitesting/atitesting/Home.html&amp;r="></script>
-            <noscript>
-            &lt;img src="https://bp.specificclick.net?pixid=99068583" width="0" height="0" border="0"&gt;
-            </noscript>
-            <div style="background-color: #ffffff; height: 7px;"></div>
-          </div></td>
+            <?= $this->snippet("links") ?>
+            <script>document.write("<scr"+"ipt src='https://bp.specificclick.net?pixid=99068583&u="+escape(parent.document.location)+"&r="+escape(parent.document.referrer)+"'></scri"+"pt>");</script>
+                        <noscript>
+                           <img src="https://bp.specificclick.net?pixid=99068583" width="0" height="0" border="0">
+                        </noscript>
+                        <div style="background-color: #ffffff; height: 7px;"></div>
+                      </div>
+            </td>
+
       </tr>
     </tbody></table>
