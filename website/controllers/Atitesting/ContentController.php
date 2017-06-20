@@ -1,8 +1,8 @@
 <?php
+
 use Website\Controller\Action;
 
-class Atitesting_ContentController extends Action
-{
+class Atitesting_ContentController extends Action {
 
     private $defaultLayout;
     private $brandId;
@@ -11,29 +11,29 @@ class Atitesting_ContentController extends Action
      * init function 
      * called before every action in this controller
      */
-    public function init()
-    {
+    public function init() {
         parent::init();
         //$this->view->addHelperPath(PIMCORE_WEBSITE_PATH . "/lib/Website/View/Helper/Truroots", "Website_View_Helper_Truroots_");
         $this->defaultLayout = "atitesting/layout";
-
     }
 
     /**
      * home page
      */
-    public function homeAction()
-    {
-        $this->enableLayout();
-        $this->setLayout($this->defaultLayout);
+    public function homeAction() {
+        
     }
 
     /**
      * content page,
      * renders every page that is made with pimcore admin
      */
-    public function contentAction()
-    {
+    public function contentAction() {
+        $this->enableLayout();
+        $this->setLayout($this->defaultLayout);
+    }
+
+    public function productSolutionsAction() {
         $this->enableLayout();
         $this->setLayout($this->defaultLayout);
     }
@@ -42,21 +42,18 @@ class Atitesting_ContentController extends Action
      * header
      * renders header
      */
-    public function headerAction()
-    {
-
+    public function headerAction() {
+        
     }
 
-    public function linkAction()
-    {
-
+    public function linkAction() {
+        
     }
 
     /**
      * renders footer
      */
-    public function footerAction()
-    {
+    public function footerAction() {
         
     }
 
