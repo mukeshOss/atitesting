@@ -3,7 +3,7 @@
         <div id="header">
         <div id="headerLogo">
             <div id="headerLogo-top"> </div>
-            <div id="headerLogo-middle"> <a id="ctl00_headerLogoLink" class="headerLogo-link" href="Home.html"><img id="ctl00_headerLogoLinkSpacer" class="headerLogo-link-spacer" src="/website/static/atitesting/css\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" border="0"></a> </div>
+            <div id="headerLogo-middle"> <a id="ctl00_headerLogoLink" class="headerLogo-link" href="Home.html"><img id="ctl00_headerLogoLinkSpacer" class="headerLogo-link-spacer" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" border="0"></a> </div>
             <div id="headerLogo-bottom"> </div>
         </div>
         <div id="headerCallout">
@@ -25,14 +25,14 @@
                     </ol>
                 </div>
             </div>
-            <div id="headerCallout-middle"> <a id="ctl00_HeaderImage_imageLink" class="headerCallout-middle-link"><img id="ctl00_HeaderImage_imageOverlay" class="headerCallout-middle-image" src="/website/static/atitesting/css\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" alt="Nurses Week" border="0"></a> </div>   
+            <div id="headerCallout-middle"> <a id="ctl00_HeaderImage_imageLink" class="headerCallout-middle-link"><img id="ctl00_HeaderImage_imageOverlay" class="headerCallout-middle-image" src="/website/static/atitesting/css/App_Themes/AtiTesting/Imagesblank.gif" alt="Nurses Week" border="0"></a> </div>   
             <div id="headerCallout-bottom">
                 <div id="header-nav">
                     <table cellpadding="0" cellspacing="0">
                         <tbody><tr>
-                                <td id="header-nav-about" class="header-nav-item"><a href="About.html" id="ctl00_aboutATI" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-left"><span class="header-nav-text">About ATI</span><img style="border-width: 0px;" src="/website/static/atitesting/css\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-right"></a></td>
-                                <td id="header-nav-solutions" class="header-nav-item"><a href="Solutions.html" id="ctl00_productSolutions" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Product Solutions</span><img style="border-width: 0px;" src="/website/static/atitesting/css\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-right"></a></td>
-                                <td id="header-nav-resources" class="header-nav-item"><a href="Resources.html" id="ctl00_newsAndResources" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Resources</span><img style="border-width: 0px;" src="/website/static/atitesting/css\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-right"></a></td>
+                                <td id="header-nav-about" class="header-nav-item"><a href="About.html" id="ctl00_aboutATI" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">About ATI</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td>
+                                <td id="header-nav-solutions" class="header-nav-item"><a href="Solutions.html" id="ctl00_productSolutions" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Product Solutions</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td>
+                                <td id="header-nav-resources" class="header-nav-item"><a href="Resources.html" id="ctl00_newsAndResources" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Resources</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td>
                             </tr>
                         </tbody></table>
                     <div class="clear"> </div>
@@ -450,7 +450,7 @@
     margin-top:20px;
     }
     .videocontainer1 {
-    background: url("\website\static\atitesting\Libraries\new-ati\iphonebg.sflb.ashx") no-repeat scroll 0 0 transparent;
+    background: url("/website/static/atitesting/Libraries/new-ati/iphonebg.sflb.ashx") no-repeat scroll 0 0 transparent;
     height: 328px;
     padding-top: 56px;
     width: 223px;
@@ -466,7 +466,7 @@
     margin-right:20px;
     }
     .righthalf12 {
-    background: url("\website\static\atitesting\Libraries\new-ati\monitorbg.sflb.ashx") no-repeat scroll 0 0 transparent;
+    background: url("/website/static/atitesting/Libraries/new-ati/monitorbg.sflb.ashx") no-repeat scroll 0 0 transparent;
     float: left;
     height: 280px;
     padding-left: 15px;

@@ -30,12 +30,12 @@
             </td>
             <td rowspan="2" valign="top">
                 <div id="content">
-                    
+
                     <?php
-                        $allowedAreas = [
-                            'Atitesting_Headlines',
-                        ];
-                        echo $this->areablock('content_block', ['allowed' => $allowedAreas]);
+                    $allowedAreas = [
+                        'Atitesting_Headlines',
+                    ];
+                    echo $this->areablock('content_block', ['allowed' => $allowedAreas]);
                     ?>
 
                     <div class="topContent">
