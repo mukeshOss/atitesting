@@ -34,6 +34,7 @@
                     <?php
                     $allowedAreas = [
                         'Atitesting_Headlines',
+                        'home_content'
                     ];
                     echo $this->areablock('content_block', ['allowed' => $allowedAreas]);
                     ?>
