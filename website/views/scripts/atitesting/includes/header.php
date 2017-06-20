@@ -170,7 +170,7 @@
     }
     sup {font-size: 9px; vertical-align:top;}
     .h1bg {
-    background: url("/website/static/atitestig/Libraries/fonts/h1bg.sflb.ashx") repeat-x scroll 0 50% transparent;
+    background: url("/website/static/atitesting/Libraries/fonts/h1bg.sflb.png") repeat-x scroll 0 50% transparent;
     display: block;
     margin-bottom: 10px;
     margin-top:10px;
