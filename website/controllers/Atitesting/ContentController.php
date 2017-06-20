@@ -47,6 +47,11 @@ class Atitesting_ContentController extends Action
 
     }
 
+    public function linkAction()
+    {
+
+    }
+
     /**
      * renders footer
      */
