@@ -1,0 +1,34 @@
+﻿
+.tables 
+{	
+	font: normal "Lucida Grande" , "Lucida Sans Unicode" , Verdana, Arial, Helvetica, sans-serif ;	
+	width:98%;
+	
+}
+.header th
+{
+	background-color:#CCCCCC;
+	text-align:left; 
+	height:30px;
+	border-bottom-color:White;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+}
+
+.rowstyle
+{
+	
+	background-color:#99CCFF;
+	text-align:left;  
+	border-bottom-color:White;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	
+}
+
+.labeltext
+{
+	font: normal "Lucida Grande" , "Lucida Sans Unicode" , Verdana, Arial, Helvetica, sans-serif ;	
+	font-weight:bold;
+	color:Navy;
+}

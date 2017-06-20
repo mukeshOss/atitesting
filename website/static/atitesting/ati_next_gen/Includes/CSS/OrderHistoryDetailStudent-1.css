@@ -1,0 +1,167 @@
+﻿
+.orderdetailstudentformview
+{	
+	font-family: Verdana, Arial, sans-serif;
+	width:90%;
+
+	
+}
+.orderdetailstudenttables 
+{	
+	font-family: Verdana, Arial, sans-serif;
+	width:90%;
+	border-bottom-color:Black;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-left-color:Black;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-right-color:Black;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-top-color:Black;
+	border-top-style:solid;
+	border-top-width:1px;
+	
+}
+.orderdetailstudentheader th
+{
+	background-color:#FF6600;
+	text-align:left; 
+	border-bottom-color:Black;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-left-color:Black;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-right-color:Black;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-top-color:Black;
+	border-top-style:solid;
+	border-top-width:1px;
+}
+.orderdetailstudentDetailsheader th
+{
+	background-color:#FFFFCC;
+	text-align:left; 
+	border-bottom-color:Black;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-left-color:Black;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-right-color:Black;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-top-color:Black;
+	border-top-style:solid;
+	border-top-width:1px;
+}
+.orderdetailstudentDetailsLabel td
+{
+	background-color:White;
+	text-align:left; 
+	border-bottom-color:Black;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-left-color:Black;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-right-color:Black;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-top-color:Black;
+	border-top-style:solid;
+	border-top-width:1px;
+}
+.orderdetailstudentDetailsrowstyle
+{
+	
+	background-color:#99CCFF;
+	text-align:left;  
+	border-bottom-color:White;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	
+}
+
+.orderdetailstudentlabeltext
+{
+	font-family: Verdana, Arial, sans-serif;
+	font-weight:bold;
+	color:Black;
+}
+.orderdetailstudentlabelHeadertext
+{
+	font-family: Verdana, Arial, sans-serif;
+	font-weight:bold;
+	color:#FFFFCC;
+}
+.orderdetailstudentlabelHeaderDesctext
+{
+	font-family: Verdana, Arial, sans-serif;
+	font-weight:bold;
+	color:#FF9900;
+}
+.orderdetailstudentInfotext
+{
+	font-family: Verdana, Arial, sans-serif;
+	font-weight:bold;
+	color:Black;	
+}
+
+
+.tablehead7 {
+
+            color: #FEFECC;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #FE6600;
+            height: 25px;
+            vertical-align: middle;
+            padding-left: 5px;
+            text-align: center;
+
+}
+
+.tablehead8 {
+
+            color: #efbf39;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+
+}
+
+.tablehead9 {
+
+            color: #2D1307;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #FEFECC;
+            height: 25px;
+            vertical-align: middle;
+            padding-left: 5px;
+            text-align: center;
+
+}
+
+.lable2
+{
+    color: #2D1307;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.tablecontent
+{
+    color: #2D1307;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    table-layout: fixed;
+}

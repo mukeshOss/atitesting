@@ -1,0 +1,19 @@
+﻿.inputHyper
+{
+	padding:2px,2px,2px,2px;
+	float:left ;
+	color: #2D1307;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+.inputLable
+{
+	padding:2px,2px,2px,2px;
+	color: #2D1307;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+	float:right ;
+}

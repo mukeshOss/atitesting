@@ -1,0 +1,1621 @@
+﻿/********************************
+Global Properties
+********************************/
+
+/** {
+	font-size: 100%;
+}*/
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #222;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, dt, small, 
+form, fieldset, button, input, textarea {
+	margin: 0;
+	padding: 1;
+}
+
+
+fieldset, img, button {
+	border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    text-align: left;
+}
+/*
+ul, li {
+	list-style: none;
+}
+*/
+
+
+
+th.orange 
+{
+	background-color: #FEA500;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.nopadbox 
+{
+	border-top: 0;
+	border-right: 1px solid #D8DDE9;
+	border-bottom: 1px solid #D8DDE9;
+	border-left: 1px solid #D8DDE9;
+	margin: 0;
+	padding: 0;
+}
+.buttonplain 
+{
+    /*color: #FFFFFF;
+    background-color: #6B86B8;*/
+    padding: 1px;
+    font-weight: bold;
+    /*border-top: 1px solid #E6EAF3;
+    border-right: 1px solid #435DA1;
+    border-bottom: 1px solid #435DA1;
+    border-left: 1px solid #E6EAF3;*/
+     background-color: #ced45c;
+     border: 1px solid #c5cc42;
+      color: #373534;
+}
+
+th.dark 
+{
+	background-color: #5675AD;
+}
+
+.nurse-manager-certificate ul li 
+{
+	color: #222;
+	padding-left: 15px;
+	margin-bottom: 2px;
+	background: url(/images_v2/bullet-3.gif) no-repeat 0 4px;
+}
+
+.plain ul li 
+{
+	color: #222;
+	padding-left: 15px;
+	margin-bottom: 2px;
+}
+/* removed for reskinning ddennison FAC-347
+a { 
+	 
+	//--2008-01-22 - jpagkaliwangan - [BT#5711] - Removed outline so that outline will
+													show upon focus for mozilla browsers
+	outline: none;
+	text-decoration: none;
+	color: #0058b4;
+}*/
+
+/********************************
+ Top-bar Classes
+********************************/
+
+.top-bar {
+	text-align: left;
+	margin: 0 auto;
+	padding: 0 1px;
+	width: 848px;
+	margin-top: 1px;
+	border-bottom: #d1d1d1 1px solid;
+	background: #efefef;
+	min-height: 25px;			
+}
+.welcome {
+	padding: 7px 5px 5px 5px;
+	width: 450px;
+	float: left;	
+}	
+.top-nav {
+	float: right;
+	padding: 7px 5px 5px 5px;	
+	text-align: right;
+}
+.top-nav li {
+	display: inline;
+	text-align: right;
+	margin-right: 5px;
+}
+.top-nav img {
+	padding: 0 4px;
+}
+
+/********************************
+Main Classes
+********************************/
+
+.wrap {
+	width: 848px;
+	margin: 0 auto;
+	padding: 0 1px;
+	text-align: left;
+}
+h1, h2 {
+	text-indent: -9000px;
+	clear: both;
+}
+h1 a {
+	float: left;
+	display: block;
+	overflow: hidden;
+	margin: 17px 14px 5px 15px;
+	width: 135px;
+	height: 82px;
+}
+.page-general {
+	background: #48804c;
+}
+.page-general .wrap {
+	background: #fff url(/images_v2/bg-header-general.jpg) no-repeat center top;
+}
+.page-students {
+	background: #a8503f;
+}
+.page-students .wrap {
+	background: #fff url(/images_v2/bg-header-students.jpg) no-repeat center top;
+}
+.page-faculty {
+	background: #4f427a;
+}
+.page-faculty .wrap {
+	background: #fff url(/images_v2/bg-header-faculty.jpg) no-repeat center top;
+}
+.page-licensed-nurses {
+	background: #bea33a;
+}
+.page-licensed-nurses .wrap {
+	background: #fff url(/images_v2/bg-header-nurses.jpg) no-repeat center top;
+}
+.search {
+	clear: both;	
+	float: left;
+	height: 30px;
+}
+.search form {
+	width: 212px;
+	float: left;
+}
+.search button {
+	width: 61px;
+	height: 22px;
+	text-indent: -9000px;
+	cursor: pointer;
+	background: url(/images_v2/btn-search.gif) no-repeat;
+}
+.search input {
+	width: 130px;
+	height: 15px;
+	padding: 5px 0 0 3px;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #222;
+	margin-right: 5px;
+	margin-left: 8px;
+	border: 1px #b7b7b7 solid;
+}
+.bread-crumbs {
+	padding-top: 5px;
+	margin-left: 8px;
+	color: #959595;	
+	float: left;
+}
+.bread-crumbs span {
+	color: #f6a716;
+}
+.column-left {
+	clear: both;
+	float: left;
+	display: inline;
+	margin-left: 8px;
+	margin-right: 8px;
+	width: 202px;
+}
+
+.signin 
+{       
+	width: 408px;	
+	height: 328px; 
+	margin-bottom: 9px;
+    background:#fff;
+	/*background: url(../Images/BLUE-POPUP-SMALL.png) no-repeat top;*/
+    border:1px solid #54534a;
+}
+.signin legend 
+{
+    /*font: 13px Verdana, Arial, sans-serif;*/
+    font:12px Verdana, Arial, sans-serif;
+    font-weight:bold;
+    /*color:White;*/
+    color: #e54d43;
+    text-decoration:none;
+    border:none;
+}
+
+.signin table
+{
+    float:left;
+    padding-left:15px;    
+}
+    
+.signin label 
+{
+    font-weight:bold;
+    float: left;
+}
+.signin input 
+{
+    float: left;
+	width: 145px;
+	height: auto;
+	padding: 5px 0 0 3px;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #373534;
+	margin-right: 5px;
+	margin-bottom: 6px;
+	border: 1px #b7b7b7 solid;
+}
+.signin .signin-button {
+	width: 140px;
+	height: 25px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.signin ul 
+{    
+    float: left;
+	margin-bottom: 5px;
+}
+.signin ul li 
+{
+	list-style:none;
+	padding-left: 15px;
+	margin-bottom: 2px;
+	background: url(../images/bullet-3.gif) no-repeat 0 4px;
+}
+.signin fieldset {
+	min-height: 328px;
+	padding-top: 10px;
+	padding-left: 18px;
+}
+
+.column-left .partners {
+	padding: 6px;
+	background: url(../images/bg-blue-200.jpg) no-repeat;	
+}
+/********************************
+Homepage Nav (no flash detected)
+********************************/
+.home-nav {
+	float: left;
+	margin: 0;
+	height: 210px;
+}
+.home-nav ul li {
+	float: left;
+	display: inline;
+	margin-right: 6px;
+	text-indent: -9000px;
+}
+.home-nav ul li a {
+	width: 202px;
+	height: 201px;
+	display: block;
+	overflow: hidden;
+}
+.home-nav .home-nav-faculty {
+	background: url(../images/home-nav-bg.jpg);
+}
+.home-nav .home-nav-faculty a:hover {
+	background: url(../images/home-nav-bg.jpg) 0 -201px;
+}
+.home-nav .home-nav-students {
+	background: url(../images/home-nav-bg.jpg) -202px 0;
+}
+.home-nav .home-nav-students a:hover {
+	background: url(../images/home-nav-bg.jpg) -202px -201px;
+}
+.home-nav .home-nav-licensed-nurses {
+	background: url(../images/home-nav-bg.jpg) -404px 0;
+}
+.home-nav .home-nav-licensed-nurses a:hover {
+	background: url(../images/home-nav-bg.jpg) -404px -201px;
+}
+#flashcontent {
+	margin: 0;
+	padding: 0;
+}
+.column-main {
+	float: left;
+	display: inline;
+	width: 400px;
+	padding: 12px;
+	min-height: 350px;
+	background: url(/images_v2/bg-gray-410.jpg) no-repeat;	
+}
+.column-main h3 {
+	width: 376px;
+	height: 25px;
+	text-indent: -9000px;
+	margin: 10px 0;
+	margin-bottom: 5;
+}
+.column-right h3, .column-left .partners h3 {
+	width: 170px;
+	height: 25px;
+	text-indent: -9000px;
+	margin: 10px 0;
+}
+.column-left .partners {
+	height: 350px;
+}
+.column-left .partners a {
+	display: block;
+}
+.column-left .partners p {
+	height: 50px;
+}
+.column-left .partners div 
+{
+	background: url(/images_v2/div-small.gif) no-repeat;
+}
+.column-main {
+	min-height: 350px;
+}
+#flashcontent {
+	margin: 0;
+	padding: 0;
+}
+h3.header-student-roadmap {
+	background: url(/images_v2/header-student-roadmap.gif) no-repeat left;
+}
+h3.header-review-modules {
+	background: url(/images_v2/header-review-modules.gif) no-repeat left;
+}
+h3.header-news-updates {
+	background: url(/images_v2/header-news-sm.gif) no-repeat left;
+}
+h3.header-news-updates-sm {
+	background: url(/images_v2/header-news-sm.gif) no-repeat left;
+}
+h3.header-learn-more {
+	background: url(/images_v2/header-learn-more.gif) no-repeat left;
+}
+h3.header-product-spotlight {
+	background: url(/images_v2/header-product-spotlight.gif) no-repeat left;
+}
+h3.header-partners {
+	background: url(../images/header-partners.gif) no-repeat left;
+}
+h3.header-shop-online {
+	background: url(../images/header-products.gif) no-repeat left;
+}
+h3.header-testimonials {
+	background: url(/images_v2/header-testimonials.gif) no-repeat left;
+}
+h3.header-entering-nursing-school {
+	background: url(/images_v2/header-entering-nursing-school.gif) no-repeat left;
+}
+h3.header-ati-nursenotes {
+	background: url(/images_v2/header-ati-nursenotes.gif) no-repeat left;
+}
+h3.header-ati-plan-dvd {
+	background: url(/images_v2/header-ati-plan-dvd.gif) no-repeat left;
+}
+h3.header-comp-online-practice {
+	background: url(/images_v2/header-comp-online-practice.gif) no-repeat left;
+}
+h3.header-content-mastery {
+	background: url(/images_v2/header-content-mastery.gif) no-repeat left;
+}
+h3.header-during-nursing-school {
+	background: url(/images_v2/header-during-nursing-school.gif) no-repeat left;
+}
+h3.header-nurseadvance-collection {
+	background: url(/images_v2/header-nurseAdvance-collection.gif) no-repeat left;
+}
+h3.header-nurse-manager-certificate {
+	background: url(/images_v2/header-nurse-manager-certificate.gif) no-repeat left;
+}
+h3.header-online-practice-assessments {
+	background: url(/images_v2/header-online-practice-assessments.gif) no-repeat left;
+}
+h3.header-nurse-manager-certificate {
+	background: url(/images_v2/header-nurse-manager-certificate.gif) no-repeat left;
+}
+h3.header-other-resources {
+	background: url(/images_v2/header-other-resources.gif) no-repeat left;
+}
+h3.header-preparing-nclex {
+	background: url(/images_v2/header-preparing-nclex.gif) no-repeat left;
+}
+h3.header-quest-academic-success {
+	background: url(/images_v2/header-quest-academic-success.gif) no-repeat left;
+}
+h3.header-ready-set {
+	background: url(/images_v2/header-ready-set.gif) no-repeat left;
+}
+h3.header-sigma-theta-tau {
+	background: url(/images_v2/header-sigma-theta-tau.gif) no-repeat left;
+}
+h3.header-skills-modules-series {
+	background: url(/images_v2/header-skills-modules-series.gif) no-repeat left;
+}
+h3.header-teas-faq {
+	background: url(/images_v2/header-teas-faq.gif) no-repeat left;
+}
+h3.header-teas-online-practice {
+	background: url(/images_v2/header-teas-online-practice.gif) no-repeat left;
+}
+h3.header-teas-study-manual {
+	background: url(/images_v2/header-teas-study-manual.gif) no-repeat left;
+}
+h3.header-overview {
+	background: url(/images_v2/header-overview.gif) no-repeat left;
+}
+h3.header-ce-state-requirements {
+	background: url(/images_v2/header-ce-state-requirements.gif) no-repeat left;
+}
+h3.header-about-ati-ce-providership {
+	background: url(/images_v2/header-about-ati-ce-providership.gif) no-repeat left;
+}
+h3.header-teas {
+	background: url(/images_v2/header-teas.gif) no-repeat left;
+}
+h3.header-virtual-ati {
+	background: url(/images_v2/header-virtual-ati.gif) no-repeat left;
+}
+h3.header-teas-faq {
+	background: url(/images_v2/header-teas-faq.gif) no-repeat left;
+}
+h3.header-shop {
+	background: url(/images_v2/header-shop.gif) no-repeat left;
+}
+h3.header-shop-featured {
+	background: url(/images_v2/header-shop-featured.gif) no-repeat left;
+}
+h3.header-contact-us {
+	background: url(/images_v2/header-contact-us.gif) no-repeat left;
+}
+h3.header-about-ati {
+	background: url(/images_v2/header-about-ati.gif) no-repeat left;
+}
+h3.header-advisory-board {
+	background: url(/images_v2/header-advisory-board.gif) no-repeat left;
+}
+h3.header-privacy-policy {
+	background: url(/images_v2/header-privacy-policy.gif) no-repeat left;
+}
+h3.header-technical-requirements {
+	background: url(/images_v2/header-technical-requirements.gif) no-repeat left;
+}
+h3.header-sitemap {
+	background: url(/images_v2/header-sitemap.gif) no-repeat left;
+}
+h3.header-related-products {
+	background: url(/images_v2/header-related-products.gif) no-repeat left;
+}
+h3.header-browse-ce-products {
+	background: url(/images_v2/header-browse-ce-products.gif) no-repeat left;
+}
+h3.header-ati-solution {
+	background: url(/images_v2/header-ati-solution.gif) no-repeat left;
+}
+h3.header-overworked-staff {
+	background: url(/images_v2/header-overworked-staff.gif) no-repeat left;
+}
+h3.header-student-diversity {
+	background: url(/images_v2/header-student-diversity.gif) no-repeat left;
+}
+h3.header-student-attrition {
+	background: url(/images_v2/header-student-attrition.gif) no-repeat left;
+}
+h3.header-lack-clinical-sites {
+	background: url(/images_v2/header-lack-clinical-sites.gif) no-repeat left;
+}
+h3.header-pass-rates {
+	background: url(/images_v2/header-pass-rates.gif) no-repeat left;
+}
+h3.header-nclex-preparation {
+	background: url(/images_v2/header-nclex-preparation.gif) no-repeat left;
+}
+h3.header-accreditation {
+	background: url(/images_v2/header-accreditation.gif) no-repeat left;
+}
+h3.header-student-assessments {
+	background: url(/images_v2/header-student-assessments.gif) no-repeat left;
+}
+h3.header-pre-admission-teas {
+	background: url(/images_v2/header-pre-admission-teas.gif) no-repeat left;
+}
+h3.header-entrance {
+	background: url(/images_v2/header-entrance.gif) no-repeat left;
+}
+h3.header-contentmastery {
+	background: url(/images_v2/header-contentmastery.gif) no-repeat left;
+}
+h3.header-nclex-predictors {
+	background: url(/images_v2/header-nclex-predictors.gif) no-repeat left;
+}
+h3.header-focused-review {
+	background: url(/images_v2/header-focused-review.gif) no-repeat left;
+}
+h3.header-reports {
+	background: url(/images_v2/header-reports.gif) no-repeat left;
+}
+h3.header-group-reports {
+	background: url(/images_v2/header-group-reports.gif) no-repeat left;
+}
+h3.header-individual-reports {
+	background: url(/images_v2/header-individual-reports.gif) no-repeat left;
+}
+h3.header-grade-book {
+	background: url(/images_v2/header-grade-book.gif) no-repeat left;
+}
+h3.header-question-analysis {
+	background: url(/images_v2/header-question-analysis.gif) no-repeat left;
+}
+h3.header-individual-transcript {
+	background: url(/images_v2/header-individual-transcript.gif) no-repeat left;
+}
+h3.header-teas-report {
+	background: url(/images_v2/header-teas-report.gif) no-repeat left;
+}
+h3.header-critical-thinking {
+	background: url(/images_v2/header-critical-thinking.gif) no-repeat left;
+}
+h3.header-custom-reports {
+	background: url(/images_v2/header-custom-reports.gif) no-repeat left;
+}
+h3.header-targeted-review {
+	background: url(/images_v2/header-targeted-review.gif) no-repeat left;
+}
+h3.header-online-practice-assessments {
+	background: url(/images_v2/header-online-practice-assessments.gif) no-repeat left;
+}
+h3.header-review-modules {
+	background: url(/images_v2/header-review-modules.gif) no-repeat left;
+}
+h3.header-skills-modules-series {
+	background: url(/images_v2/header-skills-modules-series.gif) no-repeat left;
+}
+h3.header-virtual-ati {
+	background: url(/images_v2/header-virtual-ati.gif) no-repeat left;
+}
+h3.header-live-reviews {
+	background: url(/images_v2/header-live-reviews.gif) no-repeat left;
+}
+h3.header-faculty-enhancement {
+	background: url(/images_v2/header-faculty-enhancement.gif) no-repeat left;
+}
+h3.header-longitudinal-report {
+	background: url(/images_v2/header-longitudinal-report.gif) no-repeat left;
+}
+h3.header-results-analysis {
+	background: url(/images_v2/header-results-analysis.gif) no-repeat left;
+}
+h3.header-longitudinal-report {
+	background: url(/images_v2/header-longitudinal-report.gif) no-repeat left;
+}
+.resultsanalysis {
+	padding: 20px;
+	background-color: #d0cedc;
+	font-style: italic;
+	display: block;
+	clear: both;
+}
+.column-main div.divider {
+	height: 14px;
+	margin: 10px 0;
+	border: none;
+	background: url(/images_v2/div.gif) no-repeat;
+}
+.column-main div.divider hr {
+	display: none;
+}
+.column-main ul.news li {
+	padding-bottom: 10px;
+	border-bottom: 1px #edeeed solid;
+}
+.column-main ul li {
+	list-style:none;
+}
+/*
+.column-main ul li {
+	padding: 10px 0;
+	margin: 5px 0;
+	border-bottom: 1px #edeeed dashed;
+}
+.column-main ul ul {
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.column-main ul li li {
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px #fff none;
+	list-style-type: disc;
+}*/
+.column-main .highlight {
+	color: #40773f;
+	font-weight: bold;
+	display: inline;
+}
+.column-main h4, .column-right h4 {
+	color: #40773f;
+	font-size: 12px;
+	margin: 10px 0;
+}
+
+.column-main span, .column-right span {
+	display: block;
+	color: #666;
+}
+.column-main span { 
+	margin-bottom: 20px; 
+}
+.column-main p {
+	margin: 3px 0;
+	margin-bottom: 10px;
+}
+.column-right p {
+	margin: 3px 0;
+}
+.column-main .modules li {
+	border: 1px #e1e1e1 solid;	
+	margin-bottom: 8px;
+}
+.column-main .modules li h4 {
+	margin: -10px 0;
+	padding: 4px;
+	color: #40773f;
+	font-size: 13px;
+	background: #e0f0ff;
+	border: 1px #fff solid;
+}
+.column-main .modules p {
+	padding: 8px;
+}
+.column-main .modules .buy-links img {
+	padding: 0px 4px ;
+}
+.column-main .modules .module-img {
+	float: right;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.column-right {
+	float: left;
+	height: 350px;
+	width: 176px;
+	padding: 12px;
+	padding-right: 0;
+	margin: 0;
+	background: url(../images/bg-blue-200.jpg) no-repeat;	
+}
+.footer {
+	clear: both;
+	height: 45px;
+	text-align: center;
+	padding-top: 120px;
+	border-bottom: 1px #7aa777 solid;
+}
+.footer p {
+	color: #fff;
+}
+.footer ul li {
+	display: inline;
+	color: #fff;
+}
+.footer a {
+	color: #fffdc9;
+	text-decoration: none;
+}
+.page-general .footer {
+	background: url(/images_v2/bg-footer-general.jpg) no-repeat 0 -1px;
+}
+.page-students .footer {
+	background: url(/images_v2/bg-footer-students.jpg) no-repeat 0 -1px;
+}
+.page-faculty .footer {
+	background: url(/images_v2/bg-footer-faculty.jpg) no-repeat 0 -1px;
+}
+.page-licensed-nurses .footer {
+	background: url(/images_v2/bg-footer-nurses.jpg) no-repeat 0 -1px;
+}
+.sub-nav {
+	background: #b7b7b7;
+	padding-top: 1px;
+	padding-left: 1px;
+	border-bottom: 1px #fff solid;
+}
+.sub-nav h3 {
+	background: #d4e8f8;
+	margin-bottom: 1px;
+	margin-right: 1px;
+	border: 1px #fff solid;
+}
+.sub-nav h3 a {
+	padding: 9px 5px;
+	display: block;
+	overflow: hidden;
+	font-weight: bold;
+}
+.sub-nav h4 {
+	border: 1px #fff solid;
+	border-bottom: 1px #b7b7b7 solid;
+	background: #ebf5fc url(/images_v2/bullet-2.gif) no-repeat 7px 8px;
+	margin-right: 1px;		
+}
+.sub-nav h4 a {
+	padding: 4px;
+	padding-left: 20px;
+	display: block;
+	font-weight: normal;
+}
+
+.sub-nav ul li {
+	border: 1px #fff solid;
+	border-bottom: 1px #b7b7b7 solid;
+	margin-right: 1px;
+	background: #f8f8f8 url(/images_v2/bullet-1.gif) no-repeat 23px 10px; 
+	/*2008-01-28 jsandoval -[bt5850] added style to prevent display of bullets*/
+	list-style-type:none;
+}
+
+.sub-nav ul li a {
+	padding: 4px;
+	padding-left: 30px;
+	display: block;
+}
+.bulleted-link, .column-right li 
+{
+	list-style:none;
+	padding-left: 15px;
+	margin-bottom: 2px;
+	background: url(/images_v2/bullet-3.gif) no-repeat 0 4px;
+}
+
+bulleted-post-paragraph 
+{
+	margin: -5px 0 10px;
+}
+
+.bulleted-post-paragraph li 
+{
+	list-style:none;
+	margin: 0;
+	padding: 3px 20px; 
+	background: url(/images_v2/bullet-2.gif) no-repeat 7px 7px;
+	border: none;
+}
+
+.customer {
+	font-weight: bold;
+	color: #40773f;
+}
+.selected {
+	padding: 4px;
+	font-weight: bold;	
+	color: #54534a;
+}
+h4.selected { 
+	padding-left: 20px; 
+}
+h3.selected {   
+	padding: 9px 5px; 
+}
+li.selected { 	
+	font-weight: normal; padding-left: 30px; 
+}
+.shop-status {
+	width: 829px;
+	height: 20px;
+	clear: both;
+	margin: 0 auto;
+	background: #cdf7ff;
+	border: #dfdfdf 1px solid;
+	margin-bottom: 8px;
+}
+.shop-status-paging {
+	float: left;	
+	height: 13px;
+	width: 405px;
+	padding: 2px 3px 3px 5px;
+	border: #fff 1px solid;	
+	border-right: none;	
+}
+.shop-status-paging span {
+	letter-spacing: 1px;
+}
+.shop-status-cart {
+	float: right;
+	padding: 2px 5px 3px 3px;
+	height: 13px;
+	width: 405px;
+	text-align: right;
+	border: #fff 1px solid;	
+	border-left: none;	
+}
+.shop-status img {
+	padding: 0 2px;
+}
+.shop-column {
+	float: left;
+	display: inline;
+	margin-left: 8px;
+	width: 340px;
+	padding: 12px;
+	background: url(/images_v2/bg-blue-370.jpg) no-repeat;	
+}
+.shop-column ul li {
+	padding-bottom: 8px;
+}
+.shop-column h3, .shop-featured h3, .shop-browse-list h3, 
+.shop-browse h3, .shop-product-details h3, .column-single-gray h3  {
+	width: 180px;
+	height: 25px;
+	text-indent: -9000px;
+	margin: 5px 0;
+}
+.shop-featured {
+	float: left;
+	margin-left: 8px;
+	width: 430px;
+	padding: 12px;
+	background: url(/images_v2/bg-gray-410.jpg) no-repeat;	
+}
+.shop-featured ul li {
+	border: 1px #e2e2e2 solid;
+	width: 130px;
+	float: left;
+	display: inline;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.shop-featured h4 {
+	background: #d1e5f9;
+	padding: 3px;
+	height: 26px;
+	font-weight: normal;
+	border: 1px #fff solid;
+}
+.shop-featured div {
+	width: 130px;
+	height: 110px;
+	background: #fff;
+	vertical-align: bottom;
+	padding-top: 5px;
+	border-bottom: 1px #e2e2e2 solid;
+}
+.shop-browse-list, .shop-browse, .shop-product-details {
+	clear: both;
+	margin-left: 8px;
+	padding: 12px;
+	width: 800px;
+	min-height: 200px;
+	background: url(/images_v2/bg-gray-410.jpg) no-repeat;		
+}
+.shop-browse-list ul li {
+	display: inline;
+	width: 180px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;	
+}
+.shop-category-select option {
+	padding-left: 13px;
+	height: 13px;
+}
+.shop-category-select {
+	background: #f5f5f5;
+	display: block;
+	border: 1px #e2e2e2 solid;
+	padding: 3px;
+	padding-left: 8px;
+	margin-bottom: 10px;
+}
+.shop-category-select select {
+	margin-right: 10px;
+}
+.shop-category-select option.shop-category {
+	padding-left: 5px;
+}
+
+/*
+2007-06-21 S.Agawin [BT#4610] ATI v2 - Removed border
+.shop-browse ul li {
+	background: #fff;
+	border: 1px #e2e2e2 solid;
+	margin-bottom: 10px;
+}
+*/
+
+.shop-browse ul li h4 {
+	background: #d1e5f9;
+	border: 1px #fff solid;
+	padding: 4px;
+}
+.shop-browse ul li div.browse-item-description {
+	border-top: 1px #e2e2e2 solid;
+	border-bottom: 1px #e2e2e2 solid;
+	padding: 8px;
+	min-height: 90px;
+}
+.shop-browse ul li div.browse-item-footer {
+	height: 22px;
+	padding: 3px;
+	border: 1px #fff solid;
+	background: url(/images_v2/bg-item-footer-tile.gif) repeat-y left;
+}
+.shop-browse ul li span.item-type-package {
+	float: left;
+	background: #efefef;
+	padding-top: 4px;
+	padding-left: 16px;
+	background: url(/images_v2/icon-package.gif) no-repeat 0 4px;
+}
+.shop-browse ul li span.browse-item-buttons {
+	float: right;
+}
+.shop-browse ul li span.browse-item-buttons a {
+	margin-left: 10px;
+}
+.product-image {
+	float: right;
+	margin: 5px;
+	margin-left: 15px;
+}
+.btn-learnmore {
+	background: url(/images_v2/btn-learnmore.gif);
+	width: 99px;
+	height: 22px;
+	display: block;
+	float: left;
+	text-indent: -9000px;	
+}
+.btn-addtocart {
+	background: url(/images_v2/btn-addtocart.gif);
+	width: 99px;
+	height: 22px;
+	display: block;
+	float: left;
+	text-indent: -9000px;	
+}
+.btn-buy {
+	background: url(/images_v2/btn-buy.gif);
+	width: 65px;
+	height: 22px;
+	display: block;
+	float: left;
+	text-indent: -9000px;	
+}
+.bnr {
+	position: absolute;
+	top: 45px;	
+}
+.shop-product-details ul {
+	margin: 10px 0;
+}
+.shop-product-details ul.bullet-2 li {
+	margin: 0;
+	padding: 3px 20px 5px 20px;	
+	background: url(/images_v2/bullet-2.gif) no-repeat 7px 7px;
+	border: none;
+}
+.shop-product-details ul.bullet-check li {
+	margin: 0;
+	padding: 3px 20px 5px 20px;	
+	background: url(/images_v2/bullet-check.gif) no-repeat 4px 6px;
+	border: none;
+}
+.shop-product-details h4 {
+	color: #40773f;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.column-single-gray {
+	clear: both;
+	margin-left: 8px;
+	padding: 12px;
+	width: 800px;
+	min-height: 200px;
+	background: url(/images_v2/bg-gray-410.jpg) no-repeat;		
+}
+.column-single-gray h4 {
+	color: #40773f;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.column-single-blue {
+	clear: both;
+	margin-left: 8px;
+	padding: 12px;
+	width: 800px;
+	min-height: 150px;
+	background: url(/images_v2/bg-blue-400.jpg) no-repeat;		
+}
+.column-single-blue h3 {
+	width: 170px;
+	height: 25px;
+	text-indent: -9000px;
+	margin: 5px 0;
+}
+.product-summary {
+	height: 22px;
+	padding: 3px;
+	padding-left: 15px;
+	background: #f5f5f5;
+	border: 1px #e3e3e3 solid;
+	display: block;
+}
+.product-summary li {
+	display: inline;
+	margin-right: 20px;
+	line-height: 0;
+	vertical-align: baseline;
+}
+.product-summary li input {
+	width: 20px;
+}
+.product-summary li img {
+	position: absolute;
+}
+.item-type-package  {
+	display: inline;
+}	
+.item-type-package li  {
+	display: inline;
+	margin-right: 15px;
+}	
+.summary-item-buttons  {
+	display: inline;
+}
+.summary-item-buttons img {
+	float: right;
+}
+.summary-item-buttons input {
+	width: 20px;
+	margin: 0;
+	padding: 0;	
+}
+.summary-item-buttons img {
+	margin: 0;
+	padding: 0;
+}
+.shop-related-products li 
+{
+	list-style: none;
+	height: 30px;
+	padding: 1px;
+	background: #fafafa;
+	border: 1px #e3e3e3 solid;
+	margin-bottom: 8px;
+}
+/* //--2008-01-29 - jpagkaliwangan - [BT#5864] - adjusted height 15px - to 16px.*/
+.shop-related-products .item-type {
+	background: #efefef;
+	width: 140px;
+	height: 16px;
+	float: left;
+	padding: 7px;
+	padding-top: 8px;
+	padding-left: 15px;
+	border-right: 1px #fafafa solid;
+}
+/* //--2008-01-29 - jpagkaliwangan - [BT#5864] - adjusted height 15px - to 16px. Remove padding-top & padding*/
+.shop-related-products .item-name {
+	width: 400px;
+	height: 18px;
+	float:left;
+	padding-left: 15px;
+}
+
+/* //--2008-01-29 - jpagkaliwangan - [BT#5864] - adjusted height 15px - to 18px.*/
+.shop-related-products .buy-links {
+	height: 18px;
+	float: right;
+	padding: 4px;
+}
+.reg-price {
+	font-weight: bold;
+}
+.dc-price {
+	font-weight: bold;
+	color: #40773f;	
+}
+.shop-browse table {
+	border: 1px #e3e3e3 solid;
+}
+.shop-browse th{
+	background: #e0f0ff;
+	padding: 5px 8px;
+	border: 1px #fff solid;
+	font-weight: normal;
+	font-size: 9px;
+	text-transform: uppercase;
+}
+.shop-browse td{
+	padding: 5px 8px;
+}
+.shop-browse .th-hours {
+	width: 85px;
+	text-align: center;
+}
+.shop-browse .th-desc {
+	width: 190px;
+}
+.shop-browse .th-btn {
+	width: 280px;
+}
+.shop-browse .td-btn {
+}
+.shop-browse .td-price, .shop-browse .td-hours {
+	text-align: center;
+}
+.shop-browse h5 {
+	color: #40773f;
+	margin: 20px 0 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.shop-browse .alt-row {
+	background: #fbfbfb;
+}
+.tabular-data {
+	border: 1px #e3e3e3 solid;
+}
+.tabular-data th{
+	background: #e0f0ff;
+	padding: 3px;
+	border: 1px #fff solid;
+	text-align: center;
+	font-size: 86;
+	font-weight: normal;
+}
+.tabular-data .sub-header {
+	background: #53cd8c;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+	border-left: 1px #fff solid;
+	border-right: 1px #fff solid;	
+}
+.tabular-data .alt-row {
+	background: #fbfbfb;
+}
+.tabular-data  td {
+	padding: 3px;
+	text-align: center;
+}
+.tabular-data  .column-name {
+	text-align: left;	
+}
+fieldset.ce-req {
+	margin: 0 auto;
+	padding: 10px;
+	width: 380px;
+	border: 1px solid #ddd; 
+}		
+fieldset.ce-req legend {
+	margin-left: 5px;
+	margin-right: 5px; }
+		
+fieldset.ce-req p {	clear: both; margin: 0; padding: 0;  }
+			
+fieldset.ce-req p label {
+	display: block;
+	float: left;
+	width: 75px;
+	font-weight: normal; 
+}	
+fieldset.ce-req p span {
+	display: block;
+	width: 300px;
+	float: right; 
+}			
+.sitemap  a {
+	color: #40773f;
+	font-size: 12px;
+	margin: 10px 0;
+}
+.sitemap  a:hover {
+	color: #40773f;
+	font-size: 12px;
+	margin: 10px 0;
+}	
+.side-bnr {
+	margin-top: 20px;
+}
+.side-bnr li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/********************************
+Global Pages Classes
+********************************/
+
+.column-single-middle 
+{
+	list-style:none;
+	float: left;
+	display: inline;
+	width: 500px;
+	padding: 12px;
+	clear: both;
+	margin-left: 218px;	
+	background: url(../images/bg-gray-410.jpg) no-repeat;	
+}
+.column-single-middle h3  {
+	width: 180px;
+	height: 25px;
+	text-indent: -9000px;
+	margin: 5px 0;
+}
+.column-single-middle p {
+	margin: 3px 0;
+	margin-bottom: 10px;
+}
+.column-single-middle span { 
+	margin-bottom: 20px; 
+}
+.column-single-middle h4 {
+	color: #40773f;
+	font-size: 12px;
+	margin: 10px 0;
+}
+.column-single-middle h3  {
+	width: 250px;
+	height: 25px;
+	text-indent: -9000px;
+	margin: 5px 0;
+}
+.bulleted {
+	margin: 3px 0;
+}
+.bulleted li 
+{
+	list-style: none;
+	margin: 0;
+	padding: 3px 20px;	
+	background: url(../images/bullet-2.gif) no-repeat 7px 7px;
+	border: none;
+}
+.board-member {
+	padding: 5px 0;
+	clear:both;
+}
+.board-member img {
+	width: 90px;
+	float: left;
+	border: 1px solid #edeeed;
+	margin-right: 10px;
+}
+.board-member p {
+	margin-left: 100px;
+}
+.board-member h4 {
+	margin-top: 0;
+}
+
+.column-single-middle span {
+	display: block;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+.product-listing {
+	border: 1px #e1e1e1 solid;	
+	margin-bottom: 8px;
+}
+.product-listing h4 {
+	padding: 4px;
+	margin: 0;
+	color: #40773f;
+	font-size: 11px;
+	background: #e0f0ff;
+	border: 1px #fff solid;
+	margin: 0;
+}
+.product-listing p {
+	padding: 8px;
+}
+.product-listing img {
+	float: right;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+
+.middlepane
+{
+	vertical-align: top;
+	border: solid 1px #D8DDE9;	
+	margin: 0;
+	padding: 5 5 5 5;
+}
+
+.largebluebold
+{
+	font-size: 12px;
+	font-weight: bold;	
+	color: #254E99;
+}
+
+/* from sid */
+sup 
+{
+	vertical-align:baseline; 
+	position: relative; 
+	bottom: 0.33em; 
+}
+
+div.NoWrap
+{
+	margin: 0px;
+	padding: 0px;	
+}
+
+div.NoWrap ul li, div.NoWrap ol li
+{
+	
+	margin-left: 30px;
+	padding: 0px;
+	background: 0f0;
+	
+}
+/*--  
+For News and Updates page
+override the class .column-single-middle span
+--*/
+div.NoWrap span 
+{
+	display:inline;
+	margin-bottom: auto;
+}
+
+.sample-thumbnail img{
+	margin-top: 90px;
+	margin-left: 20px;
+	width: 150px;
+	height: 200px;
+	display: block;
+	margin-right: -210px;
+	border: 1px #ccc solid;
+	padding: 1px;
+}
+
+.column-right-thumbnail {
+	float: left;
+	width: 176px;
+	padding: 12px;
+	padding-right: 0;
+	margin: 0;
+}
+
+.sample-full img {
+	border: 1px #ccc solid;
+	padding: 2px;
+}
+.ahQFLHeading{ width:100%; color:#fff; font-size:16px; font-weight:bold;}
+.ahQFLArea{  background: none repeat scroll 0 0 #8FCEDD;
+    color: #333333;
+    float: left;
+    font-weight: normal;
+    height: 65px;
+    padding: 5px 10px;
+    text-align: left;
+    width: 245px;}
+    .ahQFLArea:after
+    {
+ border-bottom: 38px solid transparent;
+    border-left: 30px solid #8FCEDD;
+    border-top: 38px solid transparent;
+    content: "▸";
+    display: block;
+    font-size: 0;
+    height: 0;
+    left: 270px;
+    line-height: 0;
+    position: absolute;
+    top: 5px;
+    width: 0;
+    }
+    div#ahPolicyArea, #ctl00_contentPlaceHolderBody_ahPolicyArea
+    {
+        padding:10px;
+        text-align:left;
+        
+    }
+     div#ahPolicyArea p , #ctl00_contentPlaceHolderBody_ahPolicyArea p
+    {
+        padding-bottom:7px;
+        
+    }
+    .keepInMindMessage
+    {
+        width: 460px;
+        padding: 20px;
+        margin: 5% auto 0;
+        z-index: 90;
+        /*-webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 10px;*/
+        box-shadow:0 0px 35px rgba(0,0,0,0) inset,0 0px 5px rgba(0,0,0,1);
+        background-color: #fff;
+        border: 3px solid #fff;
+        font-size:13px;
+    }
+    .keepInMindMessage a.contNext
+    {
+        /*-moz-border-radius: 20px;
+        -webkit-border-radius: 20px;*/
+        /*border-radius: 20px;*/
+        line-height: 2.2em;
+        padding: 0;
+        width: 120px;
+        border: 1px solid #b6b9bb;
+        background: #ced45c;
+        /*background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+        background-image: -moz-linear-gradient(top,#fff 10%,#ced906 100%);
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#fff),color-stop(100%,#ced906));
+        background-image: -webkit-linear-gradient(top,#fff 10%,#a2b707 100%);
+        background-image: -o-linear-gradient(top,#fff 10%,#ced906 100%);
+        background-image: -ms-linear-gradient(top,#fff 10%,#ced906 100%);*/
+        /*-pie-background: linear-gradient(to bottom,#fff 10%,#ced906 100%);*/
+}
+.keepInMindMessage a.contNext:after {
+/*background: url("../Images/btnArrRightIcon.png") no-repeat scroll 0 0 transparent;*/
+clear: both;
+content: "";
+display: block;
+height: 13px;
+margin-left: 98px;
+margin-top: -22px;
+padding: 0;
+position: absolute;
+width: 15px;
+z-index: 1;
+}
+.keepInMindMessage a {
+background: #8fcedd;
+background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background-image: -moz-linear-gradient(top,#e8f6fa 0,#e8f6fa 36%,#8fcddd 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#e8f6fa),color-stop(36%,#e8f6fa),color-stop(100%,#8fcddd));
+background-image: -webkit-linear-gradient(top,#e8f6fa 0,#e8f6fa 36%,#8fcddd 100%);
+background-image: -o-linear-gradient(top,#e8f6fa 0,#e8f6fa 36%,#8fcddd 100%);
+background-image: -ms-linear-gradient(top,#e8f6fa 0,#e8f6fa 36%,#8fcddd 100%);
+-pie-background: linear-gradient(to bottom,#e8f6fa 0,#e8f6fa 36%,#8fcddd 100%);
+height: 30px;
+font-size: 14px;
+border: 1px solid #aaa;
+border-top: 1px solid #ccc;
+border-left: 1px solid #ccc;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+color: #3f3e29;
+display: inline-block;
+/*font: 14px 'atzz',Arial,Helvetica,sans-serif!important;*/
+font-weight: bold;
+text-decoration: none;
+text-shadow: 0 1px 0 #fff;
+cursor: pointer;
+line-height: normal;
+padding: 0 20px;
+}
+.keepInMindMessageRowOne .atiWarning 
+{
+width: 34px;
+height: 30px;
+position: relative;
+background: #B83C3C;
+box-shadow: 0 1px 4px #660303 inset;
+border-radius: 50px;
+border: 2px solid #FFF;
+}
+.keepInMindMessageRowOne .atiWarning:before 
+{
+content: "!";
+position: absolute;
+width: 140px;
+height: 51px;
+margin-right: 20px;
+left: -53px;
+top: 0px;
+color: #fff;
+font-size: 25px;
+font-family: verdana,serif;
+font-weight: bold;
+text-shadow: 0 -1px 2px #020202;
+}
+
+.keepInMindMessageRowOne
+{
+    
+ /*   display:table;width: 400px;margin:1em auto .5em;color:#8fcedd*/
+display: block;
+margin: 1em auto .5em;
+color: #ffffff;
+background: #DF4949;
+width: 300px;
+border-radius: 30px;
+box-shadow: 0 1px 4px #660303 inset;
+padding: 10px;
+position:relative;
+text-shadow: 0 -1px 1px #616060;
+    
+    }
+    .keepInMindMessageAlternatives{
+    width: 350px;
+margin: 0 auto;
+padding-top: 10px;
+}
+.keepInMindMessageAlternatives ul li:first-child{font-size:12px; font-weight:bold; color:#585858; padding:.5em;}
+.keepInMindMessageAlternatives ul
+{
+    list-style:none; text-align:left; padding:.5em; background:#F1EEEE; border-radius:.5em; box-shadow: 0 1px 4px #aaa inset; margin:1em 0;
+}
+.keepInMindMessageAlternatives ul li{position:relative;}
+.keepInMindMessageAlternatives ul li a
+{
+    background:none;  border:none;
+    display: table-cell;
+vertical-align: middle;
+}
+.keepInMindMessageAlternatives ul li a:before
+{
+    content:"";
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #000;
+    width:0;
+    height:0;
+    z-index:10;
+    position:absolute;
+    margin-top: 3px;
+    margin-left: -10px;
+}
+    .keepInMindMessageRowOne:after
+{
+content: "";
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-top: 20px solid #DF4949;
+position: absolute;
+top: 53px;
+left:50%;
+margin-left:-20px;
+z-index: 10;
+}
+.keepInMindMessageRowTwo{display:table;width: 400px;margin:0 20px 1em 20px;; }
+.keepInMindMessageRowOne div{display:table-cell;  vertical-align: middle;}
+.keepInMindMessageRowOne div span
+{
+font-size: 30px;
+font-weight: bold;
+display: block;
+text-align: left;
+padding-left: 1em;
+    }
+.keepInMindMessageTxt{ width: 100%;
+font-weight: bold;
+display: block;
+padding:2em 1em 1em;
+box-sizing:border-box;
+font-size: 13px;
+color: #DF4949;
+text-align:left;
+}
+.keepInMindMessageButtonArea
+{
+ display: block;
+ font-weight: bold;
+}
