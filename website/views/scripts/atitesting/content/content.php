@@ -31,30 +31,30 @@
                         <div class="clear">
                         </div>
 
-                       <?php
-                $allowedAreas = [
-                    'AtiTesting_Headline',
-                    'AtiTesting_SubHeadline',
-                    'AtiTesting_Wysiwyg',
-                    'AtiTesting_HomeTiles',
-                    
-                ]; ?>
-                <?php
-                echo $this->areablock('content_block', array(
-                    'allowed' => $allowedAreas,
-                    "areablock_toolbar" => array(
-                        "title" => "",
-                        "width" => 230,
-                        "x" => 20,
-                        "y" => 300,
-                        "xAlign" => "left",
-                        "buttonWidth" => 218,
-                        "buttonMaxCharacters" => 35,
-                        "collapsible" => true)
-                        )
-                );
-                ?>	
-                
+                        <?php
+                        $allowedAreas = [
+                            'AtiTesting_Headline',
+                            'AtiTesting_SubHeadline',
+                            'AtiTesting_Wysiwyg',
+                            'AtiTesting_HomeTiles',
+                        ];
+                        ?>
+                        <?php
+                        echo $this->areablock('content_block', array(
+                            'allowed' => $allowedAreas,
+                            "areablock_toolbar" => array(
+                                "title" => "",
+                                "width" => 230,
+                                "x" => 20,
+                                "y" => 300,
+                                "xAlign" => "left",
+                                "buttonWidth" => 218,
+                                "buttonMaxCharacters" => 35,
+                                "collapsible" => true)
+                                )
+                        );
+                        ?>	
+
                     </div>
                     <table cellpadding="0" cellspacing="0" id="tableContent">
                         <tbody><tr>
