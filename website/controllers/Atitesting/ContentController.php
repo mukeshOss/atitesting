@@ -24,8 +24,7 @@ class Atitesting_ContentController extends Action
      */
     public function homeAction()
     {
-        $this->enableLayout();
-        $this->setLayout($this->defaultLayout);
+       
     }
 
     /**
@@ -33,6 +32,12 @@ class Atitesting_ContentController extends Action
      * renders every page that is made with pimcore admin
      */
     public function contentAction()
+    {
+        $this->enableLayout();
+        $this->setLayout($this->defaultLayout);
+    }
+
+     public function productSolutionsAction()
     {
         $this->enableLayout();
         $this->setLayout($this->defaultLayout);
