@@ -1,0 +1,136 @@
+.product-details {
+	clear: both;
+	margin-left: 8px;
+	padding: 12px;
+	min-height: 200px;
+	background: url(/onlinestore/images/bg-gray-410.jpg) no-repeat;		
+}
+
+.product-details ul {
+	margin: 10px 0;
+}
+.product-details ul.bullet-2 li {
+	margin: 0;
+	padding: 3px 20px 5px 20px;	
+	background: url(/onlinestore/images/bullet-2.gif) no-repeat 7px 7px;
+	border: none;
+}
+.product-details ul.bullet-check li {
+	margin: 0;
+	padding: 3px 20px 5px 20px;	
+	background: url(/onlinestore/images/bullet-check.gif) no-repeat 4px 6px;
+	border: none;
+	/*2008-01-28 jsandoval -[bt5835]added style to prevent display of bullets*/
+	list-style-type:none;
+}
+
+.product-details h3 {
+	width: 180px;
+	height: 25px;
+	text-indent: -9000px;
+	margin: 5px 0;
+}
+
+h3.header-product-details {
+	background: url(/onlinestore/images/header-product-details.gif) no-repeat left;
+}
+
+h3.header-related-products-title {
+	background: url(/onlinestore/images/header-related-products.gif) no-repeat left;
+}
+
+h3.header-testimonials-title {
+	background: url(/onlinestore/images/header-testimonials.gif) no-repeat left;
+}
+
+.product-details-itemimage {
+	float: right;
+	margin: 5px;
+	margin-left: 15px;
+ 	Width: 155px; 
+ 	Height: 210px;
+}
+
+.product-details-itemtitle {
+	/*color: #40773f;*/
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight:bold;
+	margin-left: 3px;
+}
+
+.product-details-itemdesc {
+	margin-left: 3px;
+	border: 1px solid black;
+	}
+
+.product-details-reg-price {
+	font-weight: bold;
+}
+
+.product-details-summary {
+	height: 22px;
+	padding: 10px;
+	padding-left: 15px;
+	background: #f5f5f5;
+	border: 1px #e3e3e3 solid;
+	margin: 10px 1px 1px 1px;
+}
+.product-details-summary li {
+	display: inline;
+	margin-right: 5px;
+	line-height: 0;
+	vertical-align: middle;
+}
+.product-details-summary li input {
+	width: 30px;
+	border: 1px solid #C2C4D0;
+}
+.product-details-summary li img {
+	position: relative;
+}
+
+.product-details-sale-price {
+	font-weight: bold;
+	color: #40773f;	
+}
+
+.product-details-single-blue {
+	clear: both;
+	margin-left: 8px;
+	padding: 12px;
+	width: 800px;
+	min-height: 150px;
+	background: url(/onlinestore/images/bg-blue-400.jpg) no-repeat;
+}
+.product-details-single-blue h3 {
+	width: 170px;
+	height: 25px;
+	text-indent: -9000px;
+	margin: 5px 0;
+}
+
+
+div.NoWrap
+{
+	margin: 3px;
+	padding: 0px;	
+}
+
+div.NoWrap ul li, div.NoWrap ol li
+{
+	margin-left: 30px;
+	padding: 0px;
+	background: 0f0;
+	
+}
+
+.related-item-content
+{
+	margin-left: 3px;
+}
+
+.testimonial-item-content
+{
+	margin-left: 3px;
+}

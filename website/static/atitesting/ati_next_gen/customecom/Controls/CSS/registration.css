@@ -1,0 +1,28 @@
+
+h3.page-header
+{
+	font-size: 1.8em;
+	color: #f7ae21;
+	font-family: Verdana;
+	background-image:none;	
+	font-weight:normal;
+	letter-spacing: -.1em;
+}
+
+div.page-content
+{
+	margin:0  auto;	
+	width:90%;
+	display:block;
+	clear:both;
+	padding:10px;
+	color:#333333;
+	font-family:Arial,Helvetica,sans-serif
+}
+
+input.registration-button
+{
+	background-color:#DBE5F1;
+	border:solid 1px #CCD6E1;
+	color:#3C5283;	
+}

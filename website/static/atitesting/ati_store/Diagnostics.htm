@@ -1,0 +1,3646 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f7f7db9847","applicationID":"9137107","transactionName":"ZwQGZERSV0RVBhAMCV5OJWNmHF1eVQIKChVECAdDGFJKR0w=","queueTime":0,"applicationTime":505,"ttGuid":"D1972B8BC27970E6","agent":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vw8GUFFSGwoBV1ZTBwY="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1039.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+    <title>Znode Storefront Diagnostics</title>
+</head>
+<style type="text/css">
+    .Error {font-weight: bold; color: #ff0000; margin-bottom: 5px; margin-top: 5px; }
+    .Success {font-weight: bold; color: #0000ff; margin-bottom: 5px; margin-top: 5px; }
+</style>
+<body leftmargin="15px" rightmargin="15px" topmargin="15px">
+    <form name="form1" method="post" action="Diagnostics.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzODE0NjA3NjkPZBYCAgEPZBYSZg8PFgIeBFRleHQFFSBCYXNlIFZlcnNpb246IHY1LjIuMGRkAgEPPCsACQBkAgIPDxYGHwAFFyBEYXRhYmFzZSBDb25uZWN0aW9uIE9LHghDc3NDbGFzcwUHU3VjY2Vzcx4EXyFTQgICZGQCAw8PFgYfAQUHU3VjY2Vzcx8ABR4gRGF0YSBmb2xkZXIgLSBSZWFkICsgV3JpdGUgT0sfAgICZGQCBA8PFgYfAQUHU3VjY2Vzcx8ABSNabm9kZSBTdG9yZWZyb250IEVudGVycHJpc2UgRWRpdGlvbh8CAgJkZAIFDw8WBh8ABREgU01UUCBTZXR0aW5ncyBPSx8BBQdTdWNjZXNzHwICAmRkAggPDxYCHgdWaXNpYmxlZ2RkAgkPDxYCHwNnZGQCCg8PFgIfA2dkZGRsUyQ0zOkPFyraJwAocWAn98rhdg==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B6CBFA03" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLh8vr7BgKnwpSECgK6m5P9A90JYj0PDRqtVLkUGk8uXsk9rzwL" />
+        <div align="left" style=" font-family:Arial; text-align:left;" id="Container">
+            <h1>Znode Storefront Diagnostics - v5.3.0</h1>
+            <div>
+                Here are the results of diagnostic tests that were run on your storefront installation
+            </div>  
+            <hr />     
+             <span id="BaseVersionLabel"> Base Version: v5.2.0</span>
+             
+             <p><b>Database Status</b> - <span id="lblDatabaseStatus" class="Success"> Database Connection OK</span></p>
+             <p><b>Folder Permission</b> - <span id="lblPublicPermissions" class="Success"> Data folder - Read + Write OK</span></p>             
+             <p><b>License Status</b> - <span id="lblLicenseStatus" class="Success">Znode Storefront Enterprise Edition</span></p>
+             <p><b>SMTP Status</b> - <span id="lblSMTPAccountStatus" class="Success"> SMTP Settings OK</span></p>
+             <hr />
+             
+            &nbsp;
+            <span id="lblCase">ZNode Support Case Number:</span><input name="CaseNumber" type="text" maxlength="6" id="CaseNumber" size="6" />
+            <input type="submit" name="btnEmailDiagnostics" value="Email Diagnostics to ZNode Support" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnEmailDiagnostics&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnEmailDiagnostics" />
+             <hr />
+        </div>
+    </form>
+</body>
+</html>
+
+
+  
+<div id="__asptrace">
+<style type="text/css">
+span.tracecontent b { color:white }
+span.tracecontent { background-color:white; color:black;font: 10pt verdana, arial; }
+span.tracecontent table { clear:left; font: 10pt verdana, arial; cellspacing:0; cellpadding:0; margin-bottom:25}
+span.tracecontent tr.subhead { background-color:#cccccc;}
+span.tracecontent th { padding:0,3,0,3 }
+span.tracecontent th.alt { background-color:black; color:white; padding:3,3,2,3; }
+span.tracecontent td { color: black; padding:0,3,0,3; text-align: left }
+span.tracecontent td.err { color: red; }
+span.tracecontent tr.alt { background-color:#eeeeee }
+span.tracecontent h1 { font: 24pt verdana, arial; margin:0,0,0,0}
+span.tracecontent h2 { font: 18pt verdana, arial; margin:0,0,0,0}
+span.tracecontent h3 { font: 12pt verdana, arial; margin:0,0,0,0}
+span.tracecontent th a { color:darkblue; font: 8pt verdana, arial; }
+span.tracecontent a { color:darkblue;text-decoration:none }
+span.tracecontent a:hover { color:darkblue;text-decoration:underline; }
+span.tracecontent div.outer { width:90%; margin:15,15,15,15}
+span.tracecontent table.viewmenu td { background-color:#006699; color:white; padding:0,5,0,5; }
+span.tracecontent table.viewmenu td.end { padding:0,0,0,0; }
+span.tracecontent table.viewmenu a {color:white; font: 8pt verdana, arial; }
+span.tracecontent table.viewmenu a:hover {color:white; font: 8pt verdana, arial; }
+span.tracecontent a.tinylink {color:darkblue; background-color:black; font: 8pt verdana, arial;text-decoration:underline;}
+span.tracecontent a.link {color:darkblue; text-decoration:underline;}
+span.tracecontent div.buffer {padding-top:7; padding-bottom:17;}
+span.tracecontent .small { font: 8pt verdana, arial }
+span.tracecontent table td { padding-right:20 }
+span.tracecontent table td.nopad { padding-right:5 }
+</style>
+<span class="tracecontent">
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Request Details</b></h3></th>
+	</tr><tr align="left">
+		<th>Session Id:</th><td>5btik2453wkhutjkusnqubup</td><th>Request Type:</th><td>GET</td>
+	</tr><tr align="left">
+		<th>Time of Request:</th><td>6/16/2017 2:37:57 AM</td><th>Status Code:</th><td>200</td>
+	</tr><tr align="left">
+		<th>Request Encoding:</th><td>Unicode (UTF-8)</td><th>Response Encoding:</th><td>Unicode (UTF-8)</td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Trace Information</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Category</th><th>Message</th><th>From First(s)</th><th>From Last(s)</th>
+	</tr><tr>
+		<td>aspx.page</td><td>End Load</td><td></td><td></td>
+	</tr><tr class="alt">
+		<td>aspx.page</td><td>Begin LoadComplete</td><td>2.31873045317212E-05</td><td>0.000023</td>
+	</tr><tr>
+		<td>aspx.page</td><td>End LoadComplete</td><td>4.99365142776526E-05</td><td>0.000027</td>
+	</tr><tr class="alt">
+		<td>aspx.page</td><td>Begin PreRender</td><td>6.97015961525836E-05</td><td>0.000020</td>
+	</tr><tr>
+		<td>aspx.page</td><td>End PreRender</td><td>0.000154977797457498</td><td>0.000085</td>
+	</tr><tr class="alt">
+		<td>aspx.page</td><td>Begin PreRenderComplete</td><td>0.000178444467104059</td><td>0.000023</td>
+	</tr><tr>
+		<td>aspx.page</td><td>End PreRenderComplete</td><td>0.00019744129491318</td><td>0.000019</td>
+	</tr><tr class="alt">
+		<td>aspx.page</td><td>Begin SaveState</td><td>0.000787879465127551</td><td>0.000590</td>
+	</tr><tr>
+		<td>aspx.page</td><td>End SaveState</td><td>0.000937409642845669</td><td>0.000150</td>
+	</tr><tr class="alt">
+		<td>aspx.page</td><td>Begin SaveStateComplete</td><td>0.00096220329678772</td><td>0.000025</td>
+	</tr><tr>
+		<td>aspx.page</td><td>End SaveStateComplete</td><td>0.000984552505974921</td><td>0.000022</td>
+	</tr><tr class="alt">
+		<td>aspx.page</td><td>Begin Render</td><td>0.00100313028611178</td><td>0.000019</td>
+	</tr><tr>
+		<td>aspx.page</td><td>End Render</td><td>0.00298780990321396</td><td>0.001985</td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="5"><h3><b>Control Tree</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Control UniqueID</th><th>Type</th><th>Render Size Bytes (including children)</th><th>ViewState Size Bytes (excluding children)</th><th>ControlState Size Bytes (excluding children)</th>
+	</tr><tr>
+		<td><nobr>__Page</td><td>ASP.diagnostics_aspx</td><td>2879</td><td>0</td><td>0</td>
+	</tr><tr class="alt">
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;ctl01</td><td>System.Web.UI.ResourceBasedLiteralControl</td><td>518</td><td>0</td><td>0</td>
+	</tr><tr>
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;form1</td><td>System.Web.UI.HtmlControls.HtmlForm</td><td>2333</td><td>0</td><td>0</td>
+	</tr><tr class="alt">
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BaseVersionLabel</td><td>System.Web.UI.WebControls.Label</td><td>56</td><td>48</td><td>0</td>
+	</tr><tr>
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VersionDetails</td><td>System.Web.UI.WebControls.DataList</td><td>0</td><td>12</td><td>0</td>
+	</tr><tr class="alt">
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lblDatabaseStatus</td><td>System.Web.UI.WebControls.Label</td><td>75</td><td>88</td><td>0</td>
+	</tr><tr>
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lblPublicPermissions</td><td>System.Web.UI.WebControls.Label</td><td>85</td><td>96</td><td>0</td>
+	</tr><tr class="alt">
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lblLicenseStatus</td><td>System.Web.UI.WebControls.Label</td><td>86</td><td>104</td><td>0</td>
+	</tr><tr>
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lblSMTPAccountStatus</td><td>System.Web.UI.WebControls.Label</td><td>72</td><td>80</td><td>0</td>
+	</tr><tr class="alt">
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PnlExceptionSummary</td><td>System.Web.UI.WebControls.Panel</td><td>0</td><td>0</td><td>0</td>
+	</tr><tr>
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctl02</td><td>System.Web.UI.LiteralControl</td><td>0</td><td>0</td><td>0</td>
+	</tr><tr class="alt">
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lblMsg</td><td>System.Web.UI.WebControls.Literal</td><td>0</td><td>0</td><td>0</td>
+	</tr><tr>
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctl03</td><td>System.Web.UI.LiteralControl</td><td>0</td><td>0</td><td>0</td>
+	</tr><tr class="alt">
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctl00</td><td>System.Web.UI.WebControls.RequiredFieldValidator</td><td>6</td><td>0</td><td>0</td>
+	</tr><tr>
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lblCase</td><td>System.Web.UI.WebControls.Label</td><td>52</td><td>24</td><td>0</td>
+	</tr><tr class="alt">
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CaseNumber</td><td>System.Web.UI.WebControls.TextBox</td><td>78</td><td>24</td><td>0</td>
+	</tr><tr>
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btnEmailDiagnostics</td><td>System.Web.UI.WebControls.Button</td><td>293</td><td>24</td><td>0</td>
+	</tr><tr class="alt">
+		<td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;ctl04</td><td>System.Web.UI.LiteralControl</td><td>28</td><td>0</td><td>0</td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Session State</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Session Key</th><th>Type</th><th>Value</th>
+	</tr><tr>
+		<td>ProfileCache</td><td>ZNode.Libraries.DataAccess.Entities.Profile</td><td>ZNode.Libraries.DataAccess.Entities.Profile
+-&nbsp;ProfileID:&nbsp;5
+-&nbsp;PortalID:&nbsp;1
+-&nbsp;DefaultExternalAccountNo:&nbsp;
+-&nbsp;Name:&nbsp;Anonymous
+-&nbsp;IsDefault:&nbsp;False
+-&nbsp;IsAnonymous:&nbsp;True
+-&nbsp;UseWholesalePricing:&nbsp;False
+-&nbsp;EmailList:&nbsp;
+-&nbsp;TaxExempt:&nbsp;False
+-&nbsp;TaxClassID:&nbsp;
+-&nbsp;ShowPricing:&nbsp;True
+-&nbsp;ShowOnPartnerSignup:&nbsp;False
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+</td>
+	</tr><tr class="alt">
+		<td>ZnodeStorefrontRefererDomain</td><td>System.String</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>ZnodeStorefrontRefererQuery</td><td>System.String</td><td>&nbsp;</td>
+	</tr><tr class="alt">
+		<td>ZnodeStorefrontAffiliateId</td><td>System.String</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>ZnodeStorefrontCampaignSource</td><td>System.String</td><td>&nbsp;</td>
+	</tr><tr class="alt">
+		<td>ZnodeStorefrontCampaignId</td><td>System.String</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>ZnodeStorefrontCampaignKeyword</td><td>System.String</td><td>&nbsp;</td>
+	</tr><tr class="alt">
+		<td>ZnodeStorefrontTrackingCustom1</td><td>System.String</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>ZnodeStorefrontTrackingCustom2</td><td>System.String</td><td>&nbsp;</td>
+	</tr><tr class="alt">
+		<td>ZnodeStorefrontTrackingCustom3</td><td>System.String</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>ZnodeStorefrontTrackingId</td><td>System.String</td><td>&nbsp;</td>
+	</tr><tr class="alt">
+		<td>LoggedOut</td><td>System.Boolean</td><td>False</td>
+	</tr><tr>
+		<td>ShoppingCart</td><td>ZNode.Libraries.ECommerce.ShoppingCart.ZNodeShoppingCart</td><td>ZNode.Libraries.ECommerce.ShoppingCart.ZNodeShoppingCart</td>
+	</tr><tr class="alt">
+		<td>DisplayOrder</td><td>System.String</td><td>348</td>
+	</tr><tr>
+		<td>ProductViewedList</td><td>ZNode.Libraries.ECommerce.Catalog.ZNodeProductList</td><td>ZNode.Libraries.ECommerce.Catalog.ZNodeProductList</td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Application State</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Application Key</th><th>Type</th><th>Value</th>
+	</tr><tr>
+		<td>SiteConfig</td><td>ZNode.Libraries.DataAccess.Entities.Portal</td><td>ZNode.Libraries.DataAccess.Entities.Portal
+-&nbsp;PortalID:&nbsp;1
+-&nbsp;DomainName:&nbsp;localhost
+-&nbsp;CompanyName:&nbsp;Assessment&nbsp;Technologies&nbsp;Institute
+-&nbsp;StoreName:&nbsp;ATI&nbsp;Store
+-&nbsp;LogoPath:&nbsp;~/data/default/content/logo.gif
+-&nbsp;UseSSL:&nbsp;True
+-&nbsp;AdminEmail:&nbsp;onlinestore@atitesting.com
+-&nbsp;SalesEmail:&nbsp;onlinestore@atitesting.com
+-&nbsp;CustomerServiceEmail:&nbsp;onlinestore@atitesting.com
+-&nbsp;SalesPhoneNumber:&nbsp;1.800.667.7531
+-&nbsp;CustomerServicePhoneNumber:&nbsp;1.800.667.7531
+-&nbsp;ImageNotAvailablePath:&nbsp;~/images/pics/noimage.gif
+-&nbsp;MaxCatalogDisplayColumns:&nbsp;3
+-&nbsp;MaxCatalogDisplayItems:&nbsp;12
+-&nbsp;MaxCatalogCategoryDisplayThumbnails:&nbsp;5
+-&nbsp;MaxCatalogItemSwatchWidth:&nbsp;20
+-&nbsp;MaxCatalogItemSmallWidth:&nbsp;145
+-&nbsp;MaxCatalogItemMediumWidth:&nbsp;150
+-&nbsp;MaxCatalogItemThumbnailWidth:&nbsp;50
+-&nbsp;MaxCatalogItemLargeWidth:&nbsp;150
+-&nbsp;MaxCatalogItemCrossSellWidth:&nbsp;97
+-&nbsp;ShowSwatchInCategory:&nbsp;False
+-&nbsp;ShowAlternateImageInCategory:&nbsp;False
+-&nbsp;ActiveInd:&nbsp;True
+-&nbsp;SMTPServer:&nbsp;mail.ascendlearning.com
+-&nbsp;SMTPUserName:&nbsp;icZ1z0zfF54=
+-&nbsp;SMTPPassword:&nbsp;icZ1z0zfF54=
+-&nbsp;SMTPPort:&nbsp;25
+-&nbsp;SiteWideBottomJavascript:&nbsp;&lt;!--&nbsp;Start&nbsp;of&nbsp;Async&nbsp;HubSpot&nbsp;Analytics&nbsp;Code&nbsp;--&gt;
+&nbsp;&nbsp;&lt;script&nbsp;type=&quot;text/javascript&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;(function(d,s,i,r)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(d.getElementById(i)){return;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new&nbsp;Date()/r)*r)+'/1270502.js';
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.parentNode.insertBefore(n,&nbsp;e);
+&nbsp;&nbsp;&nbsp;&nbsp;})(document,&quot;script&quot;,&quot;hs-analytics&quot;,300000);
+&nbsp;&nbsp;&lt;/script&gt;
+&lt;!--&nbsp;End&nbsp;of&nbsp;Async&nbsp;HubSpot&nbsp;Analytics&nbsp;Code&nbsp;--&gt;
+-&nbsp;SiteWideTopJavascript:&nbsp;&lt;script&nbsp;type=&quot;text/javascript&quot;&gt;
+
+&nbsp;&nbsp;var&nbsp;_gaq&nbsp;=&nbsp;_gaq&nbsp;||&nbsp;[];
+&nbsp;&nbsp;_gaq.push(['_setAccount',&nbsp;'UA-6539623-2']);
+&nbsp;&nbsp;_gaq.push(['_setAllowLinker',&nbsp;true]);
+&nbsp;&nbsp;_gaq.push(['_trackPageview']);
+
+&nbsp;&nbsp;(function()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;ga&nbsp;=&nbsp;document.createElement('script');&nbsp;ga.type&nbsp;=&nbsp;'text/javascript';&nbsp;ga.async&nbsp;=&nbsp;true;
+&nbsp;&nbsp;&nbsp;&nbsp;ga.src&nbsp;=&nbsp;('https:'&nbsp;==&nbsp;document.location.protocol&nbsp;?&nbsp;'https://ssl'&nbsp;:&nbsp;'http://www')&nbsp;+&nbsp;'.google-analytics.com/ga.js';
+&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;s&nbsp;=&nbsp;document.getElementsByTagName('script')[0];&nbsp;s.parentNode.insertBefore(ga,&nbsp;s);
+&nbsp;&nbsp;})();
+
+&lt;/script&gt;
+
+
+&lt;!--&nbsp;Google&nbsp;Tag&nbsp;Manager&nbsp;--&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new&nbsp;Date().getTime(),event:'gtm.js'});var&nbsp;f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NC2TRLQ');&lt;/script&gt;
+&lt;!--&nbsp;End&nbsp;Google&nbsp;Tag&nbsp;Manager&nbsp;--&gt;
+-&nbsp;OrderReceiptAffiliateJavascript:&nbsp;&lt;script&nbsp;type=&quot;text/javascript&quot;&gt;&nbsp;if&nbsp;(!window.mstag)&nbsp;mstag&nbsp;=&nbsp;{loadTag&nbsp;:&nbsp;function(){},time&nbsp;:&nbsp;(new&nbsp;Date()).getTime()};&lt;/script&gt;&nbsp;&lt;script&nbsp;id=&quot;mstag_tops&quot;&nbsp;type=&quot;text/javascript&quot;&nbsp;src=&quot;//flex.msn.com/mstag/site/07eef326-aa74-45fa-8812-4f12f52052a8/mstag.js&quot;&gt;&lt;/script&gt;&nbsp;&lt;script&nbsp;type=&quot;text/javascript&quot;&gt;&nbsp;mstag.loadTag(&quot;analytics&quot;,&nbsp;{dedup:&quot;1&quot;,domainId:&quot;3067103&quot;,type:&quot;1&quot;,revenue:&quot;&quot;,actionid:&quot;241338&quot;})&lt;/script&gt;&nbsp;&lt;noscript&gt;&nbsp;&lt;iframe&nbsp;src=&quot;//flex.msn.com/mstag/tag/07eef326-aa74-45fa-8812-4f12f52052a8/analytics.html?dedup=1&amp;domainId=3067103&amp;type=1&amp;revenue=&amp;actionid=241338&quot;&nbsp;frameborder=&quot;0&quot;&nbsp;scrolling=&quot;no&quot;&nbsp;width=&quot;1&quot;&nbsp;height=&quot;1&quot;&nbsp;style=&quot;visibility:hidden;display:none&quot;&gt;&nbsp;&lt;/iframe&gt;&nbsp;&lt;/noscript&gt;
+-&nbsp;SiteWideAnalyticsJavascript:&nbsp;
+-&nbsp;GoogleAnalyticsCode:&nbsp;
+-&nbsp;UPSUserName:&nbsp;icZ1z0zfF54=
+-&nbsp;UPSPassword:&nbsp;icZ1z0zfF54=
+-&nbsp;UPSKey:&nbsp;icZ1z0zfF54=
+-&nbsp;ShippingOriginZipCode:&nbsp;43016
+-&nbsp;Theme:&nbsp;Default
+-&nbsp;ShopByPriceMin:&nbsp;0
+-&nbsp;ShopByPriceMax:&nbsp;100
+-&nbsp;ShopByPriceIncrement:&nbsp;20
+-&nbsp;FedExAccountNumber:&nbsp;RM2/7anamDmerqFm0SST/w==
+-&nbsp;FedExMeterNumber:&nbsp;818BdffyyAJNHMJUJUdH/Q==
+-&nbsp;FedExProductionKey:&nbsp;gi+bP0zTd3p3tdfrY6OfPQxDYwLcJEbW
+-&nbsp;FedExSecurityCode:&nbsp;j0MImhOkGOSx4P7a8tWalApGdp1Z71Q5W2vJtAspBnI=
+-&nbsp;FedExCSPKey:&nbsp;vuB2Ui3CCpHkCs53
+-&nbsp;FedExCSPPassword:&nbsp;TAt234utxOFiJuJM2Yw0oL7sD
+-&nbsp;FedExClientProductId:&nbsp;KHHG
+-&nbsp;FedExClientProductVersion:&nbsp;3203
+-&nbsp;FedExDropoffType:&nbsp;REGULAR_PICKUP
+-&nbsp;FedExPackagingType:&nbsp;YOUR_PACKAGING
+-&nbsp;FedExUseDiscountRate:&nbsp;False
+-&nbsp;FedExAddInsurance:&nbsp;False
+-&nbsp;ShippingOriginAddress1:&nbsp;
+-&nbsp;ShippingOriginAddress2:&nbsp;
+-&nbsp;ShippingOriginCity:&nbsp;
+-&nbsp;ShippingOriginStateCode:&nbsp;OH
+-&nbsp;ShippingOriginCountryCode:&nbsp;US
+-&nbsp;ShippingOriginPhone:&nbsp;
+-&nbsp;CurrencyTypeID:&nbsp;107
+-&nbsp;WeightUnit:&nbsp;LBS
+-&nbsp;DimensionUnit:&nbsp;IN
+-&nbsp;EmailListLogin:&nbsp;
+-&nbsp;EmailListPassword:&nbsp;
+-&nbsp;EmailListDefaultList:&nbsp;
+-&nbsp;ShippingTaxable:&nbsp;False
+-&nbsp;DefaultOrderStateID:&nbsp;20
+-&nbsp;DefaultReviewStatus:&nbsp;A
+-&nbsp;InclusiveTax:&nbsp;False
+-&nbsp;SeoDefaultProductTitle:&nbsp;
+-&nbsp;SeoDefaultProductDescription:&nbsp;
+-&nbsp;SeoDefaultProductKeyword:&nbsp;
+-&nbsp;SeoDefaultCategoryTitle:&nbsp;
+-&nbsp;SeoDefaultCategoryDescription:&nbsp;
+-&nbsp;SeoDefaultCategoryKeyword:&nbsp;
+-&nbsp;SeoDefaultContentTitle:&nbsp;
+-&nbsp;SeoDefaultContentDescription:&nbsp;
+-&nbsp;SeoDefaultContentKeyword:&nbsp;
+-&nbsp;TimeZoneOffset:&nbsp;
+</td>
+	</tr><tr class="alt">
+		<td>CurrencyTypeCache</td><td>ZNode.Libraries.DataAccess.Entities.CurrencyType</td><td>ZNode.Libraries.DataAccess.Entities.CurrencyType
+-&nbsp;CurrencyTypeID:&nbsp;107
+-&nbsp;Name:&nbsp;en-US
+-&nbsp;Description:&nbsp;United&nbsp;States&nbsp;&nbsp;(US&nbsp;Dollar)
+-&nbsp;CurrencySuffix:&nbsp;
+</td>
+	</tr><tr>
+		<td>ZNODELICENSE</td><td>ZNode.Libraries.Framework.Business.ZNodeLicenseManager</td><td>ZNode.Libraries.Framework.Business.ZNodeLicenseManager</td>
+	</tr><tr class="alt">
+		<td>EnvironmentConfig</td><td>ZNode.Libraries.Framework.Business.ZNodeEnvironmentConfig</td><td>ZNode.Libraries.Framework.Business.ZNodeEnvironmentConfig</td>
+	</tr><tr>
+		<td>MessageConfig</td><td>ZNode.Libraries.Framework.Business.ZNodeMessageConfig</td><td>ZNode.Libraries.Framework.Business.ZNodeMessageConfig</td>
+	</tr><tr class="alt">
+		<td>PromotionCache</td><td>ZNode.Libraries.DataAccess.Entities.TList`1[ZNode.Libraries.DataAccess.Entities.Promotion]</td><td>TList`1&nbsp;Collection
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1860
+-&nbsp;Name:&nbsp;Test&nbsp;Coupon&nbsp;10percent&nbsp;off
+-&nbsp;Description:&nbsp;Test&nbsp;Coupon&nbsp;10percent&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1315
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;10.00
+-&nbsp;StartDate:&nbsp;11/06/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/06/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;10poffatitest
+-&nbsp;CouponQuantityAvailable:&nbsp;17
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;1
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1428
+-&nbsp;Name:&nbsp;Single&nbsp;Coupon&nbsp;Testing
+-&nbsp;Description:&nbsp;IT&nbsp;TESTINGzzzzz
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;909
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;04/13/2012&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/27/2019&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;619343-122751
+-&nbsp;CouponQuantityAvailable:&nbsp;22
+-&nbsp;PromotionMessage:&nbsp;IT&nbsp;TESTING&nbsp;SINGLE&nbsp;COUPON
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;1
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2193
+-&nbsp;Name:&nbsp;Test&nbsp;Coupon&nbsp;10percent&nbsp;off
+-&nbsp;Description:&nbsp;Test&nbsp;Coupon&nbsp;10percent&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1446
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;10.00
+-&nbsp;StartDate:&nbsp;11/06/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/06/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;10poffatitest
+-&nbsp;CouponQuantityAvailable:&nbsp;17
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;1
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2161
+-&nbsp;Name:&nbsp;Test&nbsp;Order&nbsp;-&nbsp;Skills&nbsp;Modules
+-&nbsp;Description:&nbsp;Test&nbsp;Order&nbsp;-&nbsp;Skills&nbsp;Modules
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1478
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;50.00
+-&nbsp;StartDate:&nbsp;08/31/2011&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;09/30/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;100TESTSKILL
+-&nbsp;CouponQuantityAvailable:&nbsp;1
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;25.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;1
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1772
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1775
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1760
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1004
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1758
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1004
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1759
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1004
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1848
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1003
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1849
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1003
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1774
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1776
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1773
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1757
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1004
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1780
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1778
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1756
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1004
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1755
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1004
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1777
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1761
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1004
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1779
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1754
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1004
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1762
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1004
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1850
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1003
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1118
+-&nbsp;Name:&nbsp;SKILLS&nbsp;MODULE&nbsp;INSTRUCTOR
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;909
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;12/29/2009&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2099&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;SK156INST
+-&nbsp;CouponQuantityAvailable:&nbsp;900
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1835
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1836
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1837
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1838
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1839
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1840
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1841
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1842
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1843
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1855
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1856
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1847
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1003
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1845
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1003
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1846
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1003
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1854
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1004
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1844
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1003
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1852
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1003
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1857
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1003
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1851
+-&nbsp;Name:&nbsp;Aurora&nbsp;Virtual&nbsp;ATI&nbsp;Coupon
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1003
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/20/2010&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AURORA2012
+-&nbsp;CouponQuantityAvailable:&nbsp;547
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;2
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2155
+-&nbsp;Name:&nbsp;Test&nbsp;Coupon
+-&nbsp;Description:&nbsp;10&nbsp;Percent&nbsp;Off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;10.00
+-&nbsp;StartDate:&nbsp;04/02/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2020&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;10OFFTODAY
+-&nbsp;CouponQuantityAvailable:&nbsp;9997
+-&nbsp;PromotionMessage:&nbsp;10&nbsp;PERCENT&nbsp;OFF&nbsp;ONLY&nbsp;FOR&nbsp;TODAY
+-&nbsp;OrderMinimum:&nbsp;10.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;3
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2200
+-&nbsp;Name:&nbsp;Abington&nbsp;Dixon&nbsp;SON&nbsp;-&nbsp;Virtual-ATI&nbsp;RN&nbsp;Existing&nbsp;User&nbsp;$60&nbsp;off
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;60.00
+-&nbsp;StartDate:&nbsp;06/01/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/01/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;ABATIRN275
+-&nbsp;CouponQuantityAvailable:&nbsp;24
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;300.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;11
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1498
+-&nbsp;Name:&nbsp;On-Demand&nbsp;100%&nbsp;off
+-&nbsp;Description:&nbsp;On-Demand&nbsp;100%&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1353
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;04/23/2012&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2022&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;400950-1242343
+-&nbsp;CouponQuantityAvailable:&nbsp;19141
+-&nbsp;PromotionMessage:&nbsp;100%&nbsp;off&nbsp;ATI&nbsp;Access&nbsp;RN-NCLEX&nbsp;Review
+-&nbsp;OrderMinimum:&nbsp;100.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;12
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2201
+-&nbsp;Name:&nbsp;Gaston&nbsp;College&nbsp;-&nbsp;Virtual-ATI&nbsp;RN&nbsp;Existing&nbsp;User&nbsp;$50&nbsp;off
+-&nbsp;Description:&nbsp;Gaston&nbsp;College&nbsp;-&nbsp;Virtual-ATI&nbsp;RN&nbsp;Existing&nbsp;User&nbsp;$50&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;85.00
+-&nbsp;StartDate:&nbsp;06/02/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/01/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;GASTVATIRN250
+-&nbsp;CouponQuantityAvailable:&nbsp;2
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;300.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;12
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1497
+-&nbsp;Name:&nbsp;On-Demand&nbsp;100p&nbsp;off
+-&nbsp;Description:&nbsp;On-Demand&nbsp;100p&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1353
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;04/22/2012&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;ACCATIONE
+-&nbsp;CouponQuantityAvailable:&nbsp;9918
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;100.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;12
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1522
+-&nbsp;Name:&nbsp;2012-2013&nbsp;CARP&nbsp;Semester&nbsp;Payments&nbsp;100%&nbsp;off
+-&nbsp;Description:&nbsp;2012-2013&nbsp;CARP&nbsp;Semester&nbsp;Payments&nbsp;100%&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;08/02/2012&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;240832-128216
+-&nbsp;CouponQuantityAvailable:&nbsp;11710
+-&nbsp;PromotionMessage:&nbsp;CARP&nbsp;Semester&nbsp;Payment
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;12
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2199
+-&nbsp;Name:&nbsp;Montgomery&nbsp;County&nbsp;Community&nbsp;College&nbsp;-&nbsp;Virtual-ATI&nbsp;RN&nbsp;Existing&nbsp;User&nbsp;$45&nbsp;off
+-&nbsp;Description:&nbsp;Montgomery&nbsp;County&nbsp;Community&nbsp;College&nbsp;-&nbsp;Virtual-ATI&nbsp;RN&nbsp;Existing&nbsp;User&nbsp;$45&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;45.00
+-&nbsp;StartDate:&nbsp;06/01/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/01/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;MCCCVATIRN290
+-&nbsp;CouponQuantityAvailable:&nbsp;21
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;300.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;12
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1671
+-&nbsp;Name:&nbsp;CARP&nbsp;Semester&nbsp;Payments&nbsp;-&nbsp;100%&nbsp;Off&nbsp;(2013&nbsp;-&nbsp;2015)&nbsp;B
+-&nbsp;Description:&nbsp;CARP&nbsp;Semester&nbsp;Payments&nbsp;-&nbsp;100%&nbsp;Off&nbsp;(2013&nbsp;-&nbsp;2015)&nbsp;B
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1040
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;06/06/2013&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;948433-13662
+-&nbsp;CouponQuantityAvailable:&nbsp;6000
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;13
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1670
+-&nbsp;Name:&nbsp;CARP&nbsp;Semester&nbsp;Payments&nbsp;-&nbsp;100%&nbsp;Off&nbsp;(2013&nbsp;-&nbsp;2015)
+-&nbsp;Description:&nbsp;Test
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;06/06/2013&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;781742-13660
+-&nbsp;CouponQuantityAvailable:&nbsp;8000
+-&nbsp;PromotionMessage:&nbsp;Semester&nbsp;Payment
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;13
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1882
+-&nbsp;Name:&nbsp;Wright&nbsp;State&nbsp;U&nbsp;-&nbsp;Nurses&nbsp;Touch&nbsp;-&nbsp;Bookstore
+-&nbsp;Description:&nbsp;Wright&nbsp;State&nbsp;U&nbsp;-&nbsp;Nurses&nbsp;Touch&nbsp;-&nbsp;Bookstore
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1243
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/13/2015&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;720728-1511323
+-&nbsp;CouponQuantityAvailable:&nbsp;220
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;13
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1675
+-&nbsp;Name:&nbsp;100%&nbsp;off&nbsp;ATI&nbsp;Access&nbsp;-&nbsp;Jan&nbsp;2014
+-&nbsp;Description:&nbsp;100%&nbsp;off&nbsp;ATI&nbsp;Access&nbsp;-&nbsp;Jan&nbsp;2014
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1353
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;06/28/2013&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/02/2030&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;368022-136288
+-&nbsp;CouponQuantityAvailable:&nbsp;117365
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;13
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1799
+-&nbsp;Name:&nbsp;Live&nbsp;Review&nbsp;for&nbsp;$75&nbsp;-&nbsp;LIVERN
+-&nbsp;Description:&nbsp;Live&nbsp;Review&nbsp;for&nbsp;$75&nbsp;-&nbsp;LIVERN
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;260.00
+-&nbsp;StartDate:&nbsp;07/22/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2020&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;05395-147242
+-&nbsp;CouponQuantityAvailable:&nbsp;161
+-&nbsp;PromotionMessage:&nbsp;$224&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;OrderMinimum:&nbsp;220.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1802
+-&nbsp;Name:&nbsp;Virtual&nbsp;ATI&nbsp;for&nbsp;$75&nbsp;-&nbsp;REPUPN
+-&nbsp;Description:&nbsp;Virtual&nbsp;ATI&nbsp;for&nbsp;$75&nbsp;-&nbsp;REPUPN
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1321
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;205.00
+-&nbsp;StartDate:&nbsp;07/22/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2020&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;98025-1472414
+-&nbsp;CouponQuantityAvailable:&nbsp;2058
+-&nbsp;PromotionMessage:&nbsp;$185&nbsp;off&nbsp;Virtual-ATI
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1800
+-&nbsp;Name:&nbsp;Live&nbsp;Review&nbsp;for&nbsp;$75&nbsp;-&nbsp;LIVEPN
+-&nbsp;Description:&nbsp;Live&nbsp;Review&nbsp;for&nbsp;$75&nbsp;-&nbsp;LIVEPN
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1321
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;205.00
+-&nbsp;StartDate:&nbsp;07/22/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2020&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;108341-147244
+-&nbsp;CouponQuantityAvailable:&nbsp;253
+-&nbsp;PromotionMessage:&nbsp;$185&nbsp;off
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1824
+-&nbsp;Name:&nbsp;PN&nbsp;Capstone&nbsp;Review&nbsp;$125&nbsp;off
+-&nbsp;Description:&nbsp;PN&nbsp;Capstone&nbsp;Review&nbsp;$125&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1476
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;125.00
+-&nbsp;StartDate:&nbsp;09/18/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;10/18/2022&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;408349-149183
+-&nbsp;CouponQuantityAvailable:&nbsp;499
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1826
+-&nbsp;Name:&nbsp;RN&nbsp;Capstone&nbsp;Review&nbsp;$124&nbsp;off
+-&nbsp;Description:&nbsp;RN&nbsp;Capstone&nbsp;Review&nbsp;$124&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1388
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;124.00
+-&nbsp;StartDate:&nbsp;09/18/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2022&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;688528-149187
+-&nbsp;CouponQuantityAvailable:&nbsp;500
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1827
+-&nbsp;Name:&nbsp;RN&nbsp;Capstone&nbsp;-&nbsp;$130&nbsp;off
+-&nbsp;Description:&nbsp;RN&nbsp;Capstone&nbsp;-&nbsp;$130&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1388
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;150.00
+-&nbsp;StartDate:&nbsp;09/24/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2022&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;387946-1492424
+-&nbsp;CouponQuantityAvailable:&nbsp;480
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1863
+-&nbsp;Name:&nbsp;Test&nbsp;Coupon&nbsp;$10&nbsp;off&nbsp;product&nbsp;Single&nbsp;Use
+-&nbsp;Description:&nbsp;Test&nbsp;Coupon&nbsp;$10&nbsp;off&nbsp;product&nbsp;Single&nbsp;Use
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1314
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;10.00
+-&nbsp;StartDate:&nbsp;11/06/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/06/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;947122-1411636
+-&nbsp;CouponQuantityAvailable:&nbsp;20
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1874
+-&nbsp;Name:&nbsp;Virtual&nbsp;ATI&nbsp;-&nbsp;Year&nbsp;End&nbsp;$75&nbsp;off&nbsp;-&nbsp;New&nbsp;User
+-&nbsp;Description:&nbsp;Virtual&nbsp;ATI&nbsp;-&nbsp;Year&nbsp;End&nbsp;$75&nbsp;off&nbsp;-&nbsp;New&nbsp;User
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1318
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;75.00
+-&nbsp;StartDate:&nbsp;12/16/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;75VATINEW2014
+-&nbsp;CouponQuantityAvailable:&nbsp;4994
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;275.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1875
+-&nbsp;Name:&nbsp;Virtual&nbsp;ATI&nbsp;-&nbsp;Year&nbsp;End&nbsp;$75&nbsp;off&nbsp;-&nbsp;New&nbsp;User
+-&nbsp;Description:&nbsp;Virtual&nbsp;ATI&nbsp;-&nbsp;Year&nbsp;End&nbsp;$75&nbsp;off&nbsp;-&nbsp;New&nbsp;User
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;75.00
+-&nbsp;StartDate:&nbsp;12/16/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;75VATINEW2014
+-&nbsp;CouponQuantityAvailable:&nbsp;4994
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;275.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1801
+-&nbsp;Name:&nbsp;Virtual&nbsp;ATI&nbsp;for&nbsp;$75&nbsp;-&nbsp;REPURN
+-&nbsp;Description:&nbsp;Virtual&nbsp;ATI&nbsp;for&nbsp;$75&nbsp;-&nbsp;REPURN
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;260.00
+-&nbsp;StartDate:&nbsp;07/22/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2020&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;155649-1472411
+-&nbsp;CouponQuantityAvailable:&nbsp;6318
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;300.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1794
+-&nbsp;Name:&nbsp;Virtual-ATI&nbsp;RN/PN&nbsp;Existing&nbsp;User&nbsp;-&nbsp;$75&nbsp;off&nbsp;-&nbsp;1
+-&nbsp;Description:&nbsp;Virtual-ATI&nbsp;RN/PN&nbsp;Existing&nbsp;User&nbsp;-&nbsp;$75&nbsp;off&nbsp;-&nbsp;1
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;75.00
+-&nbsp;StartDate:&nbsp;07/21/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2020&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;772615-1472145
+-&nbsp;CouponQuantityAvailable:&nbsp;300
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1796
+-&nbsp;Name:&nbsp;Virtual-ATI&nbsp;RN/PN&nbsp;Existing&nbsp;User&nbsp;-&nbsp;$75&nbsp;off&nbsp;-&nbsp;2
+-&nbsp;Description:&nbsp;Virtual-ATI&nbsp;RN/PN&nbsp;Existing&nbsp;User&nbsp;-&nbsp;$75&nbsp;off&nbsp;-&nbsp;2
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1321
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;75.00
+-&nbsp;StartDate:&nbsp;07/21/2014&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2020&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;764148-1472147
+-&nbsp;CouponQuantityAvailable:&nbsp;300
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;14
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1966
+-&nbsp;Name:&nbsp;ATI&nbsp;TEAS&nbsp;Transcript&nbsp;-&nbsp;100%&nbsp;off
+-&nbsp;Description:&nbsp;ATI&nbsp;TEAS&nbsp;Transcript&nbsp;-&nbsp;100%&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;942
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;09/07/2015&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;10/03/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;TEASTRSCT
+-&nbsp;CouponQuantityAvailable:&nbsp;9089
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;15
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2053
+-&nbsp;Name:&nbsp;ATI&nbsp;TEAS&nbsp;Online&nbsp;Practice&nbsp;B&nbsp;-&nbsp;100%&nbsp;off&nbsp;-&nbsp;Testing
+-&nbsp;Description:&nbsp;ATI&nbsp;TEAS&nbsp;Online&nbsp;Practice&nbsp;B&nbsp;-&nbsp;100%&nbsp;off&nbsp;-&nbsp;Testing
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1489
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;06/15/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;2dwp40395
+-&nbsp;CouponQuantityAvailable:&nbsp;82
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;15
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1879
+-&nbsp;Name:&nbsp;CSU&nbsp;ACC&nbsp;&nbsp;Home&nbsp;Delivery&nbsp;(accelerated&nbsp;class)
+-&nbsp;Description:&nbsp;Cleveland&nbsp;State&nbsp;Home&nbsp;Delivery&nbsp;–&nbsp;Free&nbsp;Shipping
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1219
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/29/2015&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;CSUACC839
+-&nbsp;CouponQuantityAvailable:&nbsp;100
+-&nbsp;PromotionMessage:&nbsp;Cleveland&nbsp;State&nbsp;Home&nbsp;Delivery&nbsp;–&nbsp;Free&nbsp;Shipping
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;15
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1957
+-&nbsp;Name:&nbsp;Bookstore&nbsp;-&nbsp;100%&nbsp;off&nbsp;Live&nbsp;Review&nbsp;&amp;&nbsp;CARP&nbsp;(LIVERV)
+-&nbsp;Description:&nbsp;Bookstore&nbsp;-&nbsp;100%&nbsp;off&nbsp;Live&nbsp;Review&nbsp;&amp;&nbsp;CARP&nbsp;(LIVERV)
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;07/31/2015&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;902844-1573148
+-&nbsp;CouponQuantityAvailable:&nbsp;2000
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;15
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1946
+-&nbsp;Name:&nbsp;CARP&nbsp;Semester&nbsp;Payment&nbsp;-&nbsp;100%&nbsp;off&nbsp;-&nbsp;LA&nbsp;State&nbsp;U&nbsp;Alexandria
+-&nbsp;Description:&nbsp;CARP&nbsp;Semester&nbsp;Payment&nbsp;-&nbsp;100%&nbsp;off&nbsp;-&nbsp;LA&nbsp;State&nbsp;U&nbsp;Alexandria
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;06/27/2015&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;702023-1562734
+-&nbsp;CouponQuantityAvailable:&nbsp;700
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;15
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;1962
+-&nbsp;Name:&nbsp;Kim&nbsp;Pebley&nbsp;-&nbsp;100%&nbsp;off&nbsp;Semester&nbsp;Payments&nbsp;(KDP245)
+-&nbsp;Description:&nbsp;Kim&nbsp;Pebley&nbsp;-&nbsp;100%&nbsp;off&nbsp;Semester&nbsp;Payments&nbsp;(KDP245)
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;08/28/2015&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2020&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;95406-1582837
+-&nbsp;CouponQuantityAvailable:&nbsp;3000
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;15
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2076
+-&nbsp;Name:&nbsp;CSU&nbsp;ACC&nbsp;&nbsp;Home&nbsp;Delivery&nbsp;(accelerated&nbsp;class)
+-&nbsp;Description:&nbsp;Cleveland&nbsp;State&nbsp;Home&nbsp;Delivery&nbsp;–&nbsp;Free&nbsp;Shipping
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1505
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;01/29/2015&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;CSUACC839
+-&nbsp;CouponQuantityAvailable:&nbsp;100
+-&nbsp;PromotionMessage:&nbsp;Cleveland&nbsp;State&nbsp;Home&nbsp;Delivery&nbsp;–&nbsp;Free&nbsp;Shipping
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;15
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2054
+-&nbsp;Name:&nbsp;ATI&nbsp;TEAS&nbsp;Online&nbsp;Practice&nbsp;Assessment&nbsp;-&nbsp;100%&nbsp;off&nbsp;-&nbsp;Testing
+-&nbsp;Description:&nbsp;ATI&nbsp;TEAS&nbsp;Online&nbsp;Practice&nbsp;Assessment&nbsp;-&nbsp;100%&nbsp;off&nbsp;-&nbsp;Testing
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1494
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;06/15/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;494925!24
+-&nbsp;CouponQuantityAvailable:&nbsp;387
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2070
+-&nbsp;Name:&nbsp;Union&nbsp;University&nbsp;-&nbsp;$36&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User
+-&nbsp;Description:&nbsp;Union&nbsp;University&nbsp;-&nbsp;$36&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;36.00
+-&nbsp;StartDate:&nbsp;08/21/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;10/01/2019&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;UNIOUN36V
+-&nbsp;CouponQuantityAvailable:&nbsp;98
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2032
+-&nbsp;Name:&nbsp;2012-2013&nbsp;CARP&nbsp;Semester&nbsp;Payments&nbsp;100%&nbsp;off&nbsp;-&nbsp;CARPJT
+-&nbsp;Description:&nbsp;2012-2013&nbsp;CARP&nbsp;Semester&nbsp;Payments&nbsp;100%&nbsp;off&nbsp;-&nbsp;CARPJT
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;04/20/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;05/20/2025&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;07075-164202
+-&nbsp;CouponQuantityAvailable:&nbsp;10000
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2052
+-&nbsp;Name:&nbsp;ATI&nbsp;TEAS&nbsp;Online&nbsp;Practice&nbsp;A&nbsp;-&nbsp;100%&nbsp;off&nbsp;-&nbsp;Testing
+-&nbsp;Description:&nbsp;ATI&nbsp;TEAS&nbsp;Online&nbsp;Practice&nbsp;A&nbsp;-&nbsp;100%&nbsp;off&nbsp;-&nbsp;Testing
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1484
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;06/15/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;4294sQ1!20
+-&nbsp;CouponQuantityAvailable:&nbsp;389
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2066
+-&nbsp;Name:&nbsp;CAATRN&nbsp;-&nbsp;$260&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing=&nbsp;$75
+-&nbsp;Description:&nbsp;CAATRN&nbsp;-&nbsp;$260&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing=&nbsp;$75
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;260.00
+-&nbsp;StartDate:&nbsp;08/05/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;09/04/2022&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;369056-168540
+-&nbsp;CouponQuantityAvailable:&nbsp;10000
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2062
+-&nbsp;Name:&nbsp;AZ&nbsp;State&nbsp;U&nbsp;-&nbsp;$36&nbsp;off&nbsp;VATI&nbsp;RN
+-&nbsp;Description:&nbsp;AZ&nbsp;State&nbsp;U&nbsp;-&nbsp;$36&nbsp;off&nbsp;VATI&nbsp;RN
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;36.00
+-&nbsp;StartDate:&nbsp;07/21/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AZSTATE36
+-&nbsp;CouponQuantityAvailable:&nbsp;300
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2067
+-&nbsp;Name:&nbsp;CAATPN&nbsp;-&nbsp;$260&nbsp;off&nbsp;VATI&nbsp;PN&nbsp;Existing=&nbsp;$75
+-&nbsp;Description:&nbsp;CAATPN&nbsp;-&nbsp;$260&nbsp;off&nbsp;VATI&nbsp;PN&nbsp;Existing=&nbsp;$75
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1321
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;205.00
+-&nbsp;StartDate:&nbsp;08/05/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2022&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;285312-168548
+-&nbsp;CouponQuantityAvailable:&nbsp;10000
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2063
+-&nbsp;Name:&nbsp;CARP&nbsp;-&nbsp;100%&nbsp;off&nbsp;Bookstore&nbsp;Codes&nbsp;-&nbsp;7.25.2016
+-&nbsp;Description:&nbsp;CARP&nbsp;-&nbsp;100%&nbsp;off&nbsp;Bookstore&nbsp;Codes&nbsp;-&nbsp;7.25.2016
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;07/25/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2022&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;840759-1672546
+-&nbsp;CouponQuantityAvailable:&nbsp;9999
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2061
+-&nbsp;Name:&nbsp;Bookstore&nbsp;Payment&nbsp;Letters&nbsp;-&nbsp;100%&nbsp;off&nbsp;Order
+-&nbsp;Description:&nbsp;Bookstore&nbsp;Payment&nbsp;Letters&nbsp;-&nbsp;100%&nbsp;off&nbsp;Order
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;1
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;07/20/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;351031-1672035
+-&nbsp;CouponQuantityAvailable:&nbsp;3500
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2112
+-&nbsp;Name:&nbsp;Western&nbsp;Governors&nbsp;U&nbsp;-&nbsp;$295&nbsp;off
+-&nbsp;Description:&nbsp;Western&nbsp;Governors&nbsp;U&nbsp;-&nbsp;$295&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1505
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;11/17/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;11/30/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;WESTNGOVU295
+-&nbsp;CouponQuantityAvailable:&nbsp;99
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2197
+-&nbsp;Name:&nbsp;Harrisburg&nbsp;Area&nbsp;Communuity&nbsp;College&nbsp;-&nbsp;$71&nbsp;off&nbsp;Pharmacology&nbsp;3.0
+-&nbsp;Description:&nbsp;Harrisburg&nbsp;Area&nbsp;Communuity&nbsp;College&nbsp;-&nbsp;$17&nbsp;off&nbsp;Pharmacology&nbsp;2.0
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1439
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;71.00
+-&nbsp;StartDate:&nbsp;05/30/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;10/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;HARRISCC50
+-&nbsp;CouponQuantityAvailable:&nbsp;1
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2081
+-&nbsp;Name:&nbsp;Hartwick&nbsp;College&nbsp;-&nbsp;100%&nbsp;off&nbsp;Review&nbsp;Modules
+-&nbsp;Description:&nbsp;Hartwick&nbsp;College&nbsp;-&nbsp;100%&nbsp;off&nbsp;Review&nbsp;Modules
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1529
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;09/05/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;06/30/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;HARTWICKRNAT
+-&nbsp;CouponQuantityAvailable:&nbsp;788
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2102
+-&nbsp;Name:&nbsp;Military&nbsp;-&nbsp;Free&nbsp;TEAS&nbsp;Transcript
+-&nbsp;Description:&nbsp;Military&nbsp;-&nbsp;Free&nbsp;TEAS&nbsp;Transcript
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;942
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;11/10/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/10/2022&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;384239-16111028
+-&nbsp;CouponQuantityAvailable:&nbsp;968
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;0.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2055
+-&nbsp;Name:&nbsp;COPE&nbsp;Health&nbsp;Scholars&nbsp;-&nbsp;189&nbsp;off&nbsp;vati&nbsp;on&nbsp;new&nbsp;user
+-&nbsp;Description:&nbsp;COPE&nbsp;Health&nbsp;Scholars&nbsp;-&nbsp;189&nbsp;off&nbsp;vati&nbsp;on&nbsp;new&nbsp;user
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1318
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;215.00
+-&nbsp;StartDate:&nbsp;07/01/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;Cope189vt
+-&nbsp;CouponQuantityAvailable:&nbsp;200
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2056
+-&nbsp;Name:&nbsp;COPE&nbsp;Health&nbsp;Scholars&nbsp;-&nbsp;159&nbsp;off&nbsp;vati&nbsp;rn&nbsp;new&nbsp;user
+-&nbsp;Description:&nbsp;COPE&nbsp;Health&nbsp;Scholars&nbsp;-&nbsp;159&nbsp;off&nbsp;vati&nbsp;rn&nbsp;new&nbsp;user
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;185.00
+-&nbsp;StartDate:&nbsp;07/01/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;copeh159
+-&nbsp;CouponQuantityAvailable:&nbsp;200
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2108
+-&nbsp;Name:&nbsp;$75&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;/&nbsp;PN&nbsp;Existing&nbsp;User&nbsp;-&nbsp;Marketing
+-&nbsp;Description:&nbsp;$75&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;/&nbsp;PN&nbsp;Existing&nbsp;User&nbsp;-&nbsp;Marketing
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1321
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;75.00
+-&nbsp;StartDate:&nbsp;11/15/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;75VATEXT
+-&nbsp;CouponQuantityAvailable:&nbsp;2976
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2109
+-&nbsp;Name:&nbsp;$75&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;/&nbsp;PN&nbsp;Existing&nbsp;User&nbsp;-&nbsp;Marketing
+-&nbsp;Description:&nbsp;$75&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;/&nbsp;PN&nbsp;Existing&nbsp;User&nbsp;-&nbsp;Marketing
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;75.00
+-&nbsp;StartDate:&nbsp;11/15/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;01/01/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;75VATEXT
+-&nbsp;CouponQuantityAvailable:&nbsp;2976
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;16
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2133
+-&nbsp;Name:&nbsp;Marketing&nbsp;facebook&nbsp;TEAS&nbsp;Smartprep&nbsp;20%&nbsp;off
+-&nbsp;Description:&nbsp;Marketing&nbsp;facebook&nbsp;TEAS&nbsp;Smartprep&nbsp;20%&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1528
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;20.00
+-&nbsp;StartDate:&nbsp;02/13/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;SMARTPREP20
+-&nbsp;CouponQuantityAvailable:&nbsp;2902
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;100.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2130
+-&nbsp;Name:&nbsp;Arizona&nbsp;State&nbsp;University&nbsp;-&nbsp;$36&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing
+-&nbsp;Description:&nbsp;Arizona&nbsp;State&nbsp;University&nbsp;-&nbsp;$36&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;36.00
+-&nbsp;StartDate:&nbsp;02/07/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;ARZSU36VA
+-&nbsp;CouponQuantityAvailable:&nbsp;200
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2176
+-&nbsp;Name:&nbsp;Diman&nbsp;Regional&nbsp;SON&nbsp;-&nbsp;$49
+-&nbsp;Description:&nbsp;Diman&nbsp;Regional&nbsp;SON&nbsp;-&nbsp;$49
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1040
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;149.00
+-&nbsp;StartDate:&nbsp;04/27/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;06/29/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;DIMRELIVE49
+-&nbsp;CouponQuantityAvailable:&nbsp;5
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;49.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2080
+-&nbsp;Name:&nbsp;Rockland&nbsp;CC&nbsp;-&nbsp;100%&nbsp;off&nbsp;RN&nbsp;Review&nbsp;Modules
+-&nbsp;Description:&nbsp;Rockland&nbsp;CC&nbsp;-&nbsp;100%&nbsp;off&nbsp;RN&nbsp;Review&nbsp;Modules
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1530
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;09/05/2016&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;06/30/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;ROCKLDATRNM
+-&nbsp;CouponQuantityAvailable:&nbsp;627
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2148
+-&nbsp;Name:&nbsp;Quincy&nbsp;College&nbsp;-&nbsp;$224&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;Description:&nbsp;Quincy&nbsp;College&nbsp;-&nbsp;$224&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1040
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;224.00
+-&nbsp;StartDate:&nbsp;03/28/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/10/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;QUINCYC224LR
+-&nbsp;CouponQuantityAvailable:&nbsp;46
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2143
+-&nbsp;Name:&nbsp;Success&nbsp;Testing&nbsp;-&nbsp;$20&nbsp;off
+-&nbsp;Description:&nbsp;Success&nbsp;Testing&nbsp;-&nbsp;$20&nbsp;off
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1528
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;20.00
+-&nbsp;StartDate:&nbsp;03/06/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2018&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;TEASPTWTY
+-&nbsp;CouponQuantityAvailable:&nbsp;501
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;20.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2121
+-&nbsp;Name:&nbsp;U&nbsp;of&nbsp;NE&nbsp;Medical&nbsp;Center&nbsp;-&nbsp;$165&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing
+-&nbsp;Description:&nbsp;U&nbsp;of&nbsp;NE&nbsp;Medical&nbsp;Center&nbsp;-&nbsp;$165&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;165.00
+-&nbsp;StartDate:&nbsp;01/23/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/02/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;UONEMC165
+-&nbsp;CouponQuantityAvailable:&nbsp;7
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2158
+-&nbsp;Name:&nbsp;Quinnipiac&nbsp;University&nbsp;-&nbsp;$130&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User
+-&nbsp;Description:&nbsp;Quinnipiac&nbsp;University&nbsp;-&nbsp;$130&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;130.00
+-&nbsp;StartDate:&nbsp;04/05/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;09/01/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;QUNPCRN3T
+-&nbsp;CouponQuantityAvailable:&nbsp;31
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;1.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2163
+-&nbsp;Name:&nbsp;College&nbsp;of&nbsp;St&nbsp;Scholastica&nbsp;-&nbsp;$100&nbsp;off&nbsp;VATI
+-&nbsp;Description:&nbsp;College&nbsp;of&nbsp;St&nbsp;Scholastica&nbsp;-&nbsp;$100&nbsp;off&nbsp;VATI
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;04/07/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;06/30/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;COLSTSCVAT
+-&nbsp;CouponQuantityAvailable:&nbsp;50
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;100.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2160
+-&nbsp;Name:&nbsp;RN&nbsp;Live&nbsp;Review&nbsp;Participants&nbsp;-&nbsp;100%&nbsp;off&nbsp;Live&nbsp;Review&nbsp;Registration
+-&nbsp;Description:&nbsp;RN&nbsp;Live&nbsp;Review&nbsp;Participants&nbsp;-&nbsp;100%&nbsp;off&nbsp;Live&nbsp;Review&nbsp;Registration
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1353
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;02/24/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2019&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;164333-1722434
+-&nbsp;CouponQuantityAvailable:&nbsp;55208
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;100.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2159
+-&nbsp;Name:&nbsp;RN&nbsp;Live&nbsp;Review&nbsp;Participants&nbsp;-&nbsp;100%&nbsp;off&nbsp;Live&nbsp;Review&nbsp;Registration
+-&nbsp;Description:&nbsp;RN&nbsp;Live&nbsp;Review&nbsp;Participants&nbsp;-&nbsp;100%&nbsp;off&nbsp;Live&nbsp;Review&nbsp;Registration
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1353
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;100.00
+-&nbsp;StartDate:&nbsp;02/24/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2019&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;164333-1722434
+-&nbsp;CouponQuantityAvailable:&nbsp;55208
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;100.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2168
+-&nbsp;Name:&nbsp;U&nbsp;of&nbsp;Rio&nbsp;Grande&nbsp;-&nbsp;$300&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;New&nbsp;User
+-&nbsp;Description:&nbsp;U&nbsp;of&nbsp;Rio&nbsp;Grande&nbsp;-&nbsp;$300&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;New&nbsp;User
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1319
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;300.00
+-&nbsp;StartDate:&nbsp;04/20/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;06/30/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;UORIOG300
+-&nbsp;CouponQuantityAvailable:&nbsp;101
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;300.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2179
+-&nbsp;Name:&nbsp;Mt.&nbsp;Mercy&nbsp;University&nbsp;-&nbsp;$85&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User
+-&nbsp;Description:&nbsp;Mt.&nbsp;Mercy&nbsp;University&nbsp;-&nbsp;$85&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User`
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;85.00
+-&nbsp;StartDate:&nbsp;05/04/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;MTMRCY85
+-&nbsp;CouponQuantityAvailable:&nbsp;47
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2177
+-&nbsp;Name:&nbsp;VATI&nbsp;for&nbsp;one&nbsp;existing&nbsp;cohort&nbsp;at&nbsp;Complete&nbsp;client,&nbsp;Carroll&nbsp;U&nbsp;-&nbsp;$135&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User
+-&nbsp;Description:&nbsp;
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;135.00
+-&nbsp;StartDate:&nbsp;04/27/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;06/30/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;VATONE135
+-&nbsp;CouponQuantityAvailable:&nbsp;29
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2186
+-&nbsp;Name:&nbsp;Bluegrass&nbsp;PN&nbsp;Danville&nbsp;-&nbsp;$146&nbsp;off&nbsp;VATI&nbsp;PN&nbsp;New&nbsp;User
+-&nbsp;Description:&nbsp;Bluegrass&nbsp;PN&nbsp;Danville&nbsp;-&nbsp;$146&nbsp;off&nbsp;VATI&nbsp;PN&nbsp;New&nbsp;User
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1318
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;146.00
+-&nbsp;StartDate:&nbsp;05/11/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;06/30/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;BLUEGPN146
+-&nbsp;CouponQuantityAvailable:&nbsp;9
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2195
+-&nbsp;Name:&nbsp;Central&nbsp;CT&nbsp;State&nbsp;U&nbsp;-&nbsp;$84&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User
+-&nbsp;Description:&nbsp;Central&nbsp;CT&nbsp;State&nbsp;U&nbsp;-&nbsp;$84&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;84.00
+-&nbsp;StartDate:&nbsp;05/24/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;08/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;CENTRALVATI84
+-&nbsp;CouponQuantityAvailable:&nbsp;4
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2202
+-&nbsp;Name:&nbsp;Northampton&nbsp;CC&nbsp;LPN&nbsp;Bethlehem&nbsp;-&nbsp;$40&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;Description:&nbsp;Northampton&nbsp;CC&nbsp;LPN&nbsp;Bethlehem&nbsp;-&nbsp;$40&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1040
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;40.00
+-&nbsp;StartDate:&nbsp;06/07/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;08/16/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;NORTH40LR
+-&nbsp;CouponQuantityAvailable:&nbsp;81
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2185
+-&nbsp;Name:&nbsp;Bristol&nbsp;Plymouth&nbsp;-&nbsp;$49&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;Description:&nbsp;Bristol&nbsp;Plymouth&nbsp;-&nbsp;$49&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1040
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;49.00
+-&nbsp;StartDate:&nbsp;05/10/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/20/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;BRISTOL49LR
+-&nbsp;CouponQuantityAvailable:&nbsp;27
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2181
+-&nbsp;Name:&nbsp;Ambria&nbsp;School&nbsp;of&nbsp;Nursing&nbsp;PN&nbsp;-&nbsp;$140&nbsp;off&nbsp;VATI&nbsp;PN&nbsp;Existing
+-&nbsp;Description:&nbsp;Ambria&nbsp;School&nbsp;of&nbsp;Nursing&nbsp;PN&nbsp;-&nbsp;$140&nbsp;off&nbsp;VATI&nbsp;PN&nbsp;Existing
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1321
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;140.00
+-&nbsp;StartDate:&nbsp;05/04/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;08/28/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;AMBSCNPN140
+-&nbsp;CouponQuantityAvailable:&nbsp;51
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2189
+-&nbsp;Name:&nbsp;Greater&nbsp;Lowell&nbsp;Tech&nbsp;School&nbsp;PN&nbsp;-&nbsp;$175&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;Description:&nbsp;Greater&nbsp;Lowell&nbsp;Tech&nbsp;School&nbsp;PN&nbsp;-&nbsp;$175&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1040
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;175.00
+-&nbsp;StartDate:&nbsp;05/15/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;06/28/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;GRELOWT175
+-&nbsp;CouponQuantityAvailable:&nbsp;2
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2183
+-&nbsp;Name:&nbsp;Robeson&nbsp;CC&nbsp;-&nbsp;$150&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing
+-&nbsp;Description:&nbsp;Robeson&nbsp;CC&nbsp;-&nbsp;$150&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;150.00
+-&nbsp;StartDate:&nbsp;05/04/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/01/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;ROBCC150V
+-&nbsp;CouponQuantityAvailable:&nbsp;11
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2180
+-&nbsp;Name:&nbsp;St.&nbsp;Xavier&nbsp;University&nbsp;-&nbsp;$85&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing
+-&nbsp;Description:&nbsp;St.&nbsp;Xavier&nbsp;University&nbsp;-&nbsp;$85&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;85.00
+-&nbsp;StartDate:&nbsp;05/04/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;STXAVU85V
+-&nbsp;CouponQuantityAvailable:&nbsp;97
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2139
+-&nbsp;Name:&nbsp;University&nbsp;of&nbsp;Iowa&nbsp;-&nbsp;$235&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;USer
+-&nbsp;Description:&nbsp;University&nbsp;of&nbsp;Iowa&nbsp;-&nbsp;$235&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;USer
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;235.00
+-&nbsp;StartDate:&nbsp;02/24/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;06/30/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;UNIOWA235
+-&nbsp;CouponQuantityAvailable:&nbsp;46
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;100.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2134
+-&nbsp;Name:&nbsp;Fairfield&nbsp;University&nbsp;-&nbsp;$50&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User
+-&nbsp;Description:&nbsp;Fairfield&nbsp;University&nbsp;-&nbsp;$50&nbsp;off&nbsp;VATI&nbsp;RN&nbsp;Existing&nbsp;User
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1320
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;50.00
+-&nbsp;StartDate:&nbsp;02/14/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;09/01/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;FAIRFIELDU5T
+-&nbsp;CouponQuantityAvailable:&nbsp;4
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2194
+-&nbsp;Name:&nbsp;Marion&nbsp;Technical&nbsp;College&nbsp;-&nbsp;25%&nbsp;off&nbsp;VATI&nbsp;PN&nbsp;Existing&nbsp;User
+-&nbsp;Description:&nbsp;Marion&nbsp;Technical&nbsp;College&nbsp;-&nbsp;25%&nbsp;off&nbsp;VATI&nbsp;PN&nbsp;Existing&nbsp;User
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1321
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;2
+-&nbsp;Discount:&nbsp;25.00
+-&nbsp;StartDate:&nbsp;06/01/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;12/31/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;MARION25VATI
+-&nbsp;CouponQuantityAvailable:&nbsp;7
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2203
+-&nbsp;Name:&nbsp;Holyoke&nbsp;CC&nbsp;-&nbsp;$16&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;Description:&nbsp;Holyoke&nbsp;CC&nbsp;-&nbsp;$16&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1040
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;16.00
+-&nbsp;StartDate:&nbsp;06/07/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/28/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;HOLYOKE16LR
+-&nbsp;CouponQuantityAvailable:&nbsp;29
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2190
+-&nbsp;Name:&nbsp;Bristol&nbsp;Plymouth&nbsp;Regional&nbsp;Vo&nbsp;Tech&nbsp;-&nbsp;$49&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;Description:&nbsp;Bristol&nbsp;Plymouth&nbsp;Regional&nbsp;Vo&nbsp;Tech&nbsp;-&nbsp;$49&nbsp;off&nbsp;Live&nbsp;Review
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1040
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;49.00
+-&nbsp;StartDate:&nbsp;05/16/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/01/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;BRISTOLPL49
+-&nbsp;CouponQuantityAvailable:&nbsp;75
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;200.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+ZNode.Libraries.DataAccess.Entities.Promotion
+-&nbsp;PromotionID:&nbsp;2191
+-&nbsp;Name:&nbsp;Cape&nbsp;May&nbsp;County&nbsp;Technical&nbsp;School&nbsp;-&nbsp;$189&nbsp;off&nbsp;TEAS&nbsp;SmartPrep
+-&nbsp;Description:&nbsp;Cape&nbsp;May&nbsp;County&nbsp;Technical&nbsp;School&nbsp;-&nbsp;$189&nbsp;off&nbsp;TEAS&nbsp;SmartPrep
+-&nbsp;ProfileID:&nbsp;
+-&nbsp;AccountID:&nbsp;
+-&nbsp;ProductID:&nbsp;1528
+-&nbsp;AddOnValueID:&nbsp;
+-&nbsp;SKUID:&nbsp;
+-&nbsp;DiscountTypeID:&nbsp;6
+-&nbsp;Discount:&nbsp;20.00
+-&nbsp;StartDate:&nbsp;05/22/2017&nbsp;00:00:00
+-&nbsp;EndDate:&nbsp;07/01/2017&nbsp;00:00:00
+-&nbsp;CouponInd:&nbsp;True
+-&nbsp;CouponCode:&nbsp;CAPEMAY189
+-&nbsp;CouponQuantityAvailable:&nbsp;15
+-&nbsp;PromotionMessage:&nbsp;
+-&nbsp;OrderMinimum:&nbsp;100.0000
+-&nbsp;QuantityMinimum:&nbsp;1
+-&nbsp;PromotionProductQty:&nbsp;
+-&nbsp;PromotionProductID:&nbsp;
+-&nbsp;DisplayOrder:&nbsp;17
+-&nbsp;Custom1:&nbsp;
+-&nbsp;Custom2:&nbsp;
+-&nbsp;Custom3:&nbsp;
+
+</td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Request Cookies Collection</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Name</th><th>Value</th><th>Size</th>
+	</tr><tr>
+		<td>ASP.NET_SessionId</td><td>5btik2453wkhutjkusnqubup</td><td>42</td>
+	</tr><tr class="alt">
+		<td>NSC_xxx.bujuftujoh.dpn-iuuqt-wtsw</td><td>ffffffff09a81d5745525d5f4f58455e445a4a42378b</td><td>78</td>
+	</tr><tr>
+		<td>NSC_xxx.bujuftujoh.dpn-iuuq-wtsw</td><td>ffffffff09a81d4145525d5f4f58455e445a4a423660</td><td>77</td>
+	</tr><tr class="alt">
+		<td>referer_domain</td><td>&nbsp;</td><td>15</td>
+	</tr><tr>
+		<td>referer_query</td><td>&nbsp;</td><td>14</td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Response Cookies Collection</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Name</th><th>Value</th><th>Size</th>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Headers Collection</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Name</th><th>Value</th>
+	</tr><tr>
+		<td>Accept-Charset</td><td>utf-8</td>
+	</tr><tr class="alt">
+		<td>Accept-Encoding</td><td>gzip,deflate</td>
+	</tr><tr>
+		<td>Cookie</td><td>ASP.NET_SessionId=5btik2453wkhutjkusnqubup;&nbsp;NSC_xxx.bujuftujoh.dpn-iuuqt-wtsw=ffffffff09a81d5745525d5f4f58455e445a4a42378b;&nbsp;NSC_xxx.bujuftujoh.dpn-iuuq-wtsw=ffffffff09a81d4145525d5f4f58455e445a4a423660;&nbsp;referer_domain=;&nbsp;referer_query=</td>
+	</tr><tr class="alt">
+		<td>Host</td><td>www.atitesting.com</td>
+	</tr><tr>
+		<td>User-Agent</td><td>CyotekWebCopy/1.0&nbsp;CyotekHTTP/2.0</td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Response Headers Collection</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Name</th><th>Value</th>
+	</tr><tr>
+		<td>X-AspNet-Version</td><td>2.0.50727</td>
+	</tr><tr class="alt">
+		<td>Cache-Control</td><td>private</td>
+	</tr><tr>
+		<td>Content-Type</td><td>text/html</td>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Form Collection</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Name</th><th>Value</th>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Querystring Collection</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Name</th><th>Value</th>
+	</tr>
+</table><table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<th class="alt" align="left" colspan="10"><h3><b>Server Variables</b></h3></th>
+	</tr><tr class="subhead" align="left">
+		<th>Name</th><th>Value</th>
+	</tr><tr>
+		<td>ALL_HTTP</td><td>HTTP_ACCEPT_CHARSET:utf-8
+HTTP_ACCEPT_ENCODING:gzip,deflate
+HTTP_COOKIE:ASP.NET_SessionId=5btik2453wkhutjkusnqubup;&nbsp;NSC_xxx.bujuftujoh.dpn-iuuqt-wtsw=ffffffff09a81d5745525d5f4f58455e445a4a42378b;&nbsp;NSC_xxx.bujuftujoh.dpn-iuuq-wtsw=ffffffff09a81d4145525d5f4f58455e445a4a423660;&nbsp;referer_domain=;&nbsp;referer_query=
+HTTP_HOST:www.atitesting.com
+HTTP_USER_AGENT:CyotekWebCopy/1.0&nbsp;CyotekHTTP/2.0
+</td>
+	</tr><tr class="alt">
+		<td>ALL_RAW</td><td>Accept-Charset:&nbsp;utf-8
+Accept-Encoding:&nbsp;gzip,deflate
+Cookie:&nbsp;ASP.NET_SessionId=5btik2453wkhutjkusnqubup;&nbsp;NSC_xxx.bujuftujoh.dpn-iuuqt-wtsw=ffffffff09a81d5745525d5f4f58455e445a4a42378b;&nbsp;NSC_xxx.bujuftujoh.dpn-iuuq-wtsw=ffffffff09a81d4145525d5f4f58455e445a4a423660;&nbsp;referer_domain=;&nbsp;referer_query=
+Host:&nbsp;www.atitesting.com
+User-Agent:&nbsp;CyotekWebCopy/1.0&nbsp;CyotekHTTP/2.0
+</td>
+	</tr><tr>
+		<td>APPL_MD_PATH</td><td>/LM/W3SVC/1/ROOT/ati_store</td>
+	</tr><tr class="alt">
+		<td>APPL_PHYSICAL_PATH</td><td>E:\atiwebsites\ati_store\</td>
+	</tr><tr>
+		<td>AUTH_TYPE</td><td>&nbsp;</td>
+	</tr><tr class="alt">
+		<td>AUTH_USER</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>AUTH_PASSWORD</td><td>&nbsp;</td>
+	</tr><tr class="alt">
+		<td>LOGON_USER</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>REMOTE_USER</td><td>&nbsp;</td>
+	</tr><tr class="alt">
+		<td>CERT_COOKIE</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>CERT_FLAGS</td><td>&nbsp;</td>
+	</tr><tr class="alt">
+		<td>CERT_ISSUER</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>CERT_KEYSIZE</td><td>128</td>
+	</tr><tr class="alt">
+		<td>CERT_SECRETKEYSIZE</td><td>2048</td>
+	</tr><tr>
+		<td>CERT_SERIALNUMBER</td><td>&nbsp;</td>
+	</tr><tr class="alt">
+		<td>CERT_SERVER_ISSUER</td><td>C=GB,&nbsp;S=Greater&nbsp;Manchester,&nbsp;L=Salford,&nbsp;O=COMODO&nbsp;CA&nbsp;Limited,&nbsp;CN=COMODO&nbsp;RSA&nbsp;Domain&nbsp;Validation&nbsp;Secure&nbsp;Server&nbsp;CA</td>
+	</tr><tr>
+		<td>CERT_SERVER_SUBJECT</td><td>OU=Domain&nbsp;Control&nbsp;Validated,&nbsp;OU=EssentialSSL&nbsp;Wildcard,&nbsp;CN=*.atitesting.com</td>
+	</tr><tr class="alt">
+		<td>CERT_SUBJECT</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>CONTENT_LENGTH</td><td>0</td>
+	</tr><tr class="alt">
+		<td>CONTENT_TYPE</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>GATEWAY_INTERFACE</td><td>CGI/1.1</td>
+	</tr><tr class="alt">
+		<td>HTTPS</td><td>on</td>
+	</tr><tr>
+		<td>HTTPS_KEYSIZE</td><td>128</td>
+	</tr><tr class="alt">
+		<td>HTTPS_SECRETKEYSIZE</td><td>2048</td>
+	</tr><tr>
+		<td>HTTPS_SERVER_ISSUER</td><td>C=GB,&nbsp;S=Greater&nbsp;Manchester,&nbsp;L=Salford,&nbsp;O=COMODO&nbsp;CA&nbsp;Limited,&nbsp;CN=COMODO&nbsp;RSA&nbsp;Domain&nbsp;Validation&nbsp;Secure&nbsp;Server&nbsp;CA</td>
+	</tr><tr class="alt">
+		<td>HTTPS_SERVER_SUBJECT</td><td>OU=Domain&nbsp;Control&nbsp;Validated,&nbsp;OU=EssentialSSL&nbsp;Wildcard,&nbsp;CN=*.atitesting.com</td>
+	</tr><tr>
+		<td>INSTANCE_ID</td><td>1</td>
+	</tr><tr class="alt">
+		<td>INSTANCE_META_PATH</td><td>/LM/W3SVC/1</td>
+	</tr><tr>
+		<td>LOCAL_ADDR</td><td>10.160.3.70</td>
+	</tr><tr class="alt">
+		<td>PATH_INFO</td><td>/ati_store/Diagnostics.aspx</td>
+	</tr><tr>
+		<td>PATH_TRANSLATED</td><td>E:\atiwebsites\ati_store\Diagnostics.aspx</td>
+	</tr><tr class="alt">
+		<td>QUERY_STRING</td><td>&nbsp;</td>
+	</tr><tr>
+		<td>REMOTE_ADDR</td><td>10.186.4.7</td>
+	</tr><tr class="alt">
+		<td>REMOTE_HOST</td><td>10.186.4.7</td>
+	</tr><tr>
+		<td>REMOTE_PORT</td><td>56922</td>
+	</tr><tr class="alt">
+		<td>REQUEST_METHOD</td><td>GET</td>
+	</tr><tr>
+		<td>SCRIPT_NAME</td><td>/ati_store/Diagnostics.aspx</td>
+	</tr><tr class="alt">
+		<td>SERVER_NAME</td><td>www.atitesting.com</td>
+	</tr><tr>
+		<td>SERVER_PORT</td><td>443</td>
+	</tr><tr class="alt">
+		<td>SERVER_PORT_SECURE</td><td>1</td>
+	</tr><tr>
+		<td>SERVER_PROTOCOL</td><td>HTTP/1.1</td>
+	</tr><tr class="alt">
+		<td>SERVER_SOFTWARE</td><td>Microsoft-IIS/7.5</td>
+	</tr><tr>
+		<td>URL</td><td>/ati_store/Diagnostics.aspx</td>
+	</tr><tr class="alt">
+		<td>HTTP_ACCEPT_CHARSET</td><td>utf-8</td>
+	</tr><tr>
+		<td>HTTP_ACCEPT_ENCODING</td><td>gzip,deflate</td>
+	</tr><tr class="alt">
+		<td>HTTP_COOKIE</td><td>ASP.NET_SessionId=5btik2453wkhutjkusnqubup;&nbsp;NSC_xxx.bujuftujoh.dpn-iuuqt-wtsw=ffffffff09a81d5745525d5f4f58455e445a4a42378b;&nbsp;NSC_xxx.bujuftujoh.dpn-iuuq-wtsw=ffffffff09a81d4145525d5f4f58455e445a4a423660;&nbsp;referer_domain=;&nbsp;referer_query=</td>
+	</tr><tr>
+		<td>HTTP_HOST</td><td>www.atitesting.com</td>
+	</tr><tr class="alt">
+		<td>HTTP_USER_AGENT</td><td>CyotekWebCopy/1.0&nbsp;CyotekHTTP/2.0</td>
+	</tr>
+</table><hr width=100% size=1 color=silver>
+
+Microsoft .NET Framework Version:2.0.50727.8669; ASP.NET Version:2.0.50727.5491
+
+</font>
+
+</span>
+</div>
