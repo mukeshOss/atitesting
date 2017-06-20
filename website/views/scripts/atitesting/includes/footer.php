@@ -1,8 +1,11 @@
-<div id="footer">
-      <div id="footer-content">
+ <div id="footer">
+    <div id="footer-content">
         <div id="footer-copyright">
-          <div id="footer-copyright-text"> Copyright © 2016 Assessment Technologies Institute, L.L.C. All rights reserved. </div>
-          <div id="footer-copyright-links"> <a id="ctl00_footerContent_privacyPolicy" href="PrivacyPolicy.html">Privacy Policy</a> | <a id="ctl00_footerContent_termsOfUse" href="TermsOfUse.html">Website Terms of Use</a> | <a href="terms-conditions.html">User Terms and Conditions</a> | <a href="sitemap.html">Sitemap</a> </div>
+            <div id="footer-copyright-text">
+                Copyright &copy; 2016 Assessment Technologies Institute, L.L.C. All rights reserved.
+            </div><div id="footer-copyright-links">
+                <a href="PrivacyPolicy-1.html" id="ctl00_footerContent_privacyPolicy">Privacy Policy</a> | <a href="TermsOfUse-1.html" id="ctl00_footerContent_termsOfUse">Website Terms of Use</a> | <a href="terms-conditions-1.html">User Terms and Conditions</a> | <a href="sitemap-1.html">Sitemap</a>
+            </div>
         </div>
         <div id="footer-links"> <a id="ctl00_footerContent_atiProductSolutions" href="Solutions.html">ATI Product Solutions</a> | <a id="ctl00_footerContent_shop" href="">Online Store</a> | <a id="ctl00_footerContent_contactUs" href="/ContactUs.aspx">Contact Us</a> </div>
         <div class="clear"> </div>
@@ -15,4 +18,4 @@
         <div class="clear"> </div>
       </div>
       <div id="footer-sidebar"> </div>
-    </div> 
+    </div>  

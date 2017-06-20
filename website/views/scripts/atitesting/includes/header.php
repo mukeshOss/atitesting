@@ -1,9 +1,56 @@
-   <div id="header">
+ <?php $path = $this->getParam('docPath');?>
+<?php if($path == "/atitesting") { ?>
+        <div id="header">
+        <div id="headerLogo">
+            <div id="headerLogo-top"> </div>
+            <div id="headerLogo-middle"> <a id="ctl00_headerLogoLink" class="headerLogo-link" href="Home.html"><img id="ctl00_headerLogoLinkSpacer" class="headerLogo-link-spacer" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" border="0"></a> </div>
+            <div id="headerLogo-bottom"> </div>
+        </div>
+        <div id="headerCallout">
+            <div id="headerCallout-top">
+                <div id="header-secondaryNav"> <a href="#" id="ctl00_HeaderSecondaryNav_createAnAccount">Create an Account</a>
+                    <div class="secondaryNav-spacer">|</div>
+                    <a href="#" id="ctl00_HeaderSecondaryNav_shop">Online Store</a>
+                    <div class="secondaryNav-spacer">|</div>
+                    <a href="/ContactUs.aspx" id="ctl00_HeaderSecondaryNav_contactUs">Contact Us </a>
+                    <div class="clear"> </div>
+                </div>
+                <div id="header-searchBar">
+                    <fieldset class="sf_searchBox">
+                        <input name="ctl00$HeaderSearchBar$tm_SearchBox2$ctl00$ctl00$queryText" type="text" value="Search" id="ctl00_HeaderSearchBar_tm_SearchBox2_ctl00_ctl00_queryText" class="sf_searchText" onfocus="JavaScript:searchBoxFocus(event, this);" onblur="JavaScript:searchBoxBlur(event, this);">
+                        <input name="ctl00$HeaderSearchBar$tm_SearchBox2$ctl00$ctl00$searchButton" type="button" id="ctl00_HeaderSearchBar_tm_SearchBox2_ctl00_ctl00_searchButton" onmouseover="JavaScript: searchBarGoMouseOver(event, this);" onmouseout="JavaScript: searchBarGoMouseOut(event, this);" class="sf_searchSubmit" alt="Search">
+                        <div class="clear"> </div>
+                    </fieldset>
+                    <ol class="sf_eventsList">
+                    </ol>
+                </div>
+            </div>
+            <div id="headerCallout-middle"> <a id="ctl00_HeaderImage_imageLink" class="headerCallout-middle-link"><img id="ctl00_HeaderImage_imageOverlay" class="headerCallout-middle-image" src="/website/static/atitesting/css/App_Themes/AtiTesting/Imagesblank.gif" alt="Nurses Week" border="0"></a> </div>   
+            <div id="headerCallout-bottom">
+                <div id="header-nav">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                                <td id="header-nav-about" class="header-nav-item"><a href="About.html" id="ctl00_aboutATI" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">About ATI</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td>
+                                <td id="header-nav-solutions" class="header-nav-item"><a href="Solutions.html" id="ctl00_productSolutions" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Product Solutions</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td>
+                                <td id="header-nav-resources" class="header-nav-item"><a href="Resources.html" id="ctl00_newsAndResources" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Resources</span><img style="border-width: 0px;" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" class="nav-item-right"></a></td>
+                            </tr>
+                        </tbody></table>
+                    <div class="clear"> </div>
+                </div>
+                <div id="signOnNav"> <a id="signOnNav-link" href="#" onclick="JavaScript:signOnNavStaticClick(event, this);"><span id="signOnNav-text">Secure Sign On </span><span id="signOnNav-expand" style=""></span><span id="signOnNav-collapse" style="display: none;"></span></a>
+                    <div class="clear"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php } else {?>
+
+<div id="header">
                 <div id="headerLogo">
                     <div id="headerLogo-top">
                     </div>
                     <div id="headerLogo-middle">
-                        <a id="ctl00_headerLogoLink" class="headerLogo-link" href="Home.html"><img id="ctl00_headerLogoLinkSpacer" class="headerLogo-link-spacer" src="App_Themes\AtiTesting\Images\blank.gif" border="0"></a>
+                        <a id="ctl00_headerLogoLink" class="headerLogo-link" href="Home.aspx"><img id="ctl00_headerLogoLinkSpacer" class="headerLogo-link-spacer" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" style="border-width:0px;"></a>
                     </div>
                     <div id="headerLogo-bottom">
                     </div>
@@ -11,10 +58,10 @@
                 <div id="headerCallout">
                     <div id="headerCallout-top">
                         <div id="header-secondaryNav">
-  <a href="http://student.atitesting.com/login?mode=1" id="ctl00_HeaderSecondaryNav_createAnAccount">Create an Account</a><div class="secondaryNav-spacer">|</div><a href="http://www.atitesting.com/ati_store" id="ctl00_HeaderSecondaryNav_shop">Online Store</a><div class="secondaryNav-spacer">|</div>
-  <a href="/ContactUs.aspx" id="ctl00_HeaderSecondaryNav_contactUs">Contact Us </a><div id="ctl00_HeaderSecondaryNav_homeSpacer" class="secondaryNav-spacer">|</div><a href="/" id="ctl00_HeaderSecondaryNav_home">Home</a><div class="clear">
+<a href=" http://student.atitesting.com/login?mode=1" id="ctl00_HeaderSecondaryNav_createAnAccount">Create an Account</a><div class="secondaryNav-spacer">|</div><a href=" http://www.atitesting.com/ati_store" id="ctl00_HeaderSecondaryNav_shop">Online Store</a><div class="secondaryNav-spacer">|</div>
+<a href="/ContactUs.aspx" id="ctl00_HeaderSecondaryNav_contactUs">Contact Us </a><div id="ctl00_HeaderSecondaryNav_homeSpacer" class="secondaryNav-spacer">|</div><a href="/" id="ctl00_HeaderSecondaryNav_home">Home</a><div class="clear">
 
-  </div>
+</div>
 </div>
                         <div id="header-searchBar">
                             
@@ -31,13 +78,13 @@
                         
                         <br> <style>
     @font-face {
-    font-family: archerbookitalic; src:url("Libraries/fonts/Archer_BookItalic.sflb.hxd");
+    font-family: archerbookitalic; src:url("/website/static/atitestig/Libraries/fonts/Archer_BookItalic.sflb.ashx");
     }
     @font-face {
-    font-family: archermediumitalic; src:url("Libraries/fonts/Archer_MediumItalic.sflb.hxd");
+    font-family: archermediumitalic; src:url("/website/static/atitestig/Libraries/fonts/Archer_MediumItalic.sflb.ashx");
     }
     @font-face {
-    font-family: Avenir.book; src:url("Libraries/fonts/Avenir.sflb.hxd");
+    font-family: Avenir.book; src:url("/website/static/atitestig/Libraries/fonts/Avenir.sflb.ashx");
     }
     img {
     border:none;
@@ -123,7 +170,7 @@
     }
     sup {font-size: 9px; vertical-align:top;}
     .h1bg {
-    background: url("Libraries/fonts/h1bg.sflb.png") repeat-x scroll 0 50% transparent;
+    background: url("/website/static/atitestig/Libraries/fonts/h1bg.sflb.ashx") repeat-x scroll 0 50% transparent;
     display: block;
     margin-bottom: 10px;
     margin-top:10px;
@@ -238,7 +285,7 @@
     width:25px;
     height:50px;
     float:left;
-    background:url('Libraries/new-ati/blueribbon-left.sflb.png')
+    background:url('/website/static/atitestig/Libraries/new-ati/blueribbon-left.sflb.ashx')
     }
     .bribbonmiddle {
     background: none repeat scroll 0 0 #80D1E0;
@@ -254,7 +301,7 @@
     width:25px;
     height:50px;
     float:left;
-    background:url('Libraries/new-ati/blueribbon-right.sflb.png')
+    background:url('/website/static/atitestig/Libraries/new-ati/blueribbon-right.sflb.ashx')
     }
     .left30i {
     float: left;
@@ -396,7 +443,7 @@
     margin-top:20px;
     }
     .videocontainer1 {
-    background: url("Libraries/new-ati/iphonebg.sflb.jpg") no-repeat scroll 0 0 transparent;
+    background: url("/website/static/atitesting/Libraries/new-ati/iphonebg.sflb.ashx") no-repeat scroll 0 0 transparent;
     height: 328px;
     padding-top: 56px;
     width: 223px;
@@ -412,7 +459,7 @@
     margin-right:20px;
     }
     .righthalf12 {
-    background: url("Libraries/new-ati/monitorbg.sflb.png") no-repeat scroll 0 0 transparent;
+    background: url("/website/static/atitesting/Libraries/new-ati/monitorbg.sflb.ashx") no-repeat scroll 0 0 transparent;
     float: left;
     height: 280px;
     padding-left: 15px;
@@ -543,7 +590,7 @@
     width:639px;
     border:1px solid #E9E9E9;
     padding:20px;
-    background: url('Libraries/new-ati/background1.sflb.jpg');
+    background: url('/website/static/atitestig/Libraries/new-ati/background1.sflb.ashx');
     margin-bottom:20px;
     }
     .bannercontain h1 {
@@ -557,7 +604,7 @@
     padding-left:20px;
     padding-right:20px;
     padding-bottom:0px;
-    background: url('Libraries/new-ati/background1.sflb.jpg');
+    background: url('/website/static/atitestig/Libraries/new-ati/background1.sflb.ashx');
     margin-bottom:20px;
     }
     .leftcallout {
@@ -581,7 +628,7 @@
     .blueribbontop {
     height:6px;
     float:left;
-    background:url('Libraries/new-ati/blue-ribbont.sflb.png');
+    background:url('/website/static/atitestig/Libraries/new-ati/blue-ribbont.sflb.ashx');
     background-repeat:no-repeat;
     width:679px;
     }
@@ -602,7 +649,7 @@
     width:25px;
     float:left;
     height:50px;
-    background:url('Libraries/new-ati/blueribbon-right.sflb.png');
+    background:url('/website/static/atitestig/Libraries/new-ati/blueribbon-right.sflb.ashx');
     margin-bottom:20px;
     }
     .redribbon1 {
@@ -619,7 +666,7 @@
     .redribbontop {
     height:6px;
     float:left;
-    background:url('Libraries/new-ati/red-ribbont.sflb.png');
+    background:url('/website/static/atitestig/Libraries/new-ati/red-ribbont.sflb.ashx');
     background-repeat:no-repeat;
     width:679px;
     }
@@ -631,7 +678,7 @@
     width:25px;
     float:left;
     height:50px;
-    background:url('Libraries/new-ati/redribbon-right.sflb.png');
+    background:url('/website/static/atitestig/Libraries/new-ati/redribbon-right.sflb.ashx');
     }
     .ribboncontain {
     width:679px;
@@ -657,14 +704,14 @@
     .dividerlines {
     float:left;
     width:390px;
-    background: url("Libraries/fonts/h1bg.sflb.png") repeat-x scroll 0 50% transparent;
+    background: url("/website/static/atitestig/Libraries/fonts/h1bg.sflb.ashx") repeat-x scroll 0 50% transparent;
     height:10px;
     background-repeat:repeat-x;
     }
     .dividerlineslg {
     float:left;
     width:679px;
-    background: url("Libraries/fonts/h1bg.sflb.png") repeat-x scroll 0 50% transparent;
+    background: url("/website/static/atitestig/Libraries/fonts/h1bg.sflb.ashx") repeat-x scroll 0 50% transparent;
     height:10px;
     background-repeat:repeat-x;
     margin-bottom:30px;
@@ -688,13 +735,13 @@
     padding-right: 55px;
     margin-bottom:5px;
     margin-left:5px;
-    background: url("Libraries/new-ati/redbutton.sflb.png") no-repeat scroll right center transparent;
+    background: url("/website/static/atitestig/Libraries/new-ati/redbutton.sflb.ashx") no-repeat scroll right center transparent;
     background-color:#f6f6f6;
     height:auto;
     line-height:18px;
     }
     .mainbutton {
-    background: url("Libraries/new-ati/redbutton.sflb.png") no-repeat scroll right center transparent;
+    background: url("/website/static/atitestig/Libraries/new-ati/redbutton.sflb.ashx") no-repeat scroll right center transparent;
     background-color:#d8d8d8;
     }
     .buttonul1 a:link{
@@ -713,7 +760,7 @@
     text-decoration:none;
     }
     .buttonul:hover {
-    background: url("Libraries/new-ati/redbutton.sflb.png") no-repeat scroll right center transparent;
+    background: url("/website/static/atitestig/Libraries/new-ati/redbutton.sflb.ashx") no-repeat scroll right center transparent;
     background-color:#D8D8D8;
     border:1px solid #B5B5B5;
     color:#131313;
@@ -739,19 +786,20 @@ text-decoration:underline;
                     </div>
                     <div id="headerCallout-bottom">
                         <div id="header-nav">
-  <table cellpadding="0" cellspacing="0">
-    <tr>
-      <td id="header-nav-about" class="header-nav-item"><a href="About.html" id="ctl00_aboutATI" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="App_Themes\AtiTesting\Images\blank.gif" class="nav-item-left"><span class="header-nav-text">About ATI</span><img style="border-width: 0px;" src="App_Themes\AtiTesting\Images\blank.gif" class="nav-item-right"></a></td><td id="header-nav-solutions" class="header-nav-item"><a href="Solutions.html" id="ctl00_productSolutions" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);" class="header-nav-selected"><img style="border-width: 0px;" src="App_Themes\AtiTesting\Images\blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Product Solutions</span><img style="border-width: 0px;" src="App_Themes\AtiTesting\Images\blank.gif" class="nav-item-right"></a></td><td id="header-nav-resources" class="header-nav-item"><a href="Resources.html" id="ctl00_newsAndResources" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="App_Themes\AtiTesting\Images\blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Resources</span><img style="border-width: 0px;" src="App_Themes\AtiTesting\Images\blank.gif" class="nav-item-right"></a></td>
-    </tr>
-  </table><div class="clear">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td id="header-nav-about" class="header-nav-item"><a href="/About.aspx" id="ctl00_aboutATI" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);" class="header-nav-selected"><img style="border-width: 0px;" src="\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-left"><span class="header-nav-text">About ATI</span><img style="border-width: 0px;" src="\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-right"></a></td><td id="header-nav-solutions" class="header-nav-item"><a href="/Solutions.aspx" id="ctl00_productSolutions" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Product Solutions</span><img style="border-width: 0px;" src="\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-right"></a></td><td id="header-nav-resources" class="header-nav-item"><a href="/Resources.aspx" id="ctl00_newsAndResources" onmouseover="JavaScript:navItemMouseOver(event, this);" onmouseout="JavaScript:navItemMouseOut(event, this);"><img style="border-width: 0px;" src="\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-left"><span class="header-nav-text">ATI Resources</span><img style="border-width: 0px;" src="\website\static\testing\css\App_Themes\AtiTesting\Images\blank.gif" class="nav-item-right"></a></td>
+</tr>
+</tbody></table><div class="clear">
 
-  </div>
+</div>
 </div>
                         <div id="signOnNav">
-  <a id="signOnNav-link" href="#" onclick="JavaScript:signOnNavDynamicClick(event, this);"><span id="signOnNav-text">Secure Sign On </span><span id="signOnNav-expand" style="display: none;"></span><span id="signOnNav-collapse" style=""></span></a><div class="clear">
+<a id="signOnNav-link" href="#" onclick="JavaScript:signOnNavDynamicClick(event, this);"><span id="signOnNav-text">Secure Sign On </span><span id="signOnNav-expand" style="display: none;"></span><span id="signOnNav-collapse" style=""></span></a><div class="clear">
 
-  </div>
+</div>
 </div>
                     </div>
                 </div>
             </div>
+<?php } ?> 
