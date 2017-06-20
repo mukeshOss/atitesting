@@ -36,6 +36,7 @@
                     'AtiTesting_Headline',
                     'AtiTesting_SubHeadline',
                     'AtiTesting_Wysiwyg',
+                    'AtiTesting_HomeTiles',
                     
                 ]; ?>
                 <?php
