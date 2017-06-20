@@ -228,26 +228,36 @@ p.editor
 }
 #header-nav table
 {
-	width: 385px;
+	width: 486px;
 }
 #header-nav td
 {
 	height: 39px;
 	white-space: nowrap;
+	    background-image: url(Images/bluebar-dark.png);
+    background-position: left top;
+    background-repeat: repeat-x;
 }
-#header-nav-about a
-{
-	width: 120px;
-	height: 39px;
+
+#header-nav a{
 	background-image: url(Images/bluebar-dark.png);
 	background-position: left top;
 	background-repeat: repeat-x;
 	white-space: nowrap;
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	vertical-align: middle;
 	cursor: pointer;
 	outline: none;
+	width: auto;
+	height: 39px; width: 100%;
+}
+/*
+#header-nav-about a
+{
+	width: 120px;
+	height: 39px;
+
 }
 #header-nav-solutions a
 {
@@ -277,11 +287,13 @@ p.editor
 	cursor: pointer;
 	outline: none;
 }
-#header-nav-about a.header-nav-selected 
+*/
+#header-nav a.header-nav-selected 
 {
 	background-image: url(Images/bluebar-selected.png);	
 	outline: none;
 }
+/*
 #header-nav-solutions a.header-nav-selected 
 {
 	background-image: url(Images/bluebar-selected.png);	
@@ -292,6 +304,7 @@ p.editor
 	background-image: url(Images/bluebar-selected.png);	
 	outline: none;
 }
+*/
 #header-nav a:hover
 {
 	text-decoration: none;
@@ -313,8 +326,8 @@ p.editor
 	outline-width: 0px;
 	text-decoration: none;
 }
-.nav-item-right
-{
+/*.nav-item-right, #header-nav a:after
+{	content: "";
 	float: right;
 	display: block;
 	height: 39px;
@@ -327,9 +340,9 @@ p.editor
 	outline:none;
 	outline-width: 0px;
 	text-decoration: none;
-}
-.nav-item-left-hover
-{
+}*/
+.nav-item-left-hover, #header-nav a:before
+{	content: "";
 	float: left;
 	display: block;
 	height: 39px;
@@ -365,9 +378,8 @@ p.editor
 .header-nav-text
 {
 	display: block;
-	float: left;
-	padding-top: 12px;
-	padding-left: 20px;
+	text-align: center;
+	padding: 12px 20px 0 20px;
 	font-family: Arial, Helvetica, Sans-Serif;
 	font-size: 14px;
 	font-weight:bold;
@@ -1601,3 +1613,13 @@ a:active
 {     
 	color: #474544;
 }
+
+#tableContent{width: 100%;}
+#tableContent td{display: block; width: 49.5%; float: left; border-left: solid 1px #ddd;     min-height: 200px;
+    margin-bottom: 20px; padding: 0 10px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  }
+    .headingRedHome {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:22px !important;
+    color:#C74E46 !important;
+    margin-bottom:10px !important;
+    }
