@@ -24,21 +24,39 @@
         $('#slider').nivoSlider();
     });
     </script>
-              <div class="minicol3"> <a href="http://www.jblnavigate.com/" target="_blank"><img src="/website/static/jblearning/img/hm_navlogo.png" border="0" style="float: left; margin-bottom: 7px;" /></a> <a href="http://www.jblnavigate.com/" target="_blank" class="learmore_hm_btn"></a>
-                <div class="clear"></div>
-                <span style="font-size: 11px;">Navigate empowers faculty and students with easy-to-use web-based curriculum solutions that optimize student success, identify retention risks, improve completion rates, and increase career readiness.</span> </div>
-              <div class="minicol4"> <a href="publish/index.html"><img src="/website/static/jblearning/img/hm_publishlogo.png" border="0" style="float: left; margin-bottom: 8px;" /></a> <a href="publish/index.html" class="learmore_hm_btn"></a>
-                <div class="clear"></div>
-                <span style="font-size: 11px;">PUBLISH is the easiest way for instructors and curriculum developers to build fully customized course materials from the Jones & Bartlett Learning content library.</span> </div>
-              <div class="minicol5"> 
-                <img src="/website/static/jblearning/img/imprints.png" class="imprints-img" /> 
-                <a href="http://www.psglearning.com/" target="_blank" class="imprint_psg"></a>
-                 <a href="http://www.ecsinstitute.org/" target="_blank" class="imprint_ecsi"></a> 
-                 <a href="http://www.informedguides.com/" target="_blank" class="imprint_informed"></a>
-                  <a href="http://www.uglys.net/" target="_blank" class="imprint_uglys"></a> 
-                  <a href="http://www.tarascon.com/" target="_blank" class="imprint_tara"></a> 
-                  <a href="http://www.cdxauto.com/" target="_blank" class="imprint_cdxauto"></a>
-                   </div>
+    
+    <?php
+                        $allowedAreas = [
+                            'JbLearning_Tiles',
+                        ];
+                        ?>
+    <div class ="hometilesContainer">
+                        <?php
+                        echo $this->areablock('content_block', array(
+                            'allowed' => $allowedAreas,
+                            "areablock_toolbar" => array(
+                                "title" => "",
+                                "width" => 230,
+                                "x" => 20,
+                                "y" => 300,
+                                "xAlign" => "left",
+                                "buttonWidth" => 218,
+                                "buttonMaxCharacters" => 35,
+                                "collapsible" => true)
+                                )
+                        );
+                        ?>
+    
+    </div>
+             
+                <div class="minicol5"> 
+                    <img src="/website/static/jblearning/img/imprints.png" class="imprints-img" /> 
+                    
+                       <?php while($this->block("contentblocklinks")->loop()) { ?>
+                        <?= $this->link("subline"); ?>
+                    <?php } ?>
+                        
+                </div>
               <div class="clear"> </div>
             </div>
           </div>

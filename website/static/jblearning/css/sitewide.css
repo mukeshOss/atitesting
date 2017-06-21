@@ -4006,3 +4006,8 @@ a.alt_btn:hover {
 }
 
 /* End hide from IE-mac */
+
+
+
+#content #homeMidArea .minicol3.homeTileClass{max-width:345px;}
+#content #homeMidArea .minicol3.homeTileClass:nth-child(even){margin-right: 0px;}
