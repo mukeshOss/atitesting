@@ -56,5 +56,12 @@ class Atitesting_ContentController extends Action {
     public function footerAction() {
         
     }
+    
+    /**
+     * renders leftnav
+     */
+    public function leftnavAction() {
+        
+    }
 
 }

@@ -38,13 +38,8 @@
             </script>
 
 
-            <script src="/website/static/atitesting/js/WebResource.axd?d=q6Rn_Dd2uVR9I9hRIHtiZw2&amp;t=635698354359705470" type="text/javascript"></script>
-
-
-            <script src="/website/static/atitesting/js/WebResource.axd?d=CprpFpCxf889CnZhXxIh2do-TmecyCbPluS7RaHsrb7HEnlyVg8Y-4nB2oSN_kQl-MSZrxJ5-H9Llcrp9iVoJirprOxYeRQEfXKgkly_J_s1&amp;t=634239539880000000" type="text/javascript"></script>
-            <script src="/website/static/atitesting/js/WebResource.axd?d=Til8dGnhU9i9RYohveioPT7GX3PwWYfU-OOWF7CiSLfmAw3RXuvpRTBlD9dcwKoBLFhJudX1Ooqv0Zcd6cu1ng2&amp;t=634039095040000000" type="text/javascript"></script>
-            <script src="/website/static/atitesting/js/ScriptResource.axd?d=QauLQPgrD1Twap8bjeqaOLKAebq0-F7EX-jfx1corSBUUnAUwdKTCBFmufNWY69cCustA1Wpp1sL6xMZ0LOPQ0HFHiY2msRlhCGb1w2BNZk1&amp;t=2e2045e2" type="text/javascript"></script>
-            <script src="/website/static/atitesting/js/ScriptResource.axd?d=QauLQPgrD1Twap8bjeqaOLKAebq0-F7EX-jfx1corSBUUnAUwdKTCBFmufNWY69c4tzpzPnjc7atzQpP38FEhdw5nVfDnB7Tt29VusO1TNg1&amp;t=2e2045e2" type="text/javascript"></script>
+            <script src="/website/static/atitesting/js/WebResource.js" type="text/javascript"></script>
+            <script src="/website/static/atitesting/js/ScriptResource.js" type="text/javascript"></script>
             <div>
 
                 <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="15E68AF1" />

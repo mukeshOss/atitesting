@@ -57,5 +57,12 @@ class JBlearning_ContentController extends Action {
     public function footerAction() {
         
     }
+    
+    /**
+     * renders left navigation
+     */
+    public function leftnavAction() {
+        
+    }
 
 }

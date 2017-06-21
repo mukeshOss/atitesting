@@ -1,18 +1,23 @@
 
+    <?php while ($this->block("tiles_block")->loop()) { ?>
+        <?php if (!$this->editmode): ?>
+            <td>
 
-<?php while($this->block("tiles_block")->loop()) {  ?>
-<td>
+            <?php endif; ?>
 
-<div>
-     <div class="headingRedHome">
-     	<?= $this->input("heading") ?>
-     </div>
-         <?= $this->wysiwyg("description")?>
-         <?= $this->link("link")?>
-</div>
-</td>
+            <div>
+                <div class="headingRedHome">
+                    <?= $this->input("heading") ?>
+                </div>
+                <?= $this->wysiwyg("description") ?>
+                <?= $this->link("link") ?>
+            </div>
+            <?php if (!$this->editmode): ?>
 
-<?php  } ?>
+            </td>
+        <?php endif; ?>
+    <?php } ?>
+
 
 
 
