@@ -34,7 +34,7 @@
 <link rel="icon" href="/website/static/jblearning/img//favicon.ico" type="image/x-icon" />
 <script type="text/javascript" src="/website/static/jblearning/js/jquery.dropdownPlain.js"></script>
 </head>
-<body id="homepageBody" class="homepage online">
+<body id="homepageBody" class="homepage online template5 companyprofile online template5">
 <form name="homepageForm" method="post" action="http://www.jblearning.com/" id="homepageForm">
   <div>
     <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
