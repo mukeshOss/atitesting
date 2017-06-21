@@ -8,9 +8,9 @@
               <div id="wrapper" style="margin: 0; background-color: white; position: relative;">
                 <div class="slider-wrapper">
                   <div id="sideFloatSection" style="padding: 0px 10px; margin: 0; z-index: 3; position: absolute; left: 540px; top: 40px;">
-                    <div id="loginAcct"> <a href="http://www2.jblearning.com/my-account"><img src="/website/static/jblearning/img/login_hmbtn.png" alt="Log In To Your Account" /></a> </div>
-                    <div id="redeemAccess"> <a href="http://www2.jblearning.com/my-account/terms-and-conditions"><img src="/website/static/jblearning/img/access2.png" alt="Redeem an acces code" /></a> </div>
-                    <div id="findSalesRep"> <a href="aboutus/contactus/findarep/index.html"><img src="/website/static/jblearning/img/findyoursalesrep.png" alt="Find Your Sales Rep" /></a> </div>
+                    <div id="loginAcct"> <a href="#"><img src="/website/static/jblearning/img/login_hmbtn.png" alt="Log In To Your Account" /></a> </div>
+                    <div id="redeemAccess"> <a href="#"><img src="/website/static/jblearning/img/access2.png" alt="Redeem an acces code" /></a> </div>
+                    <div id="findSalesRep"> <a href="#"><img src="/website/static/jblearning/img/findyoursalesrep.png" alt="Find Your Sales Rep" /></a> </div>
                   </div>
                  <?= $this->areablock("carousel" ,["width" => 760, "height" => 265]) ?>
                   <!-- nivoslider --> 

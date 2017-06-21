@@ -11,8 +11,11 @@
                 <div id="headerCallout">
                     <div id="headerCallout-top">
                         <div id="header-secondaryNav">
-<a href=" http://student.atitesting.com/login?mode=1" id="ctl00_HeaderSecondaryNav_createAnAccount">Create an Account</a><div class="secondaryNav-spacer">|</div><a href=" http://www.atitesting.com/ati_store" id="ctl00_HeaderSecondaryNav_shop">Online Store</a><div class="secondaryNav-spacer">|</div>
-<a href="#" id="ctl00_HeaderSecondaryNav_contactUs">Contact Us </a><div id="ctl00_HeaderSecondaryNav_homeSpacer" class="secondaryNav-spacer">|</div><a href="/" id="ctl00_HeaderSecondaryNav_home">Home</a><div class="clear">
+<a href="#" id="ctl00_HeaderSecondaryNav_createAnAccount">Create an Account</a><div class="secondaryNav-spacer">|</div>
+<a href="#" id="ctl00_HeaderSecondaryNav_shop">Online Store</a><div class="secondaryNav-spacer">|</div>
+<a href="#" id="ctl00_HeaderSecondaryNav_contactUs">Contact Us </a>
+<div id="ctl00_HeaderSecondaryNav_homeSpacer" class="secondaryNav-spacer">|</div>
+<a href="/" id="ctl00_HeaderSecondaryNav_home">Home</a><div class="clear">
 
 </div>
 </div>
