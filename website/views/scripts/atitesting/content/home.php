@@ -89,9 +89,43 @@
   
   <div id="primary">
 <div id="header">
+	  <style>#headerLogo
+{
+	float: left;
+	background-repeat: no-repeat;
+}
+#logocontainer{
+	        margin-top: 24px;
+    float: left;
+    min-width: 158px;
+    min-height: 105px;
+    border: 1px solid;
+}
+
+  </style>
       <div id="headerLogo">
+      	<?php if($this->editmode) {?> 
+      <div id = "logocontainer"><?= $this->image("logoimage"); ?>
+      </div>
+      <?php } ?>
+
+      <?php  $path = $this->image("logoimage")->getSrc() ?>
+
+      <style>#headerLogo
+{
+	float: left;
+	background-image: url(<?php echo $path ?>);
+	background-repeat: no-repeat;
+}
+
+  </style>
+
         <div id="headerLogo-top"> </div>
-        <div id="headerLogo-middle"> <a id="ctl00_headerLogoLink" class="headerLogo-link" href="Home.html"><img id="ctl00_headerLogoLinkSpacer" class="headerLogo-link-spacer" src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" border="0"></a> </div>
+        <div id="headerLogo-middle">
+          <a id="ctl00_headerLogoLink" class="headerLogo-link" href="Home.html">
+         	<img id="ctl00_headerLogoLinkSpacer" class="headerLogo-link-spacer" 
+         	src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" border="0"></a> 
+         </div>
         <div id="headerLogo-bottom"> </div>
       </div>
       <div id="headerCallout">

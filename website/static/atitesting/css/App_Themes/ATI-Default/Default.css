@@ -148,6 +148,11 @@ p.editor
 	background-image: url(Images/header-logo.png);
 	background-repeat: no-repeat;
 }
+#headerLogo1
+{
+	float: left;
+	background-repeat: no-repeat;
+}
 #headerLogo-top
 {
 	background-color: #565453;
