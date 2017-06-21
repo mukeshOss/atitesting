@@ -1,0 +1,17 @@
+﻿#demotip {
+	display: none;
+	background: transparent url(../img/customlightblue.png)  no-repeat;
+	font-size: 12px;
+	height: 70px;
+	width: 160px;
+	padding: 25px;
+	color: #34505F;
+	z-index: 1000;
+	margin-left: 0px;
+}
+/* style the trigger elements */
+#optionslist li {
+	border: 1;
+	cursor: pointer;
+	z-index: 0;
+}

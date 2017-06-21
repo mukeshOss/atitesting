@@ -1,0 +1,1558 @@
+body 
+{
+	font-family: Verdana, Arial, Sans-Serif;	
+	font-size: 12px;
+}
+.table2 
+{
+	background-color:#d3dbe3;
+}
+p
+{
+	line-height: normal;
+}
+#normalFont
+{
+	line-height: normal;
+}
+
+.tblGeneralInfo
+{
+	
+	border: solid 3px #FFF; 
+	width: 97%; 
+	margin: 15px 20px 0 0;
+	padding: 3px;
+	margin: 0;
+}
+.tblGeneralInfo p
+{
+	margin: 3px 0 3px 0;
+}
+
+.tblGeneralInfo #giStrong
+{
+	font-weight: bold;
+	font-size: 14px; 
+	color: #4C6277;
+	padding: 5px 0 5px;
+	margin: 0;
+}
+
+.cartHeading1
+{
+	font-size: 15px; color: #669; margin: 5px 0 5px 0;
+}
+a:link { color: #192E61; }
+.txtQuantity { width: 50px; text-align: center; }
+.txtBoxMargin { margin: 2px 0 5px;}
+.txtBoxLrg { width: 150px; }
+
+/********** Login Box Styles ***********/
+
+.leftCornerLogin
+{
+	background-image: url(../img/custInfoLeftCorner.gif); 
+	background-repeat: no-repeat; 
+	width: 19px; 
+	height: 50px;
+}
+
+.textareaLogin
+{
+	background-image: url(../img/custInfoCenter.gif); 
+	background-repeat: repeat-x; 
+	font-weight: bold; 
+	color: #FFF; 
+	text-align: center; 
+	vertical-align: middle;
+}
+
+.rightCornerLogin
+{
+	background-image: url(../img/custInfoRightCorner.gif); 
+	background-repeat: no-repeat; 
+	width: 19px; 
+	height: 50px;
+}
+
+.custInfoLeft
+{
+	background-image: url(../images/custInfoLeft.gif); 
+	background-repeat: repeat-y; 
+	width: 19px;
+}
+
+/********** Profile Styles ***********/
+.tblAddressForms
+{
+	width: 80%;
+	margin: 2px;
+}
+.tblAddressForms td 
+{
+	vertical-align: top;
+	text-align: center;
+}
+.divOrderForms table
+{
+	margin: 5px 0 5px 25px;	
+	text-align: center;
+	margin: 0 0 5px 3px;		
+}
+.divHeader 
+{
+	background-color: #E0E0E0;
+	padding: 10px 5px 10px 30px;
+	font-size: 12px;
+	margin: 10px 5px 10px;
+	text-align: left;
+	color: #3D3D5B;
+	font-weight: bold;
+}
+.divHeader2 
+{
+	background-color: #FFF;
+	padding: 5px 5px 15px 5px;
+	font-size: 12px;
+	margin: 5px 5px 5px;
+	text-align: left;
+	color: #3D3D5B;
+	font-weight: bold;
+}
+td.orderMessage
+{
+	color: #999;
+	font-size: 11px;
+	padding: 3px 0 5px 10px;
+	text-align: center;
+}
+p.orderMessage
+{
+	color: #999;
+	font-size: 11px;
+	padding: 3px 0 5px 10px;
+	text-align: center;
+}
+div.orderMessage
+{
+	color: #999;
+	font-size: 11px;
+	padding: 3px 0 5px 10px;
+	text-align: center;
+	margin: 5px 0 5px;
+}
+.tblErrors 
+{
+	width: 100%;	
+}
+.tblErrors div 
+{
+	font-size: 12px;
+	color: Maroon;
+}
+.tblOrderForm 
+{
+	font-size: 12px;	
+	width: 100%;
+}
+.tblOrderForm th
+{
+	font-weight: normal;
+	padding: 3px 5px 3px;
+	text-align: right;
+	width: 40%;
+}
+.tblOrderForm td
+{
+	font-weight: normal;
+	padding: 3px 5px 3px;
+	text-align: left;
+	width: 60%;
+}
+
+.tblOrderSummary
+{
+	font-size: 12px;	
+	width: 100%;	
+	margin-bottom: 5px;
+}
+.tblOrderSummary th
+{
+	font-weight: normal;
+	padding: 3px 5px 3px;
+	text-align: right;
+	width: 175px;	
+}
+.tblOrderSummary td
+{
+	font-weight: normal;
+	padding: 3px 5px 3px;
+	text-align: left;
+}
+
+.tblOrderForm2 
+{
+	font-size: 12px;
+}
+.tblOrderForm2 th
+{
+	font-weight: normal;
+	padding: 3px 5px 3px;
+	font-size: 12px;
+	text-align: right;
+	width: 40%;
+}
+.tblOrderForm2 td
+{
+	font-weight: normal;
+	padding: 3px 5px 3px;
+	text-align: left;
+}
+.tblAccountInfo
+{
+	font-size: 12px;
+	
+}
+.tblAccountInfo th
+{
+	font-weight: normal;
+	padding: 2px;
+	text-align: right;	
+	padding: 2px 2px 2px 1px;
+}
+.tblAccountInfo td
+{
+	font-weight: normal;
+	padding: 2px;
+	text-align: left;
+	width: 50px;
+	vertical-align: middle;
+	padding: 2px 2px 2px 5px;
+}
+.tblShippingSameAsBilling
+{	
+	border-bottom: solid 1px #CCC;
+	width: 50%;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+.tblShippingSameAsBilling td
+{
+	text-align: center;
+}
+.rbShippingSameAsBilling
+{
+	font-size: 12px;
+	
+}
+.rbShippingSameAsBilling td 
+{
+	text-align: left;
+}
+.rbPaymentOptions
+{
+	font-size: 12px; 
+	padding: 5px; 
+	font-weight: bold;
+}
+.tblPaymentOptions
+{	
+	border-bottom: solid 1px #CCC;
+	width: 50%;
+}
+.tblPaymentOptions td
+{
+	text-align: center;
+}
+.rbPaymentOptions td 
+{
+	text-align: left;
+}
+
+.shippingInstructions
+{
+	width: 200px;
+	height: 75px;
+}
+.tblShippingOptions 
+{
+	font-size: 12px;
+	width: 70%;
+}
+.tblShippingOptions2 
+{
+	font-size: 12px;
+	width: 90%;
+}
+.tblCreditCard 
+{
+	font-size: 12px;
+}
+.tblCreditCard th
+{
+	font-weight: normal;
+	padding: 3px 5px 3px 5px;
+	text-align: right;
+}
+.tblCheckOutOrderSummary
+{
+	font-size: 10px;
+	border-top: solid 1px #000; 
+	border-right: solid 1px #000; 
+	width: 90%;
+}
+.tblCheckOutOrderSummary th
+{
+	border-bottom: solid 2px #CCC; 
+	background-color: #E0E0E0; 
+	font-weight: bold; 
+	padding: 5px 10px; 	
+	text-align: center;
+	font-size: 10px;
+}
+.thTitle
+{
+	width: 75%; 
+	text-align: left; 
+	border-left: solid 1px #000;	
+}
+.tdTitle
+{	
+	text-align: left; 
+	border-left: solid 1px #000;	
+}
+.summaryHeader
+{
+    width: 12%;
+}
+.orderSummaryPromotionCode
+{
+	width: 90%; text-align: left; font-size: 12px; margin-top: 15px; margin-bottom: 5px;
+}
+td.tdOrderSummaryTotalHeadersDotted 
+{
+	width: 100px; font-size: 10px; padding: 5px; text-align: right; border-right: solid 1px #000; border-bottom: dotted 2px #CCC; background-color: #E0E0E0;
+}
+td.tdOrderSummaryTotalHeaders
+{
+	font-size: 10px; padding: 5px; text-align: right; border-right: solid 1px #000; background-color: #E0E0E0;
+}
+td.tdOrderSummaryTotalDotted
+{
+	width: 100px; font-size: 10px; padding: 5px 10px; text-align: right; border-bottom: dotted 2px #CCC;
+}
+td.tdOrderSummaryTotal
+{
+	font-size: 10px; padding: 5px 10px; text-align: right; border-bottom: solid 1px #000;
+}
+.tdSummaryError
+{
+	color: Maroon; 
+	padding: 2px 5px 0; 
+	text-align: left; 
+	vertical-align: top; 
+	font-size: 12px;
+}
+td.tdTitleInfo 
+{
+	text-align: left;	
+	font-weight: bold; 
+	padding: 10px 5px 5px 5px; 
+	font-size: 10px;
+	vertical-align: top;
+}
+div.checkOutButton 
+{
+	width: 90%; text-align: right; font-size: 14px; margin: 2px 0 5px 0;
+}
+#CheckoutButton 
+{
+	width: 90%; margin: 2px 0 8px 0;
+}
+td.buttonImage
+{
+	 background-color: #FFF; width: 175px; height: 50px; color: #FFF; font-weight: bold; vertical-align: middle;
+}
+.checkOutButton a:link
+{	
+	text-decoration: none;	
+	text-align: left;
+}
+.checkOutButton a:visited
+{	
+	text-decoration: none;
+}
+.checkOutButton a:hover
+{
+	text-decoration: none;
+	cursor: pointer;
+}	
+.btnRegister
+{
+	font-family: Verdana, Arial, Sans-Serif; color: #5B84AD; font-size: 14px; font-weight: bold;
+}
+.btnLogin 
+{
+	font-family: Verdana, Arial, Sans-Serif; color: #4C6277; font-size: 13px; font-weight: bold;
+}
+.btnContinueAsGuest
+{	
+	font-family: Verdana, Arial, Sans-Serif; color: #8C9BAA; font-size: 14px; font-weight: bold;
+}
+.tblRegistration th 
+{
+	width: 50%;
+	text-align: right;
+	padding: 5px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.tblRegistration td
+{
+	padding: 5px;
+	text-align: left;
+}
+.tblProfile 
+{
+	margin: 10px 0 15px 15px;
+}
+.tblProfile th 
+{
+	padding: 3px 5px 3px 5px;
+	text-align: right;
+	font-size: 12px;
+	font-weight: bold;
+}
+.tblProfile td
+{
+	padding: 3px 5px 3px 5px;
+	text-align: left;
+}
+.gvProfile
+{
+	margin: 10px 0 10px 5px;
+	border: solid 1px #707070;
+}
+.gvProfile th 
+{
+	border-right: 0;
+	border-left: 0;
+	background-color: #E0E0E0;
+	padding: 5px;
+	font-size: 12px;
+}
+.gvProfile td
+{
+	border-right: 0;
+	border-left: 0;	
+	padding: 5px;
+	font-size: 12px;
+}
+.gvMessageHeader 
+{
+	background-color: #ccc;
+	color: #FFF;
+	font-weight: bold;
+	padding: 5px;
+}
+.gvMessageText 
+{
+	background-color: #FFF;
+	color: #999;
+	padding: 5px;
+	font-size: 12px;
+}
+.tdAddress 
+{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px;
+	color: #707070;
+}
+.thAddress 
+{
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #E0E0E0;
+	padding: 5px;
+	color: #545454;
+	
+}
+.accountItems 
+{
+	margin: 5px 0 5px 5px;
+}
+.skillsMsg 
+{
+	width: 400px;
+	border: solid 1px #000;
+	background-color: #FFF;
+}
+.skillsMsg p
+{
+	font-size: 10px;
+}
+.skillsMsg li 
+{
+	font-size: 10px;
+	font-weight: bold;
+	list-style-type: circle;
+}
+.tblRegistrationComplete 
+{
+	margin-top: 8px;
+}
+.tblRegistrationComplete td
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+.rbNewUser
+{
+	font-size: 12px;
+	padding: 1px;
+	text-align: center;
+}
+.tdMsg
+{
+	background-image: url(../images/cart/alert.html);
+	background-repeat: no-repeat;
+	width: 347px;
+	height: 116px;
+	padding: 15px 5px;
+	font-size: 12px;
+	text-align: left;
+}
+td.tdMsg
+{
+	padding: 15px 10px 3px 25px;
+}
+.txtBoxLrg 
+{
+	width: 200px;
+}
+.txtBoxSmall 
+{
+	width: 50px;
+}
+.helpFile 
+{
+	font-family: Arial, Sans-Serif;
+	margin: 5px; font-size: 12px; color: #5B5B5B;
+}
+.tblPopUp 
+{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	z-index: 15;
+	background-color: #FFF;
+	border: solid 1px #000;
+	width: 400px;
+	}
+.tblPopUp th 
+{
+	text-align: right;
+	font-weight: bold;
+	font-size: 12px;
+}
+.tblPopUp td 
+{
+	padding: 10px;
+	font-size: 12px;
+	text-align: left;
+}
+.btnImage:hover 
+{
+	cursor: pointer;
+}
+.lbbtnRemovePromo
+{
+	text-align: left;
+}
+td.lbbtnRemovePromo a:link
+{
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.tblPromo
+{
+	width: 100%; border: solid 1px #999;
+	background-color: #A7B9CC;
+}
+td.lbtnRemovePromo2 
+{
+	padding: 3px;
+	text-align: right;
+	font-size: 10px;
+}
+td.lbtnRemovePromo2 a:link 
+{
+	color: #800000;
+	text-decoration: none;
+}
+td.lbtnRemovePromo2 a:visited
+{
+	color: #800000;
+}
+.rbAddressInfo td label
+{
+	font-size: 12px;
+	padding: 0;
+	margin: 0;	
+}
+.rbAddressInfo td
+{
+	width: 10%;
+	padding: 0;
+	margin: 0;
+}
+.rbAddressInfo 
+{
+	width: 115px;
+	padding: 0;
+	margin: 0 0 0 2px;
+	vertical-align: middle;
+}
+
+.thawteSeal
+{
+	width: 80%;
+	border: 0;
+	margin: 5px 30px 5px 5px;
+}
+.thawteSeal td
+{
+	text-align: right;
+}
+#tdRecommended 
+{
+	padding: 6px 0;
+	border-bottom: solid 1px #607EA3;
+}
+#promoTD 
+{
+	font-size: 12px; 
+	padding: 3px;
+}
+.tblOrderSummaryPromotionCode 
+{
+	margin: 5px 0 0;
+	width: 90%;	
+}
+.tblOrderSummaryPromotionCode td
+{
+	text-align: left;
+}
+.txtHidden 
+{
+	visibility: hidden;
+}
+
+.tblCart
+{
+	width: 99%; margin: 0; 
+	border: solid 2px #999;
+}
+
+/*------------------------------------*/
+p.clear
+{
+	clear: both; margin: 0;
+}
+#divBasketOuter
+{
+	/*width: 99%;*/
+	margin: 0;
+	padding: 0;
+	border: solid 2px #999;
+	clear: both;
+	background-color: #FFF;
+	margin-bottom: 5px;
+}
+#columnItems
+{
+	width: 60%;  
+}
+#columnQuantity
+{
+	width: 125px; 
+}
+.tdQuantity
+{
+	vertical-align: top;
+	text-align: right;
+	width: 30%;
+	padding: 5px 2px 0 0;
+}
+.tdUpdateQuantity
+{
+	vertical-align: top;
+	text-align: left;
+	width: 60px;
+	padding: 3px 1px 0 0;
+}
+.tdUnitPrice
+{
+	vertical-align: top;
+	text-align: center;
+	width: 20%;
+	padding: 5px 1px 0 2px;
+}
+.tdLineTotal
+{
+	vertical-align: top;
+	text-align: center;
+	width: 20%;
+	padding: 5px 1px 0 2px;
+}
+.gvBasket 
+{
+	width: 100%;
+}
+.gvBasket th
+{
+	text-align: center;
+	font-weight: bold;
+	background-color: #E0E0E0;
+	padding: 5px;
+	border: 0;
+	border-bottom: solid 1px #000;
+}
+.gvBasket td
+{
+	border: 0;
+}
+th.thQuantity
+{
+	text-align: right;
+	padding-right: 0;
+}
+#columnQuantityValue
+{
+	width: 125px;
+}
+#columnPrice
+{
+	width: 10%;     
+}
+#columnPriceValue
+{
+	width: 10%;
+}
+#columnTotal
+{
+	width: 10%;   
+}
+#columnLinePriceValue
+{
+	width: 10%;
+}
+.columnHeader
+{
+	float: left;
+	/*padding: 8px 3px;*/
+	background-color: #E0E0E0;    
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+.columnValue
+{
+	float: left; 
+	text-align: center; 
+	border: 1px solid red;
+}
+
+.headerBG
+{
+	width: 100%;
+	margin: 0;
+	padding: 3px 0 3px 0;
+	background-color: #E0E0E0; 
+	border-bottom: 1px solid #CCC;
+}
+.tdMainDetails
+{
+	width: 60%;
+	padding: 3px;
+}
+
+.cartItemDetails{
+	float: left; 
+	width: 100%;
+	margin: 3px 0 3px 5px;
+}
+.image 
+{
+	float: left; 
+	margin: 0; 
+	width: 20%;
+}
+.details
+{  
+	padding: 0 0 2px 2px;
+	text-align: left;
+}
+.itemDetails
+{
+	float: left;  
+	padding: 0 0 0 2px;	
+
+	width: 70%;
+}
+
+tr.emptyCartMessage td
+{
+	padding: 20px 0 20px 15px;
+	font-size: 12px;
+	font-weight: bold;	
+}
+
+.promoCodeMessage
+{
+	margin: 5px 0 5px 3px;
+}
+
+.timeSpan
+{
+	clear: both; 
+	font-size: 9px;
+	margin: 3px;
+	border: 0;
+}
+
+/* ------- Recommended ---------------*/
+.callCopySevenNarrow
+{
+    font-size: 12px;
+    padding: 0 0 2px 2px;
+}
+.hrRecommendedDivider
+{
+    border: 1px solid #607EA3;
+    margin: 10px 0 10px 0;
+}
+
+.cartSideCall h2
+{
+    font-size: 14px;
+    color: #607EA3;
+    border-bottom: 2px solid #607EA3;
+}
+.divRecommendedItemImage
+{
+    width: 28%; vertical-align: top; float: left;
+}
+.divRecommendedItemDetail
+{
+    float: left; vertical-align: top; margin: 0; width: 70%; padding: 0 0 3px 2px;
+}
+
+/*-------- Review cart ---------------*/
+.thDeleteRR
+{
+	width: 25px;
+}
+.tdDeleteRR
+{
+	vertical-align: top;
+	text-align: center;
+	padding: 3px;
+	width: 15px; 
+}
+.tdBookCodeRRC
+{
+	width: 50px;
+	padding: 3px;
+	vertical-align: top;
+	text-align: center;
+}
+.tdProductDescription
+{
+	padding: 3px;
+	width: 80%;
+}
+th.thProductDescription
+{
+   text-align: left;
+   padding-left: 5px;
+}
+
+/*--------- review eBook ---------*/
+/*  new styles for coursesmart 01-20-11 */
+.requestPrintBtn
+{
+	float: left;
+	margin: 11px 5px 5px 5px;
+	width: 219px; 
+	height: 88px; 
+	background: url(../img/request_btn.gif) no-repeat;
+	background-position: center 0px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000 !important;
+	text-decoration: none !important;
+	overflow: visible;
+}
+.requestPrintBtn:hover
+{
+	text-decoration: underline !important;
+	background-position: center -100px;
+}
+.titleImg
+{
+	float: left;
+	margin: 16px 0 0 12px;
+}
+.titleText
+{
+	float: left;
+	padding: 0;
+	margin: 20px 0 0 8px;
+	width: 135px;
+	color: #333;
+}
+.orText
+{
+	float: left;
+	padding: 0;
+	margin: 44px 0 0 0px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+}
+.learnMoreBtn
+{
+	float: right;
+	width: 106px;
+	height: 20px;
+	background: url(../img/learn_more_bl.gif) no-repeat;
+	margin: 8px 3px 0 0;
+}
+#csFadeUp
+{
+	float: left;
+	margin: 1px 0 0 -8px;
+	width: 460px; 
+	height: 108px; 
+	background: url(../img/cs_fadeup.gif) no-repeat;
+	background-position: 8px 0px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	text-decoration: none;
+	overflow: visible;
+}
+.csText
+{
+	float: left;
+	padding: 0;
+	margin: 11px 0 0 38px;
+	line-height: 17px;
+	width: 410px;
+	color: #333;
+}
+.csText a
+{
+	text-decoration: underline;
+	color: #003366;
+	font-weight: bold;
+}
+.frametable th
+{
+	padding: 5px;
+	background: #E0E0E0;
+}
+/*----------------------------------------------*/
+
+.tblCart th
+{
+	border-bottom: solid 1px #CCC; 
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	padding: 8px 3px; 
+	font-size: 12px; 
+	text-align: center; 
+}
+.tblCart td
+{
+	background-color: #FFF;
+}
+/*-------------------*/
+.tblPromotionCode
+{
+	background-color: #E0E0E0; 
+	width: 99%; 
+	border: solid 2px #999; 
+	margin: 5px 0 0;
+}
+.tdPromo1
+{
+	width: 65%; 
+	padding: 12px 3px 10px 12px; 
+	font-size: 12px; 
+	text-align: left; 
+	vertical-align: top; 
+	font-weight: bold;
+}
+.tdPromo2
+{
+	padding: 8px 3px; font-size: 12px; text-align: center; width: 19%;
+}
+.tdPromo3
+{
+	padding: 8px 3px; font-size: 12px; text-align: center; width: 20px;
+}
+.tblPromoBox
+{
+	width: 100%;
+}
+.tdPromoBox1
+{
+	width: 20%; font-size: 12px;
+}
+.tblSubtotal
+{
+	width: 100%;
+	
+}
+.tblSubtotal th
+{
+	padding: 8px 3px; 
+	font-size: 12px; 
+	text-align: center; 
+	text-align: right; 
+	padding-right: 5px; 
+	font-weight: bold;
+}
+.tblSubtotal td
+{
+	padding: 8px 3px; font-size: 12px; text-align: center; text-align: right;
+}
+/*------------ basket ---------------*/
+.tdBasketOuter
+{
+	width: 57%; padding: 5px 5px 0; text-align: left;
+}
+td.tdBasketImage
+{
+	background-color: #E0EBEB;
+}
+
+.tdBasketImage{
+width: 100px; vertical-align: top;
+}
+.tdBasketItemData
+{
+	vertical-align: top; padding-left: 5px;
+}
+.tdBasketItemTitle
+{
+	font-size: 14px; vertical-align: top; text-align: left; padding-left: 3px;
+}
+.tdBasketItemISBN
+{
+	font-size: 14px; vertical-align: top; text-align: left; padding-left: 3px;
+}
+.tdBasketItemPromoMessage
+{
+	color: #800000; font-size: 12px; padding: 3px;
+}
+.tdBasketItemRemoveBtn
+{
+	vertical-align: middle; padding: 5px 3px 0 3px;
+}
+.tdBasketQtyBox
+{
+	padding: 5px; text-align: center; vertical-align: top;
+}
+.tdBasketItemPrice
+{
+	padding: 5px; text-align: center; font-size: 14px; vertical-align: top;
+}
+.tdBasketTotal
+{
+	padding: 5px; text-align: center; font-size: 14px; vertical-align: top;
+}
+
+.tdCustInfoRight
+{
+	background-image: url(../images/cart/custInfoRight.html); background-repeat: repeat-y; width: 19px;
+}
+/*-------- Checkout ----------*/
+
+.tblReturningUsers
+{
+	width: 100%;
+}
+.tblReturningUsers th 
+{
+	text-align: right; padding: 5px 5px 5px 10px; font-size: 12px; font-weight: bold;
+}
+.tblReturningUsers td
+{
+	text-align: left; padding: 5px 15px 5px 5px;
+}
+.tdReturningUsers1
+{
+	text-align: left; padding: 15px 5px 5px 10px; font-size: 12px;
+}
+.tdReturningUsers2
+{
+	text-align: left; padding: 5px 5px 5px 5px; font-size: 12px;
+}
+.tdCustomerInfoRight
+{
+	background-image: url(../images/custInfoRight.gif); 
+	background-repeat: repeat-y; 
+	width: 19px;
+}
+.tdCustInfoBottomLeft
+{
+	background-image: url(../images/custInfoBottomLeft.gif); 
+	background-repeat: no-repeat; 
+	width: 19px; 
+	height: 11px;
+}
+.tdCustInfoBottom
+{
+	background-image: url(../images/custInfoBottom.gif); 
+	background-repeat:  repeat-x; 
+	height: 11px;
+}
+.tdCustInfoBottomRight
+{
+	background-image: url(../images/custInfoBottomRight.gif); 
+	background-repeat: no-repeat; 
+	width: 19px; 
+	height: 11px;
+}
+.tdCustomerInfoLeftCorner
+{
+	background-image: url(../images/custInfoLeftCorner.gif); 
+	background-repeat: no-repeat; 
+	width: 19px; 
+	height: 50px;
+}
+
+.tdCustInfoCenter
+{
+	background-image: url(../images/custInfoCenter.gif); 
+	background-repeat: repeat-x; 
+	font-weight: bold; 
+	color: #FFF; 
+	text-align: center; 
+	vertical-align: middle;
+}
+
+.tdCustInfoRightCorner
+{
+	background-image: url(../images/custInfoRightCorner.gif); 
+	background-repeat: no-repeat; 
+	width: 19px; 
+	height: 50px;
+}
+
+.tdCustInfoLeft
+{
+	background-image: url(../images/custInfoLeft.gif); 
+	background-repeat: repeat-y; 
+	width: 19px;
+}
+.tdLoginTypeDescription
+{
+	text-align: left; padding: 15px 5px 5px 10px; font-size: 12px; vertical-align: bottom;
+}
+.tdLogonErrorMessage
+{
+color: #800000; font-size: 12px; text-align: center;
+}
+.tblNewUser
+{
+width: 100%;
+}
+.tblNewUser th 
+{
+	text-align: right; padding: 5px 5px 5px 10px; font-size: 12px; font-weight: bold;
+}
+.tblNewUser td
+{
+	text-align: left; padding: 5px 15px 5px 5px;
+}	
+.btnContinueAsGuest
+{
+	text-align: left; padding: 5px 5px 15px 5px; font-size: 14px; vertical-align: top;
+}
+.divLoginPadding
+{
+	padding: 10px 15px 0 15px;
+}
+.tdLoginTableOrientation
+{
+	padding: 0 5px 0; text-align: right; width: 50%; vertical-align: top; text-align: right;
+}
+.tdLoginNewTableOrientation
+{
+	padding: 0 5px 0; text-align: left; width: 50%; vertical-align: top; 
+}
+.tblLoginNewOuter
+{
+	width: 75%;
+	text-align: left;
+}
+.tblHours
+{
+	border-right: solid 1px #e0e0e0;
+	border-top: solid 1px #e0e0e0;
+}
+.tblHours td
+{
+	padding: 3px;
+	border-left: solid 1px #e0e0e0;
+	border-bottom: solid 1px #e0e0e0;
+}
+.tblHours th
+{
+	padding: 3px;
+	border-left: solid 1px #e0e0e0;
+	border-bottom: solid 1px #e0e0e0;
+	font-weight: normal;
+	color: #34505F;
+}
+.tblNonJBHours
+{
+	border-right: solid 1px #e0e0e0;
+	border-top: solid 1px #e0e0e0;
+}
+.tblNonJBHours td
+{
+	padding: 3px;
+	border-left: solid 1px #e0e0e0;
+	border-bottom: solid 1px #e0e0e0;
+}
+.tblNonJBHours th
+{
+	padding: 3px;	
+	border-bottom: solid 1px #e0e0e0;
+	font-weight: bold;
+	color: #644A62;
+}
+#divSkillsTestingMessageHidden
+{
+	visibility: hidden;
+}
+##divSkillsTestingMessage
+{
+	visibility: visible;
+}
+
+.cartSidebar
+{
+	vertical-align: top;	
+}
+
+.cartSideCall
+{
+	width:99%;
+}
+
+.lblReco
+{
+	color: #607ea3; 
+	width: 100%;
+	margin: 2px 0 0 3px; 
+	background-color: #FFF; 
+	text-align: left; 
+	font-size: 15px; 
+	font-weight: bold; 
+	padding: 10px 0 0 0;
+}
+
+.hrLine
+{
+	border: solid 1px #607ea3; width: 100%; margin: 0 0 1px 0;
+}
+/* ----------- Checkout New --------------------*/
+.cartlabel
+{
+	float: left; 
+	width: 220px;
+	font-weight: bold;
+	text-align: right;
+	margin: 0;
+}
+.label
+{
+    margin: 0;
+    float: left;
+}
+.field
+{
+    margin: 0 0 0 5px;
+    float: left;
+    text-align: left;
+}
+.label1
+{
+	/*float: left; */
+	width: 80%;		
+	margin: 0 10px 3px 5px;
+}
+.cartfield
+{
+	float: left;
+	text-align: left;
+	padding-left: 5px;
+	margin: 0;
+}
+.field1
+{
+   /* float: left;*/
+	text-align: left;
+	padding-left: 5px;
+}
+.sideNote
+{
+    float: left; color: #999; padding: 2px;
+    font-size: 10px;
+    white-space: nowrap;
+}
+.emph
+{
+	color: Red;
+}
+.description
+{
+	font-size: 11px; 
+	text-align: center;
+	margin: 10px 10px 10px 5px;
+}
+.multiline
+{
+    height: 100px;
+    width: 175px;
+}
+
+.coursesTaught input
+{
+    margin: 0 3px 3px 5px;
+}
+
+.btnSubmitCourse
+{
+    float: right;
+    
+}
+/*-------- Crumbs -------------*/
+.emptyFillLeft
+{
+	float: left; background-image: url(../img/cart/arrow_fill.jpg); background-repeat: repeat-x; width: 5%; height: 44px;
+}
+.emptyFillLeft_selected
+{
+	float: left; background-image: url(../img/cart/arrow_fill_selected.jpg); background-repeat: repeat-x; width: 5%; height: 44px;
+}
+.emptyFillRight
+{
+    float: left; background-image: url(../img/cart/arrow_fill.jpg); background-repeat: repeat-x; width: 6%; height: 44px;
+}
+#rightFill
+{
+	float: left; background-image: url(../img/cart/arrow_fill.jpg); background-repeat: repeat-x; width: 15px; height: 44px;
+}
+.arrow
+{
+	float: left; background-image: url(../img/cart/arrow_left.jpg); background-repeat: no-repeat; width: 20px; height: 44px;
+}
+.arrow_selected
+{
+	float: left; background-image: url(../img/cart/arrow_right_selected.jpg); background-repeat: no-repeat; width: 20px; height: 44px;
+}
+.arrow_left_selected
+{
+	float: left; background-image: url(../img/cart/arrow_left_selected.jpg); background-repeat: no-repeat; width: 20px; height: 44px;
+}
+.fill
+{
+    float: left; 
+    background-image: url(../img/cart/arrow_fill.jpg); 
+    background-repeat: repeat-x; 
+    padding: 15px 35px 0pt; 
+    height: 44px; 
+    color: rgb(255, 255, 255); 
+    font-size: 11px;
+}
+.fill_selected
+{
+    float: left; 
+    background-image: url(../img/cart/arrow_fill_selected.jpg); 
+    background-repeat: repeat-x; 
+    padding: 15px 35px 0pt; 
+    height: 44px; 
+    color: rgb(255, 255, 255); 
+    font-size: 11px;
+}
+
+#redeemCodeContainer
+{
+    font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+    padding-bottom:20px; 
+}
+
+.labelInputPair label
+{
+    float:left;
+    text-align:right;
+    padding-right:10px;
+    /*vertical-align:bottom;*/
+    line-height:2.333em;
+}
+
+.inputBoxes
+{
+    font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+    border: 1px solid #CCCCCC;
+	/*width: 235px !important;*/
+	padding:5px;
+}
+
+#redeemCodeContainer .registrationProcess div
+{
+    float:left;
+    padding-bottom:20px;
+}
+
+/* REDEEM ACCESS STYLES SPECIFICS */
+
+#redeemCodeContainer .loginBoxes
+{
+    border: 1px solid #34505F;
+    background-color: #C7D4D8;
+    width:360px;
+    float:left;
+    margin:0 20px 20px 0;
+    padding: 20px;
+	font-size: 12px;
+	height: 300px;
+}
+
+#redeemCodeContainer .loginBoxes ul li
+{
+    padding: 0 0 .4em 21px;
+	background: url('../img/bullet1.gif') no-repeat 3px 3px;
+	list-item-type: url('../img/bullet1.gif');
+	
+}
+
+#redeemCodeContainer .loginBoxes .absContent
+{
+    position:absolute;
+    padding:0px;
+    margin:0px;
+}
+
+#redeemCodeContainer .loginBoxes .relContent
+{
+    position:relative;
+    padding:0px;
+    margin:0px;
+}
+
+#redeemCodeContainer .loginBoxes div
+{
+   padding-bottom:20px;
+}
+
+#redeemCodeContainer .loginBoxes .labelInputPair label
+{
+    width:100px;
+}
+
+#redeemCodeContainer .loginBoxes .labelInputPair .inputBoxes
+{
+    width: 235px !important;
+}
+
+#redeemCodeContainer .loginBoxes .alignLeft
+{
+    padding-left:110px;
+}
+
+#redeemCodeContainer .loginBoxes #signInBtn
+{
+    float:right;
+    margin: 0;
+    padding:0px;
+}
+
+#redeemCodeContainer .loginBoxes #signInBtn img
+{
+    display:block;
+    padding:0px;
+    margin:0px;
+}
+
+#redeemCodeContainer .loginBoxes #needAssist 
+{
+    float:right;
+    margin:0;
+    padding-top: 20px;
+    /*font-size:1em;*/
+}
+
+.vsFormError
+{
+    background-color:#E6ADB3;
+    border: 1px solid Red;
+    color: #E61029;
+    padding: 10px;
+    margin-bottom:20px;
+}
+.newRegEmail
+{
+    visibility: visible;
+    margin-bottom: 3px;
+}
+.newRegEmailHidden
+{
+    visibility: hidden;
+    margin: 0;
+}
+.loginError
+{
+    width: 350px;
+    color: #AC0606;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+.divCart
+{
+    float: left; width: 72%; margin: 0;
+}
+.recomdPrice
+{
+    font-size: 12px; vertical-align: top; text-align: left; padding: 0 0 2px 3px;
+}
+.recomdButton
+{
+    vertical-align: middle; padding: 5px 3px 0px 3px;
+}
+.gvBasket 
+{
+    border: 0;
+}
+
+.errorMessage
+{
+    color: Red;
+}
+span.errorMessage
+{
+    color: Red;
+}

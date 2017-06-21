@@ -1,0 +1,41 @@
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	border-top:4px solid #FFC423;
+}
+
+div#printBody {
+	font-family:Verdana, Geneva, sans-serif;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	font-size:80%;
+}
+div#printFooter {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	color:#999;
+	clear:both;
+}
+
+ul.prodList {
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+}
+
+ul.prodList li {
+	float:left;
+	margin-left:6px;
+	margin-right:27px;
+	padding:0;
+	text-align:left;
+	width:153px;
+	display:inline;
+}
+
+.prodList dl {
+	display: none;
+}
