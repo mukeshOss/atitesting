@@ -139,8 +139,8 @@
           </div>
           <div id="header-searchBar">
             <fieldset class="sf_searchBox">
-              <input name="ctl00$HeaderSearchBar$tm_SearchBox2$ctl00$ctl00$queryText" type="text" value="Search" id="ctl00_HeaderSearchBar_tm_SearchBox2_ctl00_ctl00_queryText" class="sf_searchText" onfocus="JavaScript:searchBoxFocus(event, this);" onblur="JavaScript:searchBoxBlur(event, this);">
-              <input name="ctl00$HeaderSearchBar$tm_SearchBox2$ctl00$ctl00$searchButton" type="button" id="ctl00_HeaderSearchBar_tm_SearchBox2_ctl00_ctl00_searchButton" onmouseover="JavaScript: searchBarGoMouseOver(event, this);" onmouseout="JavaScript: searchBarGoMouseOut(event, this);" class="sf_searchSubmit" alt="Search">
+              <input name="" type="text" value="Search" id="" class="sf_searchText" >
+              <input name="" type="button" id=""   class="sf_searchSubmit" alt="Search">
               <div class="clear"> </div>
             </fieldset>
             <ol class="sf_eventsList">
