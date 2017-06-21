@@ -12,7 +12,7 @@
                     <div id="redeemAccess"> <a href="http://www2.jblearning.com/my-account/terms-and-conditions"><img src="/website/static/jblearning/img/access2.png" alt="Redeem an acces code" /></a> </div>
                     <div id="findSalesRep"> <a href="aboutus/contactus/findarep/index.html"><img src="/website/static/jblearning/img/findyoursalesrep.png" alt="Find Your Sales Rep" /></a> </div>
                   </div>
-                  <div id="slider" class="nivoSlider"> <a href="https://www.psglearning.com/" target="_blank"> <img src="/website/static/jblearning/images/homeslider00.jpg"  title="&nbsp;" /> </a> <a href="http://www.emsreference.com/" target="_blank"> <img src="/website/static/jblearning/images/homeslider01.jpg"  title="&nbsp;" /> </a> <a href="https://evidence.care/evidencecare-integrates-with-tarascan-pharmacopoeia/" target="_blank"> <img src="/website/static/jblearning/images/homeslider03.jpg" title="&nbsp;" data-transition="slideInRight" /> </a> <a href="catalog/9781284100952/index.html"> <img src="/website/static/jblearning/images/homeslider04.jpg" title="&nbsp;" data-transition="slideInRight" /> </a> <a href="http://www.jblnavigate.com/" target="_blank"> <img src="/website/static/jblearning/images/homeslider05.jpg"  title="&nbsp;" /> </a> </div>
+                 <?= $this->areablock("carousel" ,["width" => 760, "height" => 265]) ?>
                   <!-- nivoslider --> 
                 </div>
                 <!-- slider-wrapper --> 
@@ -30,7 +30,15 @@
               <div class="minicol4"> <a href="publish/index.html"><img src="/website/static/jblearning/img/hm_publishlogo.png" border="0" style="float: left; margin-bottom: 8px;" /></a> <a href="publish/index.html" class="learmore_hm_btn"></a>
                 <div class="clear"></div>
                 <span style="font-size: 11px;">PUBLISH is the easiest way for instructors and curriculum developers to build fully customized course materials from the Jones & Bartlett Learning content library.</span> </div>
-              <div class="minicol5"> <img src="/website/static/jblearning/img/imprints.png" class="imprints-img" /> <a href="http://www.psglearning.com/" target="_blank" class="imprint_psg"></a> <a href="http://www.ecsinstitute.org/" target="_blank" class="imprint_ecsi"></a> <a href="http://www.informedguides.com/" target="_blank" class="imprint_informed"></a> <a href="http://www.uglys.net/" target="_blank" class="imprint_uglys"></a> <a href="http://www.tarascon.com/" target="_blank" class="imprint_tara"></a> <a href="http://www.cdxauto.com/" target="_blank" class="imprint_cdxauto"></a> </div>
+              <div class="minicol5"> 
+                <img src="/website/static/jblearning/img/imprints.png" class="imprints-img" /> 
+                <a href="http://www.psglearning.com/" target="_blank" class="imprint_psg"></a>
+                 <a href="http://www.ecsinstitute.org/" target="_blank" class="imprint_ecsi"></a> 
+                 <a href="http://www.informedguides.com/" target="_blank" class="imprint_informed"></a>
+                  <a href="http://www.uglys.net/" target="_blank" class="imprint_uglys"></a> 
+                  <a href="http://www.tarascon.com/" target="_blank" class="imprint_tara"></a> 
+                  <a href="http://www.cdxauto.com/" target="_blank" class="imprint_cdxauto"></a>
+                   </div>
               <div class="clear"> </div>
             </div>
           </div>

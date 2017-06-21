@@ -47,7 +47,7 @@ class JBlearning_ContentController extends Action {
         
     }
 
-    public function linkAction() {
+    public function caraouselAction() {
         
     }
 
