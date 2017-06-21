@@ -1623,3 +1623,9 @@ a:active
     color:#C74E46 !important;
     margin-bottom:10px !important;
     }
+.redHomeContainer .pimcore_block_entry.tiles_blockhome_block1{
+    width: 50%; float: left;
+    padding: 15px;
+    box-sizing: border-box;  clear: none;
+
+}    

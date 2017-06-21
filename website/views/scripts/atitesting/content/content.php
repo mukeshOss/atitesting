@@ -19,6 +19,7 @@
                             'AtiTesting_LeftNav',
                         ];
                         ?>
+                        
                         <?php
                         echo $this->areablock('content_block', array(
                             'allowed' => $allowedAreas,

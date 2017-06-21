@@ -122,7 +122,7 @@
 
         <div id="headerLogo-top"> </div>
         <div id="headerLogo-middle">
-          <a id="ctl00_headerLogoLink" class="headerLogo-link" href="Home.html">
+          <a id="ctl00_headerLogoLink" class="headerLogo-link" href="/">
          	<img id="ctl00_headerLogoLinkSpacer" class="headerLogo-link-spacer" 
          	src="/website/static/atitesting/css/App_Themes/AtiTesting/Images/blank.gif" border="0"></a> 
          </div>
@@ -203,8 +203,12 @@
       <tbody><tr>
         <td valign="top" align="left"><div id="content">
             <div class="topContent">
+
               <div class="clear"> </div>
             </div>
+                <?php if ($this->editmode): ?>
+    <div class ="redHomeContainer">
+<?php endif; ?>
              <table cellpadding="0" cellspacing="0" id="tableContent">
               <tbody><tr> 
                 <?php
@@ -215,6 +219,7 @@
                             'AtiTesting_HomeTiles',
                         ];
                         ?>
+
                         <?php
                         echo $this->areablock('home_block', array(
                             'allowed' => $allowedAreas,
@@ -230,11 +235,15 @@
                                 )
                         );
                         ?>
+
              </tr>
-            </tbody></table>
+            </tbody></table><?php if ($this->editmode): ?>
+    </div>
+<?php endif; ?>
             <div class="bottomContent">
               <div class="clear"> </div>
             </div>
+
           </div></td>
         <td valign="top" align="right"><div class="sidebar">
             <div id="signOnForm" style="">
