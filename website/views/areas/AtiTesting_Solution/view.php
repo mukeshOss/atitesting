@@ -1,5 +1,4 @@
 <?php if($this->editmode){  ?>
-    
     <?php echo $this->input("programTitle"); ?>
  <?php echo $this->wysiwyg("description"); ?>
 <?php } else { ?>
@@ -12,7 +11,4 @@
     <?php echo $this->wysiwyg("description")->text; ?>
 </div>
 <?php } ?>
-
-
-
 <div class="clear"></div>

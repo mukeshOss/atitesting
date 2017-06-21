@@ -12,7 +12,7 @@
                     <div class="secondaryNav-spacer">|</div>
                     <a href="#" id="ctl00_HeaderSecondaryNav_shop">Online Store</a>
                     <div class="secondaryNav-spacer">|</div>
-                    <a href="/ContactUs.aspx" id="ctl00_HeaderSecondaryNav_contactUs">Contact Us </a>
+                    <a href="#" id="ctl00_HeaderSecondaryNav_contactUs">Contact Us </a>
                     <div class="clear"> </div>
                 </div>
                 <div id="header-searchBar">
