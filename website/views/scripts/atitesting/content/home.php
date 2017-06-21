@@ -171,10 +171,32 @@
             <div class="topContent">
               <div class="clear"> </div>
             </div>
-            <table cellpadding="0" cellspacing="0" id="tableContent">
-              <tbody><tr>
-                <?= $this->areablock("content"); ?>
-              </tr>
+             <table cellpadding="0" cellspacing="0" id="tableContent">
+              <tbody><tr> 
+                <?php
+                        $allowedAreas = [
+                            'AtiTesting_Headline',
+                            'AtiTesting_SubHeadline',
+                            'AtiTesting_Wysiwyg',
+                            'AtiTesting_HomeTiles',
+                        ];
+                        ?>
+                        <?php
+                        echo $this->areablock('home_block', array(
+                            'allowed' => $allowedAreas,
+                            "areablock_toolbar" => array(
+                                "title" => "",
+                                "width" => 230,
+                                "x" => 20,
+                                "y" => 300,
+                                "xAlign" => "left",
+                                "buttonWidth" => 218,
+                                "buttonMaxCharacters" => 35,
+                                "collapsible" => true)
+                                )
+                        );
+                        ?>
+             </tr>
             </tbody></table>
             <div class="bottomContent">
               <div class="clear"> </div>

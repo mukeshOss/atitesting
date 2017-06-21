@@ -1,7 +1,7 @@
-<table cellpadding="0" cellspacing="0" id="contentAndSidebar">
+ <table cellpadding="0" cellspacing="0" id="contentAndSidebar">
     <tbody><tr>
             <td valign="top" class="sidebar">
-                <?php echo $this->inc("/atitesting/shared/leftnav"); ?>
+                <?php echo $this->inc("/atitesting/shared/leftnav",array('docPath' => $this->document->getPath() . $this->document->getKey())); ?>
             </td>
             <td rowspan="2" valign="top">
                 <div id="content">
@@ -33,7 +33,7 @@
                                 "collapsible" => true)
                                 )
                         );
-                        ?>	
+                        ?>
 
                     </div>
                     <table cellpadding="0" cellspacing="0" id="tableContent">
@@ -64,19 +64,19 @@
         <tr>
             <td valign="bottom" class="sidebar">
                 <div id="signOnForm" style="display: none;">
-                    <input tabindex="100" id="signOnForm-userId" onfocus="JavaScript:userIdFocus(event, this);" onblur="JavaScript:userIdBlur(event, this);" onkeypress="JavaScript: return userIdKeyPress(event, 'http://www.atitesting.com/ati_next_gen/Default.aspx');" name="txtUserName" type="text" value="Username"><div id="userNameErrorMessage" class="userId-error" style="display:none;">
+                    <input tabindex="100" id="signOnForm-userId" onfocus="JavaScript:userIdFocus(event, this);" onblur="JavaScript:userIdBlur(event, this);" onkeypress="JavaScript: return userIdKeyPress(event, ' http://www.atitesting.com/ati_next_gen/Default.aspx');" name="txtUserName" type="text" value="Username"><div id="userNameErrorMessage" class="userId-error" style="display:none;">
 
                     </div><div id="signOnForm-passwordAndGo">
-                        <input tabindex="101" id="signOnForm-passwordText" name="signOnForm-passwordText" value="Password" onfocus="JavaScript:passwordTextFocus(event, this);"><input tabindex="102" id="signOnForm-password" name="txtPassword" type="password" onblur="JavaScript:passwordBlur(event, this);" onkeypress="JavaScript: return passwordKeyPress(event, 'http://www.atitesting.com/ati_next_gen/Default.aspx');" value="" style="display:none;"><input tabindex="102" class="signOnForm-go" type="button" onclick="JavaScript: return submitSignOnForm('http://www.atitesting.com/ati_next_gen/Default.aspx');" onmouseover="JavaScript: signInGoMouseOver(event, this);" onmouseout="JavaScript: signInGoMouseOut(event, this);"><div class="clear">
+                        <input tabindex="101" id="signOnForm-passwordText" name="signOnForm-passwordText" value="Password" onfocus="JavaScript:passwordTextFocus(event, this);"><input tabindex="102" id="signOnForm-password" name="txtPassword" type="password" onblur="JavaScript:passwordBlur(event, this);" onkeypress="JavaScript: return passwordKeyPress(event, ' http://www.atitesting.com/ati_next_gen/Default.aspx');" value="" style="display:none;"><input tabindex="102" class="signOnForm-go" type="button" onclick="JavaScript: return submitSignOnForm(' http://www.atitesting.com/ati_next_gen/Default.aspx');" onmouseover="JavaScript: signInGoMouseOver(event, this);" onmouseout="JavaScript: signInGoMouseOut(event, this);"><div class="clear">
 
                         </div><div id="passwordErrorMessage" class="password-error" style="display:none;">
 
                         </div>
                     </div><div id="signOnForm-other">
                         <div id="signOnForm-needHelp">
-                            <a href="http://www.atitesting.com/ati_next_gen/General/Login_Step1.aspx" id="ctl00_forgotPassword" class="signOnForm-needHelp-link">Forgot username and/or password?</a>
+                            <a href=" http://www.atitesting.com/ati_next_gen/General/Login_Step1.aspx" id="ctl00_forgotPassword" class="signOnForm-needHelp-link">Forgot username and/or password?</a>
                         </div><div id="signOnForm-register">
-                            <a href="http://student.atitesting.com/login?mode=1" id="ctl00_register" class="signOnForm-register-link">Create an account.</a>
+                            <a href=" http://student.atitesting.com/login?mode=1" id="ctl00_register" class="signOnForm-register-link">Create an account.</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                         }
                         var n = d.createElement(s), e = d.getElementsByTagName(s)[0];
                         n.id = i;
-                        n.src = '//js.hs-analytics.net/analytics/' + (Math.ceil(new Date() / r) * r) + '/497482.js';
+                        n.src = '// js.hs-analytics.net/analytics/' + (Math.ceil(new Date() / r) * r) + '/497482.js';
                         e.parentNode.insertBefore(n, e);
                     })(document, "script", "hs-analytics", 300000);
                 </script> <!-- End of Async HubSpot Analytics Code -->
@@ -116,4 +116,4 @@
                 </div>
             </td>
         </tr>
-    </tbody></table>
+    </tbody></table> 

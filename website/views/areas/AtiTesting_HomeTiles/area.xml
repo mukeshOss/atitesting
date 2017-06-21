@@ -3,11 +3,6 @@
     <id>AtiTesting_HomeTiles</id>
     <name>AtiTesting_HomeTiles</name>
     <description></description>
-    
-    <!-- the following infos are optional -->
-    <icon>/pimcore/static/img/icon/html.png</icon>
+    <author>pimcore.org</author>
     <version>1.0</version>
-    
-    <!-- you can add your custom configurations as well -->
-    <myCustomConfig>MyValue</myCustomConfig>
 </zend-config>
