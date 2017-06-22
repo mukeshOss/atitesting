@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-06-22T09:52:24+02:00
+* Generated at: 2017-06-22T13:08:05+02:00
 * Inheritance: yes
 * Variants: no
 * Changed by: admin (2)
@@ -27,7 +27,7 @@ namespace Pimcore\Model\Object;
 * @method \Pimcore\Model\Object\ProductCategory\Listing getByFilterdefinition ($value, $limit = 0) 
 */
 
-class ProductCategory extends \OnlineShop_Framework_AbstractCategory {
+class ProductCategory extends \OnlineShop\Framework\Model\AbstractCategory {
 
 public $o_classId = 12;
 public $o_className = "ProductCategory";

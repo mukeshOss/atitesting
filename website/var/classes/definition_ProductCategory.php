@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-06-22T09:52:24+02:00
+* Generated at: 2017-06-22T13:08:05+02:00
 * Inheritance: yes
 * Variants: no
 * Changed by: admin (2)
@@ -23,10 +23,10 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'name' => 'ProductCategory',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1498117944,
+   'modificationDate' => 1498129685,
    'userOwner' => 2,
    'userModification' => 2,
-   'parentClass' => 'OnlineShop_Framework_AbstractCategory',
+   'parentClass' => '\\OnlineShop\\Framework\\Model\\AbstractCategory',
    'useTraits' => '',
    'allowInherit' => true,
    'allowVariants' => false,
