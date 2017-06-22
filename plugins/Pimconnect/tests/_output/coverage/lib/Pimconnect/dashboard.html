@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/pimcoremage/plugins/pocm/Pimconnect/lib/Pimconnect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../js/html5shiv.min.js"></script>
+  <script src="../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">/var/www/html/pimcoremage/plugins/pocm/Pimconnect</a></li>
+        <li><a href="../index.html">lib</a></li>
+        <li><a href="index.html">Pimconnect</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AppTool.php.html#12">AppTool</a></td><td class="text-right">64%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AppTool.php.html#12">AppTool</a></td><td class="text-right">840</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="PimconnectModel.php.html#26"><abbr title="PimconnectModel::getDBConnection">getDBConnection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AppTool.php.html#323"><abbr title="AppTool::manageStructureFieldData">manageStructureFieldData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AppTool.php.html#369"><abbr title="AppTool::manageObjectsData">manageObjectsData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AppTool.php.html#285"><abbr title="AppTool::manageStructureBrickData">manageStructureBrickData</abbr></a></td><td class="text-right">4%</td></tr>
+       <tr><td><a href="AppTool.php.html#733"><abbr title="AppTool::handleAssetData">handleAssetData</abbr></a></td><td class="text-right">36%</td></tr>
+       <tr><td><a href="AppTool.php.html#625"><abbr title="AppTool::getValueForVariant">getValueForVariant</abbr></a></td><td class="text-right">37%</td></tr>
+       <tr><td><a href="AppTool.php.html#208"><abbr title="AppTool::manageStructureData">manageStructureData</abbr></a></td><td class="text-right">44%</td></tr>
+       <tr><td><a href="AppTool.php.html#540"><abbr title="AppTool::getSkuID">getSkuID</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="AppTool.php.html#423"><abbr title="AppTool::createJsonForMagento">createJsonForMagento</abbr></a></td><td class="text-right">61%</td></tr>
+       <tr><td><a href="AppTool.php.html#254"><abbr title="AppTool::manageStructureLocalizedData">manageStructureLocalizedData</abbr></a></td><td class="text-right">69%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AppTool.php.html#323"><abbr title="AppTool::manageStructureFieldData">manageStructureFieldData</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="AppTool.php.html#423"><abbr title="AppTool::createJsonForMagento">createJsonForMagento</abbr></a></td><td class="text-right">64</td></tr>
+       <tr><td><a href="AppTool.php.html#285"><abbr title="AppTool::manageStructureBrickData">manageStructureBrickData</abbr></a></td><td class="text-right">63</td></tr>
+       <tr><td><a href="AppTool.php.html#625"><abbr title="AppTool::getValueForVariant">getValueForVariant</abbr></a></td><td class="text-right">40</td></tr>
+       <tr><td><a href="AppTool.php.html#208"><abbr title="AppTool::manageStructureData">manageStructureData</abbr></a></td><td class="text-right">36</td></tr>
+       <tr><td><a href="AppTool.php.html#369"><abbr title="AppTool::manageObjectsData">manageObjectsData</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="AppTool.php.html#254"><abbr title="AppTool::manageStructureLocalizedData">manageStructureLocalizedData</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="AppTool.php.html#540"><abbr title="AppTool::getSkuID">getSkuID</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="AppTool.php.html#733"><abbr title="AppTool::handleAssetData">handleAssetData</abbr></a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 4.0.1</a> using <a href="https://secure.php.net/" target="_top">PHP 5.6.23</a> with <a href="https://xdebug.org/">Xdebug 2.4.0</a>, <a href="http://codeception.com">Codeception</a> and <a href="http://phpunit.de/">PHPUnit 5.6.2</a> at Mon Dec 19 14:24:59 CET 2016.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../js/holder.min.js" type="text/javascript"></script>
+  <script src="../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,1,0,0,1,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([3,1,0,0,2,1,0,3,1,3,4,16], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[64.224137931034,125,"<a href=\"AppTool.php.html#12\">AppTool<\/a>"],[91.237113402062,42,"<a href=\"PimconnectModel.php.html#12\">PimconnectModel<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"AppTool.php.html#20\">AppTool::getToken<\/a>"],[100,9,"<a href=\"AppTool.php.html#59\">AppTool::curlPostCallMagento<\/a>"],[100,1,"<a href=\"AppTool.php.html#122\">AppTool::escapeJsonString<\/a>"],[90,3,"<a href=\"AppTool.php.html#151\">AppTool::formartImage<\/a>"],[100,3,"<a href=\"AppTool.php.html#185\">AppTool::getKewords<\/a>"],[44.827586206897,12,"<a href=\"AppTool.php.html#208\">AppTool::manageStructureData<\/a>"],[69.230769230769,7,"<a href=\"AppTool.php.html#254\">AppTool::manageStructureLocalizedData<\/a>"],[4.7619047619048,8,"<a href=\"AppTool.php.html#285\">AppTool::manageStructureBrickData<\/a>"],[0,10,"<a href=\"AppTool.php.html#323\">AppTool::manageStructureFieldData<\/a>"],[0,3,"<a href=\"AppTool.php.html#369\">AppTool::manageObjectsData<\/a>"],[94.117647058824,4,"<a href=\"AppTool.php.html#395\">AppTool::manageData<\/a>"],[61.458333333333,26,"<a href=\"AppTool.php.html#423\">AppTool::createJsonForMagento<\/a>"],[60,3,"<a href=\"AppTool.php.html#540\">AppTool::getSkuID<\/a>"],[86.363636363636,13,"<a href=\"AppTool.php.html#559\">AppTool::mangaeKeywordForMagento<\/a>"],[37.209302325581,11,"<a href=\"AppTool.php.html#625\">AppTool::getValueForVariant<\/a>"],[100,7,"<a href=\"AppTool.php.html#684\">AppTool::getDataForPimAndMagentoIds<\/a>"],[36.363636363636,2,"<a href=\"AppTool.php.html#733\">AppTool::handleAssetData<\/a>"],[100,1,"<a href=\"AppTool.php.html#752\">AppTool::logMessage<\/a>"],[100,1,"<a href=\"AppTool.php.html#760\">AppTool::logExecutionTime<\/a>"],[100,1,"<a href=\"PimconnectModel.php.html#17\">PimconnectModel::__construct<\/a>"],[0,1,"<a href=\"PimconnectModel.php.html#26\">PimconnectModel::getDBConnection<\/a>"],[100,3,"<a href=\"PimconnectModel.php.html#35\">PimconnectModel::createProc<\/a>"],[84.615384615385,4,"<a href=\"PimconnectModel.php.html#65\">PimconnectModel::getBridgeConnectionMappingData<\/a>"],[81.818181818182,4,"<a href=\"PimconnectModel.php.html#91\">PimconnectModel::chkforAttributeSet<\/a>"],[100,1,"<a href=\"PimconnectModel.php.html#117\">PimconnectModel::getSrcTargetMappingData<\/a>"],[100,2,"<a href=\"PimconnectModel.php.html#134\">PimconnectModel::getObjectVariantData<\/a>"],[100,1,"<a href=\"PimconnectModel.php.html#156\">PimconnectModel::getAllChilds<\/a>"],[100,2,"<a href=\"PimconnectModel.php.html#174\">PimconnectModel::getAllChildsListing<\/a>"],[100,5,"<a href=\"PimconnectModel.php.html#200\">PimconnectModel::getMagentoData<\/a>"],[100,2,"<a href=\"PimconnectModel.php.html#244\">PimconnectModel::getMagentoAttrValue<\/a>"],[91.666666666667,4,"<a href=\"PimconnectModel.php.html#272\">PimconnectModel::getTargetId<\/a>"],[94.285714285714,5,"<a href=\"PimconnectModel.php.html#297\">PimconnectModel::saveMapping<\/a>"],[100,2,"<a href=\"PimconnectModel.php.html#342\">PimconnectModel::updateModificationDate<\/a>"],[73.076923076923,5,"<a href=\"PimconnectModel.php.html#360\">PimconnectModel::recordExist<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

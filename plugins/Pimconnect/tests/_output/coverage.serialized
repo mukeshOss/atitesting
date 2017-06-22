@@ -1,0 +1,4377 @@
+<?php
+$coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
+$coverage->setData(array (
+  '/var/www/html/pimcoremage/plugins/pocm/Pimconnect/lib/Pimconnect/PimconnectModel.php' => 
+  array (
+    19 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+      2 => 'PimConnectTest::testUpdateVariantSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      4 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+      5 => 'PimConnectTest::testCreateProcSuccess',
+      6 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      7 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      8 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      9 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      10 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      11 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      12 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      13 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      14 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+      15 => 'PimConnectTest::testhandleAssetData',
+    ),
+    20 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+      2 => 'PimConnectTest::testUpdateVariantSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      4 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+      5 => 'PimConnectTest::testCreateProcSuccess',
+      6 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      7 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      8 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      9 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      10 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      11 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      12 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      13 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      14 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+      15 => 'PimConnectTest::testhandleAssetData',
+    ),
+    21 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+      2 => 'PimConnectTest::testUpdateVariantSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      4 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+      5 => 'PimConnectTest::testCreateProcSuccess',
+      6 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      7 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      8 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      9 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      10 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      11 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      12 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      13 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      14 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+      15 => 'PimConnectTest::testhandleAssetData',
+    ),
+    28 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    37 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    38 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    43 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    45 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    46 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    47 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    48 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    50 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    51 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    52 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    53 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    56 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    57 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateProcSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      3 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      6 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      8 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    58 => NULL,
+    67 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    68 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    70 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    71 => 
+    array (
+    ),
+    72 => 
+    array (
+    ),
+    73 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    74 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+    ),
+    75 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+    ),
+    78 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    80 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    81 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    82 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    83 => 
+    array (
+      0 => 'PimConnectTest::testgetBridgeConnectionMappingData',
+      1 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    84 => NULL,
+    93 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    94 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    95 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    99 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    101 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    103 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    104 => 
+    array (
+    ),
+    105 => 
+    array (
+    ),
+    106 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    107 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    108 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    109 => NULL,
+    119 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    120 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    121 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    122 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    123 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    124 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    126 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    127 => NULL,
+    136 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    137 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    138 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    139 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    141 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    142 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    144 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    145 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    146 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    147 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    148 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testGetObjectVariantDataSuccess',
+      2 => 'PimConnectTest::testGetObjectVariantDataFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      5 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      7 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    149 => NULL,
+    158 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    159 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    160 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    161 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    163 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    165 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    166 => NULL,
+    176 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    177 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    178 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    179 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    180 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    182 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    183 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    184 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    185 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    186 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    187 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    188 => NULL,
+    202 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    203 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    206 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    207 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    208 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    209 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    210 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    211 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    212 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    214 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    215 => NULL,
+    217 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    222 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    223 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    224 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    225 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    226 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    228 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    229 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    230 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    232 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    233 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    234 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    235 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    236 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    237 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    239 => NULL,
+    246 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    253 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    254 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    256 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    258 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    259 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    260 => NULL,
+    261 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      2 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      3 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    263 => NULL,
+    274 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      7 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      8 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    275 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      7 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      8 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    276 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      7 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      8 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    277 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      7 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      8 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    279 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      7 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      8 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    281 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      7 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      8 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    282 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+    ),
+    283 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+    ),
+    284 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      3 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      4 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      6 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      7 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      8 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    285 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+    ),
+    286 => NULL,
+    287 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+      6 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      7 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    289 => NULL,
+    290 => 
+    array (
+    ),
+    292 => NULL,
+    299 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    300 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    301 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    302 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    303 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    304 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    305 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    306 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    308 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    309 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    310 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    311 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    312 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    313 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    314 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    315 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    316 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    317 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    318 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    319 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    320 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    321 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    322 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    323 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    324 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    326 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    327 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    328 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    329 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    330 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    331 => 
+    array (
+    ),
+    332 => 
+    array (
+    ),
+    334 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    335 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    337 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    344 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    345 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    346 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    347 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    349 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    350 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    351 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    352 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    353 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    354 => 
+    array (
+      0 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    355 => 
+    array (
+      0 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    362 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    363 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    364 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    365 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    367 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    368 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    370 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    372 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    373 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    374 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    375 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    376 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    377 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    378 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    379 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    380 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    382 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    383 => 
+    array (
+    ),
+    384 => 
+    array (
+    ),
+    385 => 
+    array (
+    ),
+    386 => 
+    array (
+    ),
+    387 => 
+    array (
+    ),
+    388 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    389 => 
+    array (
+    ),
+    390 => 
+    array (
+    ),
+    392 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+  ),
+  '/var/www/html/pimcoremage/plugins/pocm/Pimconnect/cli/PimconnectBridge.php' => 
+  array (
+    90 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    91 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    92 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    93 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    94 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    95 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    96 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    97 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    98 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    99 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    100 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    101 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    102 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    103 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    104 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    105 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    112 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    115 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    118 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    120 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    121 => 
+    array (
+    ),
+    122 => 
+    array (
+    ),
+    123 => NULL,
+    124 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    126 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    127 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    129 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    130 => 
+    array (
+    ),
+    131 => 
+    array (
+    ),
+    132 => NULL,
+    133 => NULL,
+    135 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    137 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    138 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    139 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    141 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    142 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    144 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    145 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    146 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    148 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    149 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    151 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    153 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    155 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    157 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    158 => NULL,
+    159 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    160 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    162 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    163 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    164 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    165 => 
+    array (
+    ),
+    166 => 
+    array (
+    ),
+    168 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    170 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    171 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    172 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    173 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    175 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    176 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    177 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    178 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    179 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    180 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    181 => 
+    array (
+    ),
+    182 => 
+    array (
+    ),
+    183 => 
+    array (
+    ),
+    184 => 
+    array (
+    ),
+    185 => 
+    array (
+    ),
+    187 => 
+    array (
+    ),
+    188 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    191 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    192 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    193 => 
+    array (
+    ),
+    194 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    195 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    196 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    197 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    198 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    199 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    200 => 
+    array (
+    ),
+    201 => 
+    array (
+    ),
+    202 => 
+    array (
+    ),
+    203 => 
+    array (
+    ),
+    204 => 
+    array (
+    ),
+    205 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    206 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    207 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    208 => NULL,
+    210 => NULL,
+    218 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    220 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    221 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    223 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    224 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    227 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    228 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    229 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    230 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    231 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    232 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    233 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    235 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    236 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    238 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    240 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    241 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    242 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    244 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    245 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    248 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    249 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    250 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    251 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    252 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    254 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    255 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    256 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    257 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    258 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    259 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    260 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    261 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    262 => 
+    array (
+    ),
+    264 => 
+    array (
+    ),
+    265 => 
+    array (
+    ),
+    266 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    268 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    270 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    271 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    273 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    274 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    275 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    279 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    280 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    281 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    283 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    284 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    285 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    288 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    289 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    290 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    291 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    294 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    295 => 
+    array (
+      0 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    296 => 
+    array (
+      0 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    303 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    304 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    305 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    306 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    307 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+  ),
+  '/var/www/html/pimcoremage/plugins/pocm/Pimconnect/lib/Pimconnect/AppTool.php' => 
+  array (
+    23 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    24 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    26 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    27 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    28 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    30 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    32 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    33 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    35 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    37 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    40 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    41 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    42 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    43 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    45 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    46 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    47 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    48 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    49 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    50 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    51 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    53 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testTokenSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    54 => NULL,
+    63 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    65 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    66 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    67 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    70 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    71 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    72 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    73 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    75 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    76 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    77 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    79 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    80 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    81 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    83 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    86 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    87 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    88 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    89 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    91 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    92 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    93 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    94 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    95 => 
+    array (
+      0 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    96 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    99 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    100 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    101 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    102 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    104 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    105 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    106 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    107 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    108 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+    ),
+    110 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    111 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    112 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    113 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    116 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    117 => NULL,
+    125 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    126 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    127 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    128 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    129 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    130 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    131 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    133 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    135 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    136 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    137 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    138 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    139 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    140 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    141 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    143 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    144 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    145 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    146 => NULL,
+    153 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    154 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    155 => 
+    array (
+    ),
+    156 => 
+    array (
+    ),
+    158 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    159 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    160 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    161 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    162 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    164 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    165 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    167 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    169 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    170 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    171 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    172 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    173 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    174 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    176 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    177 => 
+    array (
+      0 => 'PimConnectTest::testformartImageSuccess',
+      1 => 'PimConnectTest::testformartImageFailure',
+    ),
+    178 => NULL,
+    187 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetKewordsSuccess',
+      3 => 'PimConnectTest::testGetKewordsFailure',
+    ),
+    188 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetKewordsSuccess',
+      3 => 'PimConnectTest::testGetKewordsFailure',
+    ),
+    189 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetKewordsSuccess',
+      3 => 'PimConnectTest::testGetKewordsFailure',
+    ),
+    191 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetKewordsSuccess',
+      3 => 'PimConnectTest::testGetKewordsFailure',
+    ),
+    192 => NULL,
+    193 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetKewordsSuccess',
+      3 => 'PimConnectTest::testGetKewordsFailure',
+    ),
+    194 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetKewordsSuccess',
+      3 => 'PimConnectTest::testGetKewordsFailure',
+    ),
+    195 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetKewordsSuccess',
+      3 => 'PimConnectTest::testGetKewordsFailure',
+    ),
+    196 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetKewordsSuccess',
+      3 => 'PimConnectTest::testGetKewordsFailure',
+    ),
+    198 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetKewordsSuccess',
+      3 => 'PimConnectTest::testGetKewordsFailure',
+    ),
+    199 => NULL,
+    210 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    211 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    212 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    214 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    215 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    216 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    217 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    219 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    220 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    221 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    222 => 
+    array (
+    ),
+    223 => 
+    array (
+    ),
+    224 => 
+    array (
+    ),
+    225 => 
+    array (
+    ),
+    226 => 
+    array (
+    ),
+    227 => 
+    array (
+    ),
+    229 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    230 => 
+    array (
+    ),
+    231 => 
+    array (
+    ),
+    233 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    234 => 
+    array (
+    ),
+    236 => 
+    array (
+    ),
+    237 => 
+    array (
+    ),
+    238 => 
+    array (
+    ),
+    239 => 
+    array (
+    ),
+    240 => 
+    array (
+    ),
+    241 => 
+    array (
+    ),
+    242 => 
+    array (
+    ),
+    244 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    245 => NULL,
+    256 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    258 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    260 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    261 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    263 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    264 => 
+    array (
+    ),
+    265 => 
+    array (
+    ),
+    267 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    268 => 
+    array (
+    ),
+    269 => 
+    array (
+    ),
+    270 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    273 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    275 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    276 => NULL,
+    287 => 
+    array (
+    ),
+    288 => 
+    array (
+    ),
+    290 => 
+    array (
+    ),
+    291 => 
+    array (
+    ),
+    292 => 
+    array (
+    ),
+    293 => 
+    array (
+    ),
+    294 => 
+    array (
+    ),
+    296 => 
+    array (
+    ),
+    297 => 
+    array (
+    ),
+    298 => 
+    array (
+    ),
+    299 => 
+    array (
+    ),
+    300 => 
+    array (
+    ),
+    301 => 
+    array (
+    ),
+    302 => 
+    array (
+    ),
+    303 => 
+    array (
+    ),
+    304 => 
+    array (
+    ),
+    305 => 
+    array (
+    ),
+    308 => 
+    array (
+    ),
+    309 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    310 => 
+    array (
+    ),
+    312 => 
+    array (
+    ),
+    313 => NULL,
+    325 => 
+    array (
+    ),
+    326 => 
+    array (
+    ),
+    329 => 
+    array (
+    ),
+    330 => 
+    array (
+    ),
+    331 => 
+    array (
+    ),
+    332 => 
+    array (
+    ),
+    333 => 
+    array (
+    ),
+    334 => 
+    array (
+    ),
+    335 => 
+    array (
+    ),
+    336 => 
+    array (
+    ),
+    337 => 
+    array (
+    ),
+    338 => 
+    array (
+    ),
+    339 => 
+    array (
+    ),
+    340 => 
+    array (
+    ),
+    341 => 
+    array (
+    ),
+    342 => 
+    array (
+    ),
+    343 => 
+    array (
+    ),
+    344 => 
+    array (
+    ),
+    345 => 
+    array (
+    ),
+    346 => 
+    array (
+    ),
+    347 => 
+    array (
+    ),
+    348 => 
+    array (
+    ),
+    349 => 
+    array (
+    ),
+    352 => 
+    array (
+    ),
+    353 => 
+    array (
+    ),
+    354 => 
+    array (
+    ),
+    355 => 
+    array (
+    ),
+    356 => 
+    array (
+    ),
+    357 => 
+    array (
+    ),
+    360 => 
+    array (
+    ),
+    361 => NULL,
+    371 => 
+    array (
+    ),
+    372 => 
+    array (
+    ),
+    373 => 
+    array (
+    ),
+    374 => 
+    array (
+    ),
+    375 => 
+    array (
+    ),
+    376 => 
+    array (
+    ),
+    377 => 
+    array (
+    ),
+    378 => 
+    array (
+    ),
+    379 => 
+    array (
+    ),
+    380 => 
+    array (
+    ),
+    381 => 
+    array (
+    ),
+    383 => 
+    array (
+    ),
+    384 => 
+    array (
+    ),
+    385 => 
+    array (
+    ),
+    386 => NULL,
+    397 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    398 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    399 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    401 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    402 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    403 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    404 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    405 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    406 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    407 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    408 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    409 => 
+    array (
+    ),
+    411 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    412 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    413 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    414 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    415 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    416 => NULL,
+    425 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    427 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    429 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    430 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    431 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    432 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    433 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    434 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    436 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    437 => 
+    array (
+    ),
+    438 => 
+    array (
+    ),
+    439 => 
+    array (
+    ),
+    440 => 
+    array (
+    ),
+    441 => 
+    array (
+    ),
+    442 => 
+    array (
+    ),
+    443 => 
+    array (
+    ),
+    444 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    445 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    446 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    448 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    450 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    451 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    452 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    453 => 
+    array (
+    ),
+    455 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+    ),
+    456 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    458 => 
+    array (
+    ),
+    459 => 
+    array (
+    ),
+    460 => 
+    array (
+    ),
+    461 => 
+    array (
+    ),
+    462 => 
+    array (
+    ),
+    463 => 
+    array (
+    ),
+    464 => 
+    array (
+    ),
+    465 => 
+    array (
+    ),
+    466 => 
+    array (
+    ),
+    467 => 
+    array (
+    ),
+    468 => 
+    array (
+    ),
+    469 => 
+    array (
+    ),
+    470 => 
+    array (
+    ),
+    471 => 
+    array (
+    ),
+    472 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    473 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    474 => 
+    array (
+    ),
+    475 => 
+    array (
+    ),
+    476 => 
+    array (
+    ),
+    477 => NULL,
+    478 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    479 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    480 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    482 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    483 => 
+    array (
+    ),
+    484 => 
+    array (
+    ),
+    485 => 
+    array (
+    ),
+    486 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    487 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    488 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    489 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    490 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    491 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    492 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    493 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    494 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    495 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    496 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    497 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    499 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    500 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    501 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    502 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    503 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    504 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    505 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    506 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    507 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    508 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    509 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    510 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      2 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      3 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    511 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      2 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      3 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    512 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    513 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    514 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    516 => 
+    array (
+    ),
+    517 => 
+    array (
+    ),
+    518 => 
+    array (
+    ),
+    519 => 
+    array (
+    ),
+    520 => 
+    array (
+    ),
+    521 => 
+    array (
+    ),
+    522 => 
+    array (
+    ),
+    523 => 
+    array (
+    ),
+    525 => 
+    array (
+    ),
+    527 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    528 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      2 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      3 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    529 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      2 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      3 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    530 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    532 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    535 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    537 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      2 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      3 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      5 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    538 => NULL,
+    542 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      2 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      3 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    543 => 
+    array (
+    ),
+    544 => 
+    array (
+    ),
+    545 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      2 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      3 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    547 => 
+    array (
+      0 => 'PimConnectTest::testCreateJsonForMagentoSuccess',
+      1 => 'PimConnectTest::testCreateJsonForMagentoFailure',
+      2 => 'PimConnectTest::testCreateJsonForMagentoLocalizedData',
+      3 => 'PimConnectTest::testCreateJsonForMagentoBrickData',
+      4 => 'PimConnectTest::testCreateJsonForMagentoFieldCollection',
+    ),
+    548 => NULL,
+    561 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    562 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    564 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    565 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    567 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    568 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    569 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    570 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    571 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    572 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    573 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    574 => 
+    array (
+    ),
+    575 => 
+    array (
+    ),
+    576 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    577 => 
+    array (
+    ),
+    578 => 
+    array (
+    ),
+    579 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    582 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    583 => 
+    array (
+    ),
+    584 => 
+    array (
+    ),
+    586 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    587 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    588 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    590 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    591 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    593 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    594 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    596 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    597 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    598 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    599 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    600 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    601 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    602 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    604 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    605 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    606 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    607 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    608 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    609 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    610 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    611 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    613 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    615 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    616 => NULL,
+    627 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    628 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    630 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    631 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    632 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    633 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    634 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    635 => 
+    array (
+    ),
+    636 => 
+    array (
+    ),
+    638 => 
+    array (
+    ),
+    639 => 
+    array (
+    ),
+    640 => 
+    array (
+    ),
+    641 => 
+    array (
+    ),
+    642 => 
+    array (
+    ),
+    643 => 
+    array (
+    ),
+    644 => 
+    array (
+    ),
+    645 => 
+    array (
+    ),
+    646 => 
+    array (
+    ),
+    647 => 
+    array (
+    ),
+    648 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    649 => 
+    array (
+    ),
+    650 => 
+    array (
+    ),
+    651 => 
+    array (
+    ),
+    652 => 
+    array (
+    ),
+    653 => 
+    array (
+    ),
+    654 => 
+    array (
+    ),
+    655 => 
+    array (
+    ),
+    656 => 
+    array (
+    ),
+    657 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    658 => 
+    array (
+    ),
+    659 => 
+    array (
+    ),
+    660 => 
+    array (
+    ),
+    661 => NULL,
+    662 => 
+    array (
+    ),
+    663 => 
+    array (
+    ),
+    665 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    666 => 
+    array (
+    ),
+    667 => 
+    array (
+    ),
+    669 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    670 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    671 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    672 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    673 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    675 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+    ),
+    676 => NULL,
+    688 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    689 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    690 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    692 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    693 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    694 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    695 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    696 => 
+    array (
+      0 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      1 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    697 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    698 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    699 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    700 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    701 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    703 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    705 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    707 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    708 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    709 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    710 => 
+    array (
+      0 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+    ),
+    712 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    714 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    715 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    719 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    720 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    721 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    723 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    724 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    725 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    727 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess',
+      3 => 'PimConnectTest::testGetDataForPimAndMagentoIdsFailure',
+    ),
+    728 => NULL,
+    735 => 
+    array (
+      0 => 'PimConnectTest::testhandleAssetData',
+    ),
+    736 => 
+    array (
+      0 => 'PimConnectTest::testhandleAssetData',
+    ),
+    737 => 
+    array (
+    ),
+    739 => 
+    array (
+    ),
+    740 => 
+    array (
+    ),
+    741 => 
+    array (
+    ),
+    742 => 
+    array (
+    ),
+    744 => 
+    array (
+    ),
+    745 => 
+    array (
+    ),
+    746 => 
+    array (
+      0 => 'PimConnectTest::testhandleAssetData',
+    ),
+    747 => 
+    array (
+      0 => 'PimConnectTest::testhandleAssetData',
+    ),
+    754 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    755 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+      1 => 'PimConnectTest::testUpdateVariantSuccess',
+      2 => 'PimConnectTest::testCurlPostCallMagentoSuccess',
+      3 => 'PimConnectTest::testCurlPostCallMagentoFailure',
+    ),
+    762 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+    763 => 
+    array (
+      0 => 'PimConnectTest::testRunCronSuccess',
+    ),
+  ),
+));
+$coverage->setTests(array (
+  'PimConnectTest::testgetBridgeConnectionMappingData' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testRunCronSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 3,
+  ),
+  'PimConnectTest::testUpdateVariantSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testTokenSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testCurlPostCallMagentoSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testCurlPostCallMagentoFailure' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testformartImageSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testformartImageFailure' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testGetKewordsSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testGetKewordsFailure' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testCreateProcSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testGetObjectVariantDataSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testGetObjectVariantDataFailure' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testCreateJsonForMagentoSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testCreateJsonForMagentoFailure' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testCreateJsonForMagentoLocalizedData' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testCreateJsonForMagentoBrickData' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testCreateJsonForMagentoFieldCollection' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testGetDataForPimAndMagentoIdsSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testGetDataForPimAndMagentoIdsFailure' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PimConnectTest::testhandleAssetData' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+));
+
+$filter = $coverage->filter();
+$filter->setWhitelistedFiles(array (
+  '/var/www/html/pimcoremage/plugins/pocm/Pimconnect/cli/PimconnectBridge.php' => true,
+  '/var/www/html/pimcoremage/plugins/pocm/Pimconnect/lib/Pimconnect/AppTool.php' => true,
+  '/var/www/html/pimcoremage/plugins/pocm/Pimconnect/lib/Pimconnect/PimconnectModel.php' => true,
+));
+
+return $coverage;
